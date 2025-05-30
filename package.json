@@ -11,8 +11,9 @@
     "dist"
   ],
   "scripts": {
-    "start": "vite build --mode development --watch --minify false",
-    "build": "vite build --mode production --minify true && dts-bundle-generator --config dts.config.ts",
+    "dev": "vite build --mode development --watch --minify false",
+    "start": "vite build --mode development --minify false && yalc publish",
+    "build": "vite build --mode production --minify true",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "format": "prettier src",
@@ -21,6 +22,8 @@
     "commit": "scripts/commit.sh",
     "deploy": "scripts/deploy.sh",
     "git": "git push --tags",
+    "packages": "npx yalc remove @playbooks/theme && npm install @playbooks/theme@latest --legacy-peer-deps",
+    "yalc": "npm uninstall @playbooks/theme --legacy-peer-deps && npx yalc add @playbooks/theme",
     "test": "jest",
     "prepare": "husky"
   },

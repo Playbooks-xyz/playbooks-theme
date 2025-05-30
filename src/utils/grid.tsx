@@ -78,7 +78,7 @@ export const computeCol = (type, size) => {
 			return computeColXl(size);
 
 		case 'xxl':
-			return computeColXxl(size);
+			return computeCol2xl(size);
 
 		default:
 			return computeColSpan(size);
