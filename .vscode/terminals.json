@@ -2,13 +2,13 @@
 	"autorun": true,
 	"terminals": [
 		{
-			"name": "package-starter",
+			"name": "playbooks-theme",
 			"focus": true,
 			"execute": false,
 			"command": "npm start"
 		},
 		{
-			"name": "package-starter-alt",
+			"name": "playbooks-theme-alt",
 			"focus": true,
 			"execute": false,
 			"command": "npm link"
