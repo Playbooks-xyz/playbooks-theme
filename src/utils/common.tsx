@@ -15,7 +15,6 @@ export const borderProps = {
 	borderOpacity: 'border-opacity-50 dark:border-opacity-50',
 };
 
-
 export const cloudProps = {
 	bgColor: 'bg-gray-200 dark:bg-gray-700',
 	bgOpacity: 'bg-opacity-25 dark:bg-opacity-25',
