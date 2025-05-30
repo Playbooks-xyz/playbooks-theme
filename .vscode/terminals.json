@@ -1,0 +1,22 @@
+{
+	"autorun": true,
+	"terminals": [
+		{
+			"name": "package-starter",
+			"focus": true,
+			"execute": false,
+			"command": "npm start"
+		},
+		{
+			"name": "package-starter-alt",
+			"focus": true,
+			"execute": false,
+			"command": "npm link"
+		},
+    {
+			"name": "misc",
+			"open": true,
+      "command": ""
+		}
+	]
+}
