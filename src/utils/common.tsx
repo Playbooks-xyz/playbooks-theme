@@ -10,6 +10,12 @@ export const accordionProps = open => ({
 	},
 });
 
+export const borderProps = {
+	borderColor: 'border-gray-300 dark:border-gray-600',
+	borderOpacity: 'border-opacity-50 dark:border-opacity-50',
+};
+
+
 export const cloudProps = {
 	bgColor: 'bg-gray-200 dark:bg-gray-700',
 	bgOpacity: 'bg-opacity-25 dark:bg-opacity-25',
