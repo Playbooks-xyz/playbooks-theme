@@ -1,31 +1,34 @@
-export const prefooter = {
-	bgColor: 'bg-gray-100 dark:bg-gray-800',
-	spacing: 'px-16 py-20',
-};
+export const prefooter = () => ({
+	display: 'flex-column',
+	spacing: 'py-16',
+	textAlign: 'text-center',
+});
 
-export const prefooterBody = {
-	align: 'text-left',
-	space: 'space-y-4',
-};
+export const prefooterBody = () => ({
+	space: 'space-y-6',
+	maxWidth: 'max-w-2xl',
+	margin: 'mx-auto',
+});
 
-export const prefooterPretitle = {};
+export const prefooterPretitle = () => ({});
 
-export const prefooterTitle = {
-	color: 'white',
+export const prefooterTitle = () => ({
+	fontSize: 'text-3xl',
 	fontWeight: 'font-bold',
-};
+	tracking: 'tracking-tight',
+});
 
-export const prefooterSubtitle = {
-	color: 'white',
-	fontFamily: 'font-secondary',
-	fontSize: 'font-base',
-	fontWeight: 'font-light',
-};
+export const prefooterSubtitle = () => ({
+	color: 'text-gray-600 dark:text-gray-300',
+	fontSize: 'text-xl',
+	fontWeight: 'font-medium',
+	spacing: 'mt-2',
+});
 
-export const prefooterText = {};
+export const prefooterText = () => ({});
 
-export const prefooterActions = {
+export const prefooterActions = () => ({
+	display: 'flex-center',
 	space: 'space-x-4',
-	flex: 'shrink-0',
-	spacing: 'py-4',
-};
+	spacing: 'mt-8',
+});

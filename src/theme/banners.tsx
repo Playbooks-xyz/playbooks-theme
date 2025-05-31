@@ -1,6 +1,6 @@
 import { borderProps } from 'utils';
 
-export const banner = {
+export const banner = () => ({
 	border: 'border',
 	...borderProps,
 	borderRadius: 'rounded-md',
@@ -8,30 +8,30 @@ export const banner = {
 	spacing: 'mb-4 p-4',
 	space: 'space-x-4',
 	width: 'w-full',
-};
+});
 
-export const bannerIcon = {
+export const bannerIcon = () => ({
 	flex: 'shrink-0',
 	fontSize: 'text-2xl',
-};
+});
 
-export const bannerBody = {
+export const bannerBody = () => ({
 	display: 'flex-between',
 	width: 'w-full',
-};
+});
 
-export const bannerTitle = {
+export const bannerTitle = () => ({
 	fontWeight: 'font-semibold',
 	tracking: 'tracking-wide',
-};
+});
 
-export const bannerText = {
+export const bannerText = () => ({
 	fontFamily: 'font-secondary',
 	spacing: 'mt-2',
-};
+});
 
-export const bannerActions = {
+export const bannerActions = () => ({
 	display: 'flex-end',
 	flex: 'shrink-0',
 	space: 'space-x-2',
-};
+});

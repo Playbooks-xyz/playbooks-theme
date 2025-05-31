@@ -1,55 +1,56 @@
 import { borderProps } from 'utils';
 
-export const slideWrapper = {
+export const slideWrapper = () => ({
 	position: 'fixed',
 	inset: 'inset-0',
-	zIndex: 'z-20',
-};
+	zIndex: 'z-50',
+});
 
-export const slideBackdrop = {
-	bgColor: 'bg-black dark:bg-gray-700',
-	duration: 'duration-200',
-	ease: 'ease-in',
-	height: 'h-full',
-	inset: 'inset-0',
+export const slideBackdrop = () => ({
+	bgColor: 'bg-black',
+	bgOpacity: 'bg-opacity-50',
 	position: 'fixed',
-	transition: 'transition-all',
-};
+	inset: 'inset-0',
+	zIndex: 'z-40',
+});
 
-export const slide = {
-	bgColor: 'bg-white dark:bg-gray-900',
-	ease: 'ease-out',
+export const slide = () => ({
+	bgColor: 'bg-white dark:bg-gray-800',
+	border: 'border',
+	...borderProps,
 	display: 'flex-column',
-	duration: 'duration-200',
 	height: 'h-full',
+	maxWidth: 'max-w-md',
 	position: 'fixed',
-	transition: 'transition-all',
-	transform: 'transform',
-	width: 'w-[400px] max-w-80vw min-w-40vw',
-	zIndex: 'z-20',
-};
+	right: 'right-0',
+	top: 'top-0',
+	width: 'w-full',
+	zIndex: 'z-50',
+});
 
-export const slideHeader = {
-	display: 'flex-between',
+export const slideHeader = () => ({
 	border: 'border-b',
 	...borderProps,
-	spacing: 'p-4',
-	width: 'w-full',
-};
+	display: 'flex-between',
+	spacing: 'p-6',
+	space: 'space-x-4',
+});
 
-export const slideTitle = {
-	fontWeight: 'font-bold',
-	tracking: 'tracking-wide',
-};
+export const slideTitle = () => ({
+	fontWeight: 'font-semibold',
+	fontSize: 'text-lg',
+});
 
-export const slideBody = {
-	display: 'grow',
-	overflow: 'overflow-y-scroll',
-	spacing: 'p-4',
-};
+export const slideBody = () => ({
+	flex: 'flex-1',
+	overflow: 'overflow-y-auto',
+	spacing: 'p-6',
+});
 
-export const slideFooter = {
+export const slideFooter = () => ({
 	border: 'border-t',
 	...borderProps,
-	spacing: 'p-4',
-};
+	display: 'flex-end',
+	spacing: 'p-6',
+	space: 'space-x-2',
+});

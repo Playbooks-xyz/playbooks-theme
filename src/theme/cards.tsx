@@ -1,77 +1,73 @@
 import { borderProps } from 'utils';
 
-export const card = {
-	animation: 'transition-all ease',
+export const card = () => ({
 	border: 'border',
 	...borderProps,
 	borderRadius: 'rounded-md',
-	color: 'text-gray-400',
+	display: 'flex-column',
+	overflow: 'overflow-hidden',
 	width: 'w-full',
-};
+});
 
-export const cardHeader = {
-	bgColor: 'bg-gray-100 dark:bg-gray-800',
-	...borderProps,
-	borderRadius: 'rounded-md',
-};
-
-export const cardIcon = {
-	color: 'text-gray-500',
-	fontSize: 'text-xl',
-};
-
-export const cardImg = {
-	bgColor: 'bg-gray-100 dark:bg-gray-800',
-	width: 'w-full',
-};
-
-export const cardBody = {
-	align: 'text-left',
-	...borderProps,
-	space: 'space-y-1',
+export const cardHeader = () => ({
+	display: 'flex-between',
 	spacing: 'p-4',
-};
+	space: 'space-x-4',
+});
 
-export const cardPretitle = {
-	color: 'text-blue-500 dark:text-cyan-500',
-	fontFamily: 'font-accent',
+export const cardIcon = () => ({
+	flex: 'shrink-0',
+	fontSize: 'text-2xl',
+});
+
+export const cardImg = () => ({
+	height: 'h-48',
+	objectFit: 'object-cover',
+});
+
+export const cardBody = () => ({
+	display: 'flex-column',
+	flex: 'flex-1',
+	spacing: 'p-4',
+	space: 'space-y-4',
+});
+
+export const cardPretitle = () => ({
+	color: 'text-gray-500 dark:text-gray-400',
+	fontFamily: 'font-secondary',
 	fontSize: 'text-sm',
-	fontWeight: 'font-book',
-	textTransform: 'capitalize',
-	tracking: 'tracking-wider',
-};
+	fontWeight: 'font-medium',
+	textTransform: 'uppercase',
+	tracking: 'tracking-wide',
+});
 
-export const cardTitle = {
-	display: 'flex-start',
+export const cardTitle = () => ({
 	fontWeight: 'font-semibold',
-	space: 'space-x-4',
-};
+	tracking: 'tracking-wide',
+});
 
-export const cardSubtitle = {
-	color: 'text-gray-600 dark:text-gray-300',
-	fontWeight: 'font-light',
-	fontSize: 'text-base',
-	space: 'space-x-4',
-	tracking: 'tracking-normal',
-};
-
-export const cardText = {
+export const cardSubtitle = () => ({
+	color: 'text-gray-500 dark:text-gray-400',
+	fontFamily: 'font-secondary',
 	fontSize: 'text-sm',
-	fontWeight: 'font-light',
-};
+	fontWeight: 'font-medium',
+	spacing: 'mt-1',
+});
 
-export const cardFooter = {
+export const cardText = () => ({
+	color: 'text-gray-600 dark:text-gray-300',
+	fontFamily: 'font-secondary',
+});
+
+export const cardFooter = () => ({
 	border: 'border-t',
 	...borderProps,
-	color: 'text-gray-500',
 	display: 'flex-between',
-	fontSize: 'text-sm',
-	space: 'space-x-4',
 	spacing: 'p-4',
-};
-
-export const cardActions = {
-	display: 'flex-start',
-	flex: 'shrink-0',
 	space: 'space-x-4',
-};
+});
+
+export const cardActions = () => ({
+	display: 'flex-end',
+	space: 'space-x-2',
+});

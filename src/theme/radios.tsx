@@ -1,48 +1,43 @@
 import { borderProps } from 'utils';
 
-export const radioWrapper = {
-	animation: 'transition',
+export const radioWrapper = () => ({
+	display: 'flex-start',
+	space: 'space-x-3',
+	spacing: 'p-3',
 	border: 'border',
 	...borderProps,
 	borderRadius: 'rounded-md',
 	cursor: 'cursor-pointer',
-	display: 'inline-block',
-	duration: 'duration-200',
-	position: 'relative',
-	spacing: 'p-4',
-};
-
-export const radio = {
-	display: 'flex-start-top',
-	space: 'space-x-4',
-};
-
-export const radioInput = {
 	animation: 'transition-all ease',
-	bgColor:
-		'bg-gray-100 dark:bg-gray-800 checked:bg-blue-500 checked:h:bg-blue-500 checked:f:bg-blue-500 dark:checked:bg-cyan-500 dark:checked:h:bg-cyan-500 dark:checked:f:bg-cyan-500',
+	hover: 'h:bg-gray-50 h:dark:bg-gray-800',
+});
+
+export const radio = () => ({
+	flex: 'shrink-0',
+});
+
+export const radioInput = () => ({
+	appearance: 'appearance-none',
+	bgColor: 'bg-white dark:bg-gray-800',
 	border: 'border-2',
-	borderColor: 'border-gray-400 dark:border-gray-600 f:border-blue-500 dark:border-gray-500',
-	borderOpacity: 'border-opacity-50 dark:border-opacity-50',
+	borderColor: 'border-gray-300 dark:border-gray-600',
 	borderRadius: 'rounded-full',
+	checked: 'checked:bg-blue-500 checked:border-blue-500',
+	focus: 'focus:ring-2 focus:ring-blue-500',
+	height: 'h-4',
+	width: 'w-4',
 	cursor: 'cursor-pointer',
-	ring: 'ring-none',
-	ringColor:
-		'ring-transparent checked:ring-transparent dark:checked:ring-transparent f:ring-transparent dark:f:ring-transparent',
-	ringOffset: 'ring-offset-4 checked:ring-offset-4 f:ring-offset-4',
-	ringOffsetColor:
-		'checked:ring-offset-blue-500/50 dark:checked:ring-offset-cyan-500/50 f:ring-offset-blue-500/50 dark:f:ring-offset-cyan-500/50',
-	size: 'w-4 h-4',
-};
+	animation: 'transition-all ease',
+});
 
-export const radioTitle = {
+export const radioTitle = () => ({
+	fontWeight: 'font-medium',
+	fontSize: 'text-sm',
 	color: 'text-gray-700 dark:text-gray-200',
-	lineSpacing: 'leading-tight',
-	fontSize: 'text-sm',
-};
+});
 
-export const radioText = {
+export const radioText = () => ({
+	color: 'text-gray-500 dark:text-gray-400',
 	fontSize: 'text-sm',
-	fontWeight: 'font-light',
-	tracking: 'tracking-wide',
-};
+	spacing: 'mt-1',
+});

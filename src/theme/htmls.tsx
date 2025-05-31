@@ -1,62 +1,78 @@
 import { borderProps } from 'utils';
 
-export const html = {};
+export const html = () => ({});
 
-export const body = {};
+export const body = () => ({});
 
-export const main = {
+export const main = () => ({
 	position: 'relative',
-};
+	display: 'block',
+	width: 'w-full',
+});
 
-export const aside = {
+export const aside = () => ({
+	display: 'block',
+	width: 'w-full',
 	...borderProps,
-};
+});
 
-export const div = {
+export const div = () => ({
+	display: 'block',
+	width: 'w-full',
 	position: 'relative',
 	...borderProps,
-};
+});
 
-export const span = {
+export const span = () => ({
 	display: 'inline',
-};
+});
 
-export const ul = {
+export const ul = () => ({
+	display: 'block',
+	listStyle: 'list-none',
 	...borderProps,
 	spacing: 'pl-4',
-};
+});
 
-export const li = {
+export const li = () => ({
+	display: 'list-item',
+	listStyle: 'list-none',
+	spacing: 'py-1',
 	...borderProps,
 	fontFamily: 'font-secondary',
 	color: 'text-inherit',
-};
+});
 
-export const iFrame = {};
+export const iFrame = () => ({});
 
-export const img = {
-	display: 'inline-block',
-};
+export const img = () => ({
+	display: 'block',
+	maxWidth: 'max-w-full',
+});
 
-export const hr = {
+export const hr = () => ({
 	border: 'border-t',
+	borderColor: 'border-gray-200 dark:border-gray-700',
+	margin: 'my-4',
 	borderRadius: 'rounded-md',
 	...borderProps,
-};
+});
 
-export const article = {};
+export const article = () => ({});
 
-export const figure = {};
+export const figure = () => ({});
 
-export const caption = {};
+export const caption = () => ({});
 
-export const blockquote = {};
+export const blockquote = () => ({});
 
-export const pre = {};
+export const pre = () => ({});
 
-export const code = {
+export const code = () => ({
+	fontFamily: 'font-mono',
+	fontSize: 'text-sm',
 	bgColor: 'bg-gray-100 dark:bg-gray-800',
 	borderRadius: 'rounded-md',
 	display: 'inline-block',
 	spacing: 'px-2 py-0.5',
-};
+});

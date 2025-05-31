@@ -1,22 +1,20 @@
 import { borderProps } from 'utils';
 
-export const navbar = {
-	bgColor: 'bg-white dark:bg-gray-900',
+export const navbar = () => ({
+	border: 'border-b',
 	...borderProps,
 	display: 'flex-between',
-	position: 'relative',
-	spacing: 'p-4',
+	spacing: 'py-4',
+	space: 'space-x-4',
 	width: 'w-full',
-};
+});
 
-export const navbarBrand = {
-	display: 'inline-block',
-	flex: 'shrink-0',
-	width: 'w-44',
-};
-
-export const navbarList = {
-	display: 'flex-end',
+export const navbarBrand = () => ({
+	display: 'flex-start',
 	space: 'space-x-2',
-	spacing: '',
-};
+});
+
+export const navbarList = () => ({
+	display: 'flex-start',
+	space: 'space-x-4',
+});

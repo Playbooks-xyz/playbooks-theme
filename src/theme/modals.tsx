@@ -1,70 +1,66 @@
 import { borderProps } from 'utils';
 
-export const modalWrapper = {
+export const modalWrapper = () => ({
 	position: 'fixed',
 	inset: 'inset-0',
 	overflow: 'overflow-y-auto',
 	zIndex: 'z-20',
-};
+});
 
-export const modalBackdrop = {
-	bgColor: 'bg-black dark:bg-gray-700',
-	duration: 'duration-200',
-	ease: 'ease-in',
-	height: 'h-full',
-	inset: 'inset-0',
+export const modalBackdrop = () => ({
+	bgColor: 'bg-black',
+	bgOpacity: 'bg-opacity-50',
+	display: 'flex-middle',
 	position: 'fixed',
-	transition: 'transition-all',
-};
+	inset: 'inset-0',
+	zIndex: 'z-50',
+	animation: 'transition-opacity ease',
+});
 
-export const modal = {
-	align: 'text-left',
-	bgColor: 'bg-white dark:bg-gray-900',
+export const modal = () => ({
+	bgColor: 'bg-white dark:bg-gray-800',
 	border: 'border',
 	...borderProps,
 	borderRadius: 'rounded-lg',
-	duration: 'duration-200',
-	ease: 'ease-in',
-	spacing: 'mx-auto my-8',
-	transition: 'transition-all',
-	width: 'w-sm max-w-full',
-	zIndex: 'z-30',
-};
+	boxShadow: 'shadow-xl',
+	display: 'flex-column',
+	maxWidth: 'max-w-lg',
+	width: 'w-full',
+	margin: 'mx-4',
+	animation: 'transition-all ease',
+});
 
-export const modalHeader = {
-	display: 'flex-between',
+export const modalHeader = () => ({
 	border: 'border-b',
 	...borderProps,
+	display: 'flex-between',
+	spacing: 'p-6',
 	space: 'space-x-4',
-	spacing: 'p-4',
-};
+});
 
-export const modalTitle = {
-	display: 'flex-start',
-	fontWeight: 'font-bold',
-	space: 'space-x-4',
+export const modalTitle = () => ({
+	fontWeight: 'font-semibold',
+	fontSize: 'text-lg',
 	tracking: 'tracking-wide',
-};
+});
 
-export const modalSubtitle = {
+export const modalSubtitle = () => ({
 	color: 'text-gray-600 dark:text-gray-400',
 	fontWeight: 'font-normal',
 	fontFamily: 'font-secondary',
 	space: 'space-x-4',
-};
+});
 
-export const modalBody = {
-	align: 'text-left',
-	...borderProps,
-	spacing: 'p-4',
-};
+export const modalBody = () => ({
+	flex: 'flex-1',
+	spacing: 'p-6',
+	space: 'space-y-4',
+});
 
-export const modalFooter = {
+export const modalFooter = () => ({
 	border: 'border-t',
 	...borderProps,
-	color: 'text-gray-500',
-	fontSize: 'text-sm',
 	display: 'flex-end',
-	spacing: 'p-4',
-	space: 'space-x-4',
-};
+	spacing: 'p-6',
+	space: 'space-x-2',
+});

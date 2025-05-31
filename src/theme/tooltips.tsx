@@ -1,26 +1,30 @@
-export const tooltip = {
-	cursor: 'cursor-pointer',
-	duration: 'duration-100',
-	animation: 'transition-all ease',
-};
+export const tooltip = () => ({
+	position: 'relative',
+	display: 'inline-block',
+});
 
-export const tooltipBody = {
-	animation: 'transition ease',
-	zIndex: 'z-10',
-};
-
-export const tooltipInner = {
-	bgColor: 'bg-gray-800',
+export const tooltipBody = () => ({
+	bgColor: 'bg-gray-800 dark:bg-gray-200',
 	borderRadius: 'rounded-md',
-	color: 'white',
+	color: 'text-white dark:text-gray-800',
 	fontSize: 'text-sm',
-	spacing: 'px-4 py-3 m-1',
-	width: 'w-auto',
-};
+	opacity: 'opacity-0',
+	spacing: 'px-3 py-2',
+	position: 'absolute',
+	visibility: 'invisible',
+	zIndex: 'z-50',
+	animation: 'transition-opacity ease',
+});
 
-export const tooltipArrow = {
-	bgColor: 'bg-gray-800',
-	borderRadius: 'rounded-sm',
-	rotate: 'rotate-45',
-	size: 'h-4 w-4',
-};
+export const tooltipInner = () => ({
+	fontFamily: 'font-secondary',
+	fontWeight: 'font-medium',
+	whiteSpace: 'whitespace-nowrap',
+});
+
+export const tooltipArrow = () => ({
+	position: 'absolute',
+	borderStyle: 'border-solid',
+	borderWidth: 'border-4',
+	borderColor: 'border-transparent',
+});

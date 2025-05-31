@@ -1,16 +1,14 @@
-import { gradientBgColor } from 'utils';
-
-export const progressBar = {
+export const progressBar = () => ({
 	bgColor: 'bg-gray-200 dark:bg-gray-700',
-	bgOpacity: 'bg-opacity',
 	borderRadius: 'rounded-full',
+	height: 'h-2',
 	overflow: 'overflow-hidden',
-	height: 'h-2',
 	width: 'w-full',
-};
+});
 
-export const progress = {
-	...gradientBgColor,
-	position: 'absolute',
-	height: 'h-2',
-};
+export const progress = () => ({
+	bgColor: 'bg-blue-500 dark:bg-cyan-500',
+	height: 'h-full',
+	borderRadius: 'rounded-full',
+	animation: 'transition-all ease',
+});

@@ -50,14 +50,13 @@ export const borderBtn = (active?) => ({
 export const tabBtn = (active?) => ({
 	bgColor: 'bg-transparent',
 	border: 'border-b-2',
-	borderColor:
-		'border-t-transparent border-b-transparent h:border-b-gray-300 h:border-b-blue-500 dark:h:border-b-cyan-500',
+	borderColor: 'border-b-transparent h:border-b-gray-300 h:border-b-blue-500 dark:h:border-b-cyan-500',
 	borderRadius: '',
 	color: 'text-gray-500 dark:text-gray-300',
 	stroke: 'stroke-gray-500 dark:stroke-gray-300',
 	...sharedBtn(
 		active && {
-			borderColor: 'border-t-transparent border-b-blue-500 dark:border-b-cyan-500',
+			borderColor: 'border-b-blue-500 dark:border-b-cyan-500',
 			color: 'text-gray-600 dark:text-gray-200',
 			...active,
 		},
@@ -71,12 +70,12 @@ export const textBtn = (active?) => ({
 	...sharedBtn(active),
 });
 
-export const btnWrapper = {
+export const btnWrapper = () => ({
 	outline: 'focus-visible:outline',
 	outlineColor: 'focus-visible:outline-blue-500 dark:focus-visible:outline-cyan-500',
 	outlineOffset: 'outline-offset-1',
 	width: 'w-inherit',
-};
+});
 
 // Shared
 export const sharedBtn = (active?) => ({

@@ -1,3 +1,4 @@
-export const route = {
-	bgColor: 'bg-white dark:bg-gray-900',
-};
+export const route = () => ({
+	display: 'block',
+	width: 'w-full',
+});

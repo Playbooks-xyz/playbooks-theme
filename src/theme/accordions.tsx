@@ -1,12 +1,12 @@
 import { borderProps } from 'utils';
 
-export const accordion = {
+export const accordion = () => ({
 	border: 'border',
 	...borderProps,
 	width: 'w-full',
-};
+});
 
-export const accordionToggle = {
+export const accordionToggle = () => ({
 	bgColor: 'bg-transparent',
 	border: 'border-transparent',
 	borderRadius: 'rounded-none',
@@ -18,28 +18,28 @@ export const accordionToggle = {
 	spacing: 'p-0',
 	textAlign: 'text-left',
 	width: 'w-full',
-};
+});
 
-export const accordionTitle = {
+export const accordionTitle = () => ({
 	color: 'text-gray-700 dark:text-gray-100',
 	fontWeight: 'font-semibold',
 	tracking: 'tracking-wide',
-};
+});
 
-export const accordionBodyWrapper = {
+export const accordionBodyWrapper = () => ({
 	animation: 'transition-all ease',
 	duration: 'duration-200',
 	overflow: 'overflow-hidden',
-};
+});
 
-export const accordionBody = {
+export const accordionBody = () => ({
 	border: 'border-t',
 	...borderProps,
 	spacing: 'p-4',
 	width: 'w-full',
-};
+});
 
-export const accordionText = {
+export const accordionText = () => ({
 	color: 'text-gray-600 dark:text-gray-300',
 	fontFamily: 'font-secondary',
-};
+});

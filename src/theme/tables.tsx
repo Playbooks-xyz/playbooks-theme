@@ -1,43 +1,42 @@
 import { borderProps } from 'utils';
 
-export const table = {
-	divide: 'divide-y',
-	divideColor: 'divide-gray-200',
-	divideOpacity: 'divide-opacity-25',
-	width: 'w-full',
-};
-
-export const tableHeader = {
-	border: 'border-b',
+export const table = () => ({
+	border: 'border',
 	...borderProps,
-};
+	borderRadius: 'rounded-md',
+	overflow: 'overflow-hidden',
+	width: 'w-full',
+});
 
-export const tableHeaderRow = {};
+export const tableHeader = () => ({
+	bgColor: 'bg-gray-50 dark:bg-gray-800',
+});
 
-export const tableHead = {
-	animation: 'transition-all ease',
-	align: 'text-left',
-	spacing: 'p-4',
-	whiteSpace: 'whitespace-nowrap',
+export const tableHeaderRow = () => ({});
+
+export const tableHead = () => ({
+	color: 'text-gray-700 dark:text-gray-200',
+	fontFamily: 'font-secondary',
 	fontSize: 'text-xs',
 	fontWeight: 'font-medium',
-	fontFamily: 'font-primary',
-	color: 'text-gray-800 dark:text-gray-100',
-	tracking: 'tracking-wider',
-};
+	spacing: 'px-6 py-3',
+	textAlign: 'text-left',
+	textTransform: 'uppercase',
+	tracking: 'tracking-wide',
+});
 
-export const tableBody = {};
+export const tableBody = () => ({});
 
-export const tableRow = {
-	bgColor: '',
+export const tableRow = () => ({
 	border: 'border-b',
 	...borderProps,
-};
+	hover: 'h:bg-gray-50 h:dark:bg-gray-800',
+});
 
-export const tableData = {
-	align: 'text-left',
-	spacing: 'px-4 py-4',
-	fontSize: 'text-sm',
+export const tableData = () => ({
+	color: 'text-gray-600 dark:text-gray-300',
 	fontFamily: 'font-secondary',
-	whitespace: 'whitespace-nowrap',
-};
+	fontSize: 'text-sm',
+	spacing: 'px-6 py-4',
+	whiteSpace: 'whitespace-nowrap',
+});

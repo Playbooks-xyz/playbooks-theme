@@ -1,12 +1,8 @@
-import { borderProps } from 'utils';
-
-export const pagination = {
-	position: 'inline-flex',
-	border: 'border',
-	...borderProps,
-	borderRadius: 'rounded-md',
-	overflow: 'overflow-hidden',
-};
+export const pagination = () => ({
+	display: 'flex-center',
+	space: 'space-x-1',
+	spacing: 'py-4',
+});
 
 export const paginationBtn = (active?) => ({
 	spacing: 'px-4 py-2',

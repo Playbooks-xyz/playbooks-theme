@@ -1,84 +1,82 @@
 import { borderProps } from 'utils';
 
-export const menu = {
-	zIndex: 'z-20',
-};
+export const menu = () => ({
+	display: 'flex-column',
+	space: 'space-y-1',
+});
 
-export const menuBackdrop = {
-	bgColor: 'bg-black dark:bg-gray-700',
-	duration: 'duration-200',
-	ease: 'ease-in',
-	height: 'h-full',
-	inset: 'left-0 right-0 bottom-0',
+export const menuBackdrop = () => ({
+	bgColor: 'bg-black',
+	bgOpacity: 'bg-opacity-50',
 	position: 'fixed',
-	transition: 'transition-all',
-	zIndex: 'z-1',
-};
+	inset: 'inset-0',
+	zIndex: 'z-40',
+	animation: 'transition-opacity ease',
+	opacity: 'opacity-0',
+	pointerEvents: 'pointer-events-none',
+});
 
-export const menuToggle = {
-	display: 'flex-between',
-	space: 'space-x-4',
-};
+export const menuToggle = () => ({
+	display: 'flex-middle',
+	space: 'space-x-2',
+});
 
-export const menuMenu = {
-	bgColor: 'bg-white dark:bg-gray-900',
-	border: 'border-b',
+export const menuMenu = () => ({
+	bgColor: 'bg-white dark:bg-gray-800',
+	border: 'border',
 	...borderProps,
-	ease: 'ease-in',
-	height: 'max-h-[100vh]',
-	inset: 'right-0 left-0',
+	borderRadius: 'rounded-md',
+	boxShadow: 'shadow-lg',
+	display: 'flex-column',
+	minWidth: 'min-w-48',
 	position: 'absolute',
-	shadow: 'shadow-lg',
-	shadowColor: 'dark:shadow-gray-800/25',
-	textAlign: 'text-left',
-	width: 'min-w-full w-auto',
-	overflow: 'overflow-hidden overflow-y-scroll',
-};
+	space: 'space-y-1',
+	spacing: 'p-2',
+	zIndex: 'z-50',
+});
 
-export const menuMenuWrapper = {
-	position: 'absolute',
-	width: 'w-full',
-	transition: 'transition-all',
-	zIndex: 'z-20',
-};
+export const menuMenuWrapper = () => ({
+	position: 'relative',
+	display: 'inline-block',
+});
 
-export const menuBlock = {
+export const menuBlock = () => ({
 	spacing: 'p-4',
-};
+});
 
-export const menuTitle = {
+export const menuTitle = () => ({
 	fontWeight: 'font-bold',
 	spacing: 'px-3 mb-4',
 	textTransform: 'capitalize',
 	tracking: 'tracking-wide',
-};
+});
 
-export const menuSubtitle = {
+export const menuSubtitle = () => ({
 	color: 'text-gray-500 dark:text-gray-300',
 	whitespace: 'whitespace-nowrap',
 	fontWeight: 'font-normal',
 	fontSize: 'text-sm',
-};
+});
 
-export const menuList = {
+export const menuList = () => ({
 	display: 'flex-column',
 	space: 'space-y-2',
 	spacing: 'py-4',
-};
+});
 
-export const menuItem = {
+export const menuItem = () => ({
 	display: 'flex',
 	spacing: '',
 	width: 'w-inherit',
-};
+});
 
-export const menuBtn = {
+export const menuBtn = () => ({
 	align: 'text-left',
 	display: 'flex-start',
-};
+});
 
-export const menuLink = {
+export const menuLink = () => ({
 	align: 'text-left',
 	display: 'flex-start',
 	width: 'w-full',
-};
+});

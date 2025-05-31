@@ -1,6 +1,6 @@
-export const form = {};
+export const form = () => ({});
 
-export const formCheckbox = {
+export const formCheckbox = () => ({
 	animation: 'transition-all ease',
 	bgColor:
 		'bg-gray-100 dark:bg-gray-800 checked:bg-blue-500 checked:h:bg-blue-500 checked:f:bg-blue-500 dark:checked:bg-cyan-500 dark:checked:h:bg-cyan-500 dark:checked:f:bg-cyan-500',
@@ -16,15 +16,15 @@ export const formCheckbox = {
 	ringOffsetColor:
 		'checked:ring-offset-blue-500/50 dark:checked:ring-offset-cyan-500/50 f:ring-offset-blue-500/50 dark:f:ring-offset-cyan-500/50',
 	size: 'h-6 w-6',
-};
+});
 
-export const formGroup = {
+export const formGroup = () => ({
 	space: 'space-y-2',
 	spacing: 'mb-4',
 	width: 'w-full',
-};
+});
 
-export const formLabel = {
+export const formLabel = () => ({
 	color: 'text-gray-600 dark:text-gray-400',
 	cursor: 'cursor-pointer',
 	display: 'inline-block',
@@ -33,7 +33,7 @@ export const formLabel = {
 	fontSize: 'text-sm',
 	spacing: 'p-1',
 	tracking: 'tracking-wide',
-};
+});
 
 export const formInput = (variant?) => ({
 	align: 'text-left',
@@ -66,15 +66,15 @@ export const formInput = (variant?) => ({
 	}),
 });
 
-export const formDivInput = {
+export const formDivInput = () => ({
 	color: 'text-gray-600 dark:text-gray-200',
 	display: 'flex-center',
 	overflow: 'overflow-x-scroll',
-};
+});
 
-export const formFileInput = {};
+export const formFileInput = () => ({});
 
-export const formRange = {
+export const formRange = () => ({
 	animation: 'transition-all ease',
 	appearance: 'appearance-none',
 	bgColor: 'bg-transparent',
@@ -95,11 +95,11 @@ export const formRange = {
 	sliderThumbBorderRadius: '[&::-webkit-slider-thumb]:rounded-full',
 	size: 'h-6',
 	width: 'w-full',
-};
+});
 
-export const formText = {
+export const formText = () => ({
 	color: 'text-gray-500 dark:text-gray-400',
 	spacing: 'mx-1',
 	tracking: 'tracking-wider',
 	fontSize: 'text-xs',
-};
+});

@@ -1,15 +1,10 @@
-export const icon = {
-	color: 'text-inherit',
-	flex: 'shrink-0',
-	size: '',
-};
+export const icon = () => ({
+	display: 'inline-block',
+	fontSize: 'text-base',
+	lineHeight: 'leading-none',
+});
 
-export const wrappedIcon = {
-	bgColor: 'bg-gray-100 dark:bg-gray-800',
-	borderRadius: 'rounded-md',
-	color: 'text-blue-500 dark:text-cyan-500',
+export const wrappedIcon = () => ({
 	display: 'flex-middle',
-	flex: 'shrink-0',
 	fontSize: 'text-lg',
-	spacing: 'w-10 h-10',
-};
+});

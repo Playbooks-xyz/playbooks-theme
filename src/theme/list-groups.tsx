@@ -1,8 +1,9 @@
-export const listGroup = {
+export const listGroup = () => ({
+	border: 'border',
+	borderRadius: 'rounded-md',
 	display: 'flex-column',
-	divide: 'divide-y-2',
-	divideColor: 'divide-gray-200',
-	divideStyle: 'divide-dashed',
-};
+	overflow: 'overflow-hidden',
+	width: 'w-full',
+});
 
-export const listItem = {};
+export const listItem = () => ({});

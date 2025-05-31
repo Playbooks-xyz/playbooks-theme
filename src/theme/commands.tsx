@@ -1,11 +1,10 @@
 import { borderProps } from 'utils';
 
-export const command = {
+export const command = () => ({
+	border: 'border',
 	...borderProps,
-	flex: 'shrink-0',
-	fontFamily: 'font-secondary',
-	fontSize: 'text-xs',
-	fontWeight: 'font-medium',
-	textTransform: 'capitalize',
-	whitespace: 'whitespace-nowrap',
-};
+	borderRadius: 'rounded-md',
+	fontFamily: 'font-mono',
+	fontSize: 'text-sm',
+	spacing: 'p-4',
+});

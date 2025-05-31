@@ -71,12 +71,12 @@ export const textLink = (active?) => ({
 	...sharedLink(active),
 });
 
-export const linkWrapper = {
+export const linkWrapper = () => ({
 	outline: 'focus-visible:outline',
 	outlineColor: 'focus-visible:outline-blue-500 dark:focus-visible:outline-cyan-500',
 	outlineOffset: 'outline-offset-1',
 	width: 'w-inherit',
-};
+});
 
 // Shared
 export const sharedLink = (active?) => ({

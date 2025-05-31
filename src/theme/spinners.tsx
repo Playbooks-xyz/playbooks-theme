@@ -1,6 +1,9 @@
-export const spinner = {
-	align: 'flex',
-	stroke: 'stroke-inherit',
-	size: 'w-4 h-4',
-	spacing: 'mx-auto',
-};
+export const spinner = () => ({
+	animation: 'animate-spin',
+	borderRadius: 'rounded-full',
+	border: 'border-4',
+	borderColor: 'border-gray-200',
+	borderTopColor: 'border-t-blue-500',
+	height: 'h-8',
+	width: 'w-8',
+});
