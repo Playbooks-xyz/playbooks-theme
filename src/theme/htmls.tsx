@@ -42,7 +42,6 @@ export const hr = () => ({
 	...borderProps,
 	border: 'border-t',
 	borderRadius: 'rounded-md',
-	margin: 'my-4',
 });
 
 export const article = () => ({});

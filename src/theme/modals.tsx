@@ -8,39 +8,41 @@ export const modalWrapper = () => ({
 });
 
 export const modalBackdrop = () => ({
-	animation: 'transition-opacity ease',
-	bgColor: 'bg-black',
-	bgOpacity: 'bg-opacity-50',
-	display: 'flex-middle',
+	bgColor: 'bg-black dark:bg-gray-700',
+	duration: 'duration-200',
+	ease: 'ease-in',
+	height: 'h-full',
 	inset: 'inset-0',
 	position: 'fixed',
-	zIndex: 'z-50',
+	transition: 'transition-all',
 });
 
 export const modal = () => ({
-	...borderProps,
-	animation: 'transition-all ease',
-	bgColor: 'bg-white dark:bg-gray-800',
+	align: 'text-left',
+	bgColor: 'bg-white dark:bg-gray-900',
 	border: 'border',
+	...borderProps,
 	borderRadius: 'rounded-lg',
-	boxShadow: 'shadow-xl',
-	display: 'flex-column',
-	margin: 'mx-4',
-	maxWidth: 'max-w-lg',
-	width: 'w-full',
+	duration: 'duration-200',
+	ease: 'ease-in',
+	spacing: 'mx-auto my-8',
+	transition: 'transition-all',
+	width: 'w-sm max-w-full',
+	zIndex: 'z-30',
 });
 
 export const modalHeader = () => ({
-	...borderProps,
-	border: 'border-b',
 	display: 'flex-between',
+	border: 'border-b',
+	...borderProps,
 	space: 'space-x-4',
-	spacing: 'p-6',
+	spacing: 'p-4',
 });
 
 export const modalTitle = () => ({
-	fontSize: 'text-lg',
-	fontWeight: 'font-semibold',
+	display: 'flex-start',
+	fontWeight: 'font-bold',
+	space: 'space-x-4',
 	tracking: 'tracking-wide',
 });
 
@@ -52,16 +54,18 @@ export const modalSubtitle = () => ({
 });
 
 export const modalBody = ({ size }) => ({
-	flex: 'flex-1',
-	space: 'space-y-4',
+	align: 'text-left',
+	...borderProps,
+	spacing: 'p-4',
 	size: computeSectionSize(size),
-	spacing: 'p-6',
 });
 
 export const modalFooter = () => ({
-	...borderProps,
 	border: 'border-t',
+	...borderProps,
+	color: 'text-gray-500',
+	fontSize: 'text-sm',
 	display: 'flex-end',
-	space: 'space-x-2',
-	spacing: 'p-6',
+	spacing: 'p-4',
+	space: 'space-x-4',
 });

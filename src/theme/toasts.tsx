@@ -1,25 +1,22 @@
-import { borderProps } from 'utils';
-
 export const toastWrapper = () => ({
-	display: 'flex-column',
+	inset: 'bottom-0 right-0 left-0',
 	position: 'fixed',
-	right: 'right-4',
-	space: 'space-y-2',
-	top: 'top-4',
-	zIndex: 'z-50',
+	spacing: 'mx-auto',
+	width: 'w-[400px] max-w-[90%]',
+	zIndex: 'z-40',
 });
 
-export const toast = () => ({
-	...borderProps,
-	animation: 'transition-all ease',
+export const toast = ({ show }) => ({
 	bgColor: 'bg-white dark:bg-gray-800',
-	border: 'border',
 	borderRadius: 'rounded-md',
-	boxShadow: 'shadow-lg',
-	display: 'flex-start',
-	maxWidth: 'max-w-sm',
-	space: 'space-x-3',
-	spacing: 'p-4',
+	color: 'text-gray-700 dark:text-white',
+	display: 'block',
+	overflow: 'overflow-hidden',
+	shadow: 'shadow-lg',
+	spacing: 'mb-4',
+	transition: 'transition',
+	tranform: 'transform',
+	width: 'w-full',
 });
 
 export const toastHeader = () => ({
@@ -28,27 +25,23 @@ export const toastHeader = () => ({
 });
 
 export const toastIcon = () => ({
-	flex: 'shrink-0',
-	fontSize: 'text-xl',
+	color: 'text-gray-700 dark:text-gray-300',
+	borderRadius: 'rounded-md',
+	spacing: 'px-2 py-1',
 });
 
 export const toastBody = () => ({
-	flex: 'flex-1',
-	space: 'space-y-1',
+	spacing: 'px-4 py-2',
 });
 
 export const toastTitle = () => ({
+	color: 'text-gray-800 dark:text-gray-200',
+	fontWeight: 'font-semibold',
 	fontSize: 'text-sm',
-	fontWeight: 'font-medium',
+	tracking: 'tracking-wide',
 });
 
 export const toastText = () => ({
-	color: 'text-gray-600 dark:text-gray-300',
+	color: 'text-gray-700 dark:text-gray-300',
 	fontSize: 'text-sm',
-});
-
-export const toastActions = () => ({
-	display: 'flex-start',
-	space: 'space-x-2',
-	spacing: 'mt-2',
 });

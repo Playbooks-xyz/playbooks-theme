@@ -1,38 +1,39 @@
-import { computeTagImgSize } from 'utils';
+import { borderProps, computeTagSize, computeTagImgSize } from 'utils';
 
 export const tagsWrapper = () => ({
 	display: 'flex-start',
+	spacing: '',
 	flex: 'flex-wrap',
-	gap: 'gap-2',
 });
 
-export const tag = () => ({
-	bgColor: 'bg-gray-100 dark:bg-gray-800',
-	border: 'border',
-	borderColor: 'border-gray-200 dark:border-gray-700',
-	borderRadius: 'rounded-full',
-	color: 'text-gray-700 dark:text-gray-200',
-	display: 'flex-start',
-	fontFamily: 'font-secondary',
-	fontSize: 'text-sm',
-	fontWeight: 'font-medium',
-	space: 'space-x-2',
-	spacing: 'px-3 py-1',
+export const tag = ({ size }) => ({
+	bgColor: 'bg-gray-200 dark:bg-gray-700',
+	bgOpacity: 'bg-opacity-50 dark:bg-opacity-50',
+	borderColor: 'border-gray-500 dark:border-gray-400',
+	borderOpacity: 'border-opacity-50',
+	borderRadius: 'rounded-md',
+	color: 'text-gray-500 dark:text-gray-300',
+	display: 'flex-between-inline',
+	flex: 'shrink-0',
+	size: computeTagSize(size),
+	spacing: 'mb-2 mr-4',
+	tracking: 'tracking-wide',
 });
 
 export const tagImg = ({ size }) => ({
 	borderRadius: 'rounded-full',
-	height: 'h-4',
 	size: computeTagImgSize(size),
-	width: 'w-4',
 });
 
 export const tagBody = () => ({
-	display: 'flex-column',
-	space: 'space-y-1',
+	...borderProps,
+	fontSize: 'text-sm',
+	space: 'space-x-2',
+	spacing: 'px-2',
 });
 
 export const tagActions = () => ({
-	display: 'flex-start',
-	space: 'space-x-1',
+	display: 'flex-end',
+	flex: 'shrink-0',
+	space: 'space-x-2',
 });

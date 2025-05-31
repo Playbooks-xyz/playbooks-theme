@@ -1,9 +1,11 @@
 import { borderProps, computeSectionSize } from 'utils';
 
 export const nav = () => ({
-	display: 'flex-column',
-	space: 'space-y-1',
-	width: 'w-full',
+	bgColor: 'bg-white dark:bg-gray-900',
+	...borderProps,
+	borderRadius: 'rounded-md',
+	display: 'block',
+	position: 'relative',
 });
 
 export const navHeader = () => ({
@@ -21,13 +23,14 @@ export const navBody = ({ size }) => ({
 });
 
 export const navList = () => ({
+	align: 'text-left',
 	display: 'flex-column',
 	space: 'space-y-1',
+	spacing: '',
 });
 
 export const navItem = () => ({
 	display: 'block',
-	width: 'w-full',
 });
 
 export const navBtn = () => ({
@@ -42,20 +45,4 @@ export const navLink = () => ({
 	display: 'flex-start',
 	space: 'space-x-4',
 	width: 'w-full',
-});
-
-export const navGroup = () => ({
-	...borderProps,
-	border: 'border-b',
-	spacing: 'pb-4 mb-4',
-});
-
-export const navGroupTitle = () => ({
-	color: 'text-gray-500 dark:text-gray-400',
-	fontFamily: 'font-secondary',
-	fontSize: 'text-xs',
-	fontWeight: 'font-medium',
-	spacing: 'mb-2',
-	textTransform: 'uppercase',
-	tracking: 'tracking-wide',
 });

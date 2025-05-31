@@ -1,10 +1,14 @@
+import { borderProps } from 'utils';
+
 export const pagination = () => ({
-	display: 'flex-center',
-	space: 'space-x-1',
-	spacing: 'py-4',
+	position: 'inline-flex',
+	border: 'border',
+	...borderProps,
+	borderRadius: 'rounded-md',
+	overflow: 'overflow-hidden',
 });
 
-export const paginationBtn = ({ active }) => ({
+export const paginationBtn = (props?: { active: boolean }) => ({
 	bgColor: 'h:bg-gray-100 dark:h:bg-gray-800',
 	bgOpacity: 'bg-opacity-100',
 	border: '-border-x',
@@ -15,7 +19,7 @@ export const paginationBtn = ({ active }) => ({
 	fontSize: 'text-sm',
 	fontWeight: 'font-medium',
 	spacing: 'px-4 py-2',
-	...(active && {
+	...(props?.active && {
 		bgColor: 'bg-gray-200 dark:bg-gray-700',
 		color: 'text-gray-600 dark:text-gray-200',
 	}),

@@ -1,42 +1,44 @@
 import { borderProps } from 'utils';
 
 export const table = () => ({
-	...borderProps,
-	border: 'border',
-	borderRadius: 'rounded-md',
-	overflow: 'overflow-hidden',
+	divide: 'divide-y',
+	divideColor: 'divide-gray-200',
+	divideOpacity: 'divide-opacity-25',
 	width: 'w-full',
 });
 
 export const tableHeader = () => ({
-	bgColor: 'bg-gray-50 dark:bg-gray-800',
+	border: 'border-b',
+	...borderProps,
 });
 
 export const tableHeaderRow = () => ({});
 
 export const tableHead = () => ({
-	color: 'text-gray-700 dark:text-gray-200',
-	fontFamily: 'font-secondary',
+	animation: 'transition-all ease',
+	align: 'text-left',
+	spacing: 'px-4 py-4',
+	whiteSpace: 'whitespace-nowrap',
 	fontSize: 'text-xs',
 	fontWeight: 'font-medium',
-	spacing: 'px-6 py-3',
-	textAlign: 'text-left',
-	textTransform: 'uppercase',
-	tracking: 'tracking-wide',
+	fontFamily: 'font-primary',
+	color: 'text-gray-800 dark:text-gray-100',
+	tracking: 'tracking-wider',
 });
 
 export const tableBody = () => ({});
 
 export const tableRow = () => ({
-	...borderProps,
+	bgColor: '',
 	border: 'border-b',
-	hover: 'h:bg-gray-50 h:dark:bg-gray-800',
+	...borderProps,
 });
 
 export const tableData = ({ title }) => ({
+	align: 'text-left',
 	color: title ? 'text-gray-800 dark:text-gray-100' : 'text-gray-600 dark:text-gray-400',
-	fontFamily: 'font-secondary',
+	spacing: 'px-4 py-4',
 	fontSize: 'text-sm',
-	spacing: 'px-6 py-4',
-	whiteSpace: 'whitespace-nowrap',
+	fontFamily: 'font-secondary',
+	whitespace: 'whitespace-nowrap',
 });

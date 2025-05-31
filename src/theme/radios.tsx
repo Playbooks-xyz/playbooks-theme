@@ -1,19 +1,20 @@
 import { borderProps } from 'utils';
 
 export const radioWrapper = () => ({
-	...borderProps,
 	animation: 'transition-all ease',
 	border: 'border',
 	borderRadius: 'rounded-md',
+	...borderProps,
 	cursor: 'cursor-pointer',
-	display: 'flex-start',
-	hover: 'h:bg-gray-50 h:dark:bg-gray-800',
-	space: 'space-x-3',
-	spacing: 'p-3',
+	display: 'inline-block',
+	duration: 'duration-200',
+	position: 'relative',
+	spacing: 'p-4',
 });
 
 export const radio = () => ({
-	flex: 'shrink-0',
+	display: 'flex-start-top',
+	space: 'space-x-4',
 });
 
 export const radioInput = () => ({
@@ -32,12 +33,12 @@ export const radioInput = () => ({
 
 export const radioTitle = () => ({
 	color: 'text-gray-700 dark:text-gray-200',
+	lineSpacing: 'leading-tight',
 	fontSize: 'text-sm',
-	fontWeight: 'font-medium',
 });
 
 export const radioText = () => ({
-	color: 'text-gray-500 dark:text-gray-400',
 	fontSize: 'text-sm',
-	spacing: 'mt-1',
+	fontWeight: 'font-light',
+	tracking: 'tracking-wide',
 });

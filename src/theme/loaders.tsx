@@ -1,20 +1,19 @@
 export const modalLoader = () => ({
-	display: 'flex-middle',
-	height: 'h-32',
-	width: 'w-full',
+	align: 'text-center',
+	spacing: 'mx-auto',
 });
 
 export const pageLoader = () => ({
 	bgColor: 'bg-white dark:bg-gray-900',
+	color: 'text-gray-700 dark:text-gray-300',
 	display: 'flex-middle',
-	height: 'h-screen',
+	position: 'absolute',
 	inset: 'inset-0',
-	position: 'fixed',
+	spacing: 'h-full w-full',
 	zIndex: 'z-50',
 });
 
 export const sectionLoader = () => ({
-	display: 'flex-middle',
-	height: 'h-64',
-	width: 'w-full',
+	align: 'text-center',
+	spacing: 'mx-auto',
 });

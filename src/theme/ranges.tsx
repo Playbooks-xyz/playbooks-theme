@@ -1,20 +1,18 @@
 export const rangeSliderTrack = () => ({
-	bgColor: 'bg-gray-200 dark:bg-gray-700',
+	bgColor: 'bg-gray-100 dark:bg-gray-800',
 	borderRadius: 'rounded-full',
-	height: 'h-2',
-	position: 'relative',
+	height: 'h-inherit',
+	display: 'flex',
 	width: 'w-full',
 });
 
-export const rangeSliderThumb = () => ({
-	bgColor: 'bg-blue-500 dark:bg-cyan-500',
+export const rangeSliderThumb = ({ isDragged }) => ({
+	size: 'w-6 h-6',
+	bgColor: isDragged ? 'bg-blue-500 dark:bg-cyan-500' : 'bg-gray-300 dark:bg-gray-600',
 	border: 'border-2',
-	borderColor: 'border-white',
+	borderColor: isDragged ? 'border-blue-500 dark:border-cyan-500' : 'border-gray-300 dark:border-gray-600',
 	borderRadius: 'rounded-full',
-	cursor: 'cursor-pointer',
-	height: 'h-4',
-	position: 'absolute',
-	top: 'top-1/2',
-	transform: 'transform -translate-y-1/2',
-	width: 'w-4',
+	display: 'flex-middle',
+	position: '',
+	shadow: 'shadow-sm',
 });

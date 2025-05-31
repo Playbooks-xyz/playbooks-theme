@@ -6,7 +6,6 @@ export const section = () => ({
 	...borderProps,
 	borderRadius: 'rounded-md',
 	position: 'relative',
-	shadow: '',
 	spacing: 'mb-4',
 	width: 'w-full',
 });

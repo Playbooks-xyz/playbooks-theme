@@ -1,43 +1,45 @@
 import { borderProps } from 'utils';
 
 export const menu = () => ({
-	display: 'flex-column',
-	space: 'space-y-1',
+	zIndex: 'z-20',
 });
 
 export const menuBackdrop = () => ({
-	animation: 'transition-opacity ease',
-	bgColor: 'bg-black',
-	bgOpacity: 'bg-opacity-50',
-	inset: 'inset-0',
-	opacity: 'opacity-0',
-	pointerEvents: 'pointer-events-none',
+	bgColor: 'bg-black dark:bg-gray-700',
+	duration: 'duration-200',
+	ease: 'ease-in',
+	height: 'h-full',
+	inset: 'left-0 right-0 bottom-0',
 	position: 'fixed',
-	zIndex: 'z-40',
+	transition: 'transition-all',
+	zIndex: 'z-1',
 });
 
 export const menuToggle = () => ({
-	display: 'flex-middle',
-	space: 'space-x-2',
+	display: 'flex-between',
+	space: 'space-x-4',
 });
 
 export const menuMenu = () => ({
+	bgColor: 'bg-white dark:bg-gray-900',
+	border: 'border-b',
 	...borderProps,
-	bgColor: 'bg-white dark:bg-gray-800',
-	border: 'border',
-	borderRadius: 'rounded-md',
-	boxShadow: 'shadow-lg',
-	display: 'flex-column',
-	minWidth: 'min-w-48',
+	ease: 'ease-in',
+	height: 'max-h-[100vh]',
+	inset: 'right-0 left-0',
 	position: 'absolute',
-	space: 'space-y-1',
-	spacing: 'p-2',
-	zIndex: 'z-50',
+	shadow: 'shadow-lg',
+	shadowColor: 'dark:shadow-gray-800/25',
+	textAlign: 'text-left',
+	width: 'min-w-full w-auto',
+	overflow: 'overflow-hidden overflow-y-scroll',
 });
 
 export const menuMenuWrapper = () => ({
-	display: 'inline-block',
-	position: 'relative',
+	position: 'absolute',
+	width: 'w-full',
+	transition: 'transition-all',
+	zIndex: 'z-20',
 });
 
 export const menuBlock = () => ({
@@ -52,7 +54,7 @@ export const menuTitle = () => ({
 });
 
 export const menuSubtitle = () => ({
-	color: 'text-gray-500 dark:text-gray-300',
+	color: 'text-gray-700 dark:text-gray-300',
 	fontSize: 'text-sm',
 	fontWeight: 'font-normal',
 	whitespace: 'whitespace-nowrap',

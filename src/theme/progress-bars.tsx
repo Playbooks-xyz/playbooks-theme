@@ -1,3 +1,5 @@
+import { gradientBgColor } from 'utils';
+
 export const progressBar = () => ({
 	bgColor: 'bg-gray-200 dark:bg-gray-700',
 	borderRadius: 'rounded-full',
@@ -8,7 +10,7 @@ export const progressBar = () => ({
 
 export const progress = () => ({
 	animation: 'transition-all ease',
-	bgColor: 'bg-blue-500 dark:bg-cyan-500',
+	...gradientBgColor,
 	borderRadius: 'rounded-full',
 	height: 'h-full',
 });

@@ -1,50 +1,50 @@
 export const switchGroup = () => ({
-	display: 'flex-start',
-	space: 'space-x-3',
+	display: 'flex-between',
+	space: 'space-x-4',
 });
 
 export const switchBase = () => ({
-	animation: 'transition-colors ease',
-	bgColor: 'bg-gray-200 dark:bg-gray-700',
-	borderRadius: 'rounded-full',
-	cursor: 'cursor-pointer',
-	height: 'h-6',
+	display: 'inline-flex items-center justify-center shrink-0',
 	position: 'relative',
-	width: 'w-11',
+	overflow: 'overflow-hidden',
+	size: 'w-12 h-10',
+	cursor: 'cursor-pointer',
+	ring: 'ring-sky',
 });
 
 export const switchBackdrop = () => ({
-	animation: 'transition-opacity ease',
-	bgColor: 'bg-blue-500 dark:bg-cyan-500',
+	bgColor: 'bg-gray-200',
+	transition: 'transition-all ease',
+	pointer: 'pointer-events-none',
+	size: 'w-10 h-2',
 	borderRadius: 'rounded-full',
-	height: 'h-full',
-	opacity: 'opacity-0',
-	position: 'absolute',
-	width: 'w-full',
 });
 
-export const switchInner = () => ({
-	animation: 'transition-transform ease',
-	bgColor: 'bg-white',
-	borderRadius: 'rounded-full',
-	height: 'h-5',
-	left: 'left-0.5',
+export const switchInner = ({ checked }) => ({
 	position: 'absolute',
-	top: 'top-0.5',
-	transform: 'translate-x-0',
-	width: 'w-5',
-});
-
-export const switchToggle = () => ({
-	animation: 'transition-all',
-	border: '',
-	borderRadius: 'rounded-full',
-	display: 'inline-block',
+	bgColor: checked ? 'bg-gray-100 dark:bg-gray-600' : 'bg-gray-100 dark:bg-gray-800',
+	transition: 'transition',
 	duration: 'duration-200',
-	inset: 'left-0',
 	pointer: ' pointer-events-none',
+	size: 'w-10 h-3',
+	spacing: 'mx-auto',
+	borderRadius: 'rounded-full',
+});
+
+export const switchToggle = ({ checked }) => ({
+	animation: checked ? 'translate-x-6' : 'translate-x-0',
+	inset: 'left-0',
 	position: 'absolute',
+	display: 'inline-block',
+	bgColor: checked ? 'bg-blue-500 dark:bg-cyan-500' : 'bg-gray-300 dark:bg-gray-600',
+	border: '',
+	transition: 'transition',
+	transform: 'transform',
+	duration: 'duration-200',
+	pointer: ' pointer-events-none',
+	// shadow: 'shadow-md',
 	size: 'w-6 h-6',
+	borderRadius: 'rounded-full',
 });
 
 export const switchLabel = () => ({
