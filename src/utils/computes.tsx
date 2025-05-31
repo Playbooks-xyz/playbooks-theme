@@ -95,7 +95,7 @@ export const computeHeroSize = size => {
 	}
 };
 
-export const computeHeroImgSize = size => {
+export const computeThumbnailSize = size => {
 	switch (size) {
 		case 'xs':
 			return 'w-10';

@@ -1,22 +1,22 @@
 import { borderProps } from 'utils';
 
 export const header = () => ({
-	...borderProps,
 	border: 'border-b',
+	...borderProps,
 	display: 'flex-between',
+	position: 'relative',
 	space: 'space-x-4',
 	spacing: 'py-4',
-});
-
-export const headerBrand = () => ({
-	display: 'flex-start',
-	space: 'space-x-2',
+	width: 'w-full',
 });
 
 export const headerTitle = () => ({
-	fontSize: 'text-lg',
-	fontWeight: 'font-semibold',
+	display: 'flex-start',
+	flex: 'grow',
+	fontWeight: 'font-bold',
+	space: 'space-x-4',
 	tracking: 'tracking-wide',
+	textTransform: 'capitalize',
 });
 
 export const headerSubtitle = () => ({
@@ -28,12 +28,12 @@ export const headerSubtitle = () => ({
 
 export const headerText = () => ({
 	color: 'text-gray-700 dark:text-gray-100',
-	fontFamily: 'font-secondary',
 	fontWeight: 'font-light',
+	fontFamily: 'font-secondary',
 	tracking: 'tracking-normal',
 });
 
 export const headerActions = () => ({
 	display: 'flex-end',
-	space: 'space-x-2',
+	space: 'space-x-4',
 });

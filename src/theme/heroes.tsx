@@ -1,4 +1,4 @@
-import { borderProps, computeHeroSize } from 'utils';
+import { borderProps, computeHeroSize, computeThumbnailSize } from 'utils';
 
 export const hero = ({ size }) => ({
 	bgColor: 'bg-white dark:bg-gray-900',
@@ -25,60 +25,61 @@ export const heroImg = ({ size }) => ({
 	display: 'flex-middle',
 	flex: 'shrink-0',
 	overflow: 'overflow-hidden',
-	size: computeHeroSize(size),
+	size: computeThumbnailSize(size),
 });
 
-export const heroIcon = () => ({
-	bgColor: 'bg-blue-100 dark:bg-cyan-900',
-	borderRadius: 'rounded-full',
-	color: 'text-blue-500 dark:text-cyan-500',
+export const heroIcon = ({ size }) => ({
+	aspect: 'aspect-[1/1]',
+	bgColor: 'bg-gray-100 dark:bg-gray-800',
+	border: '',
+	...borderProps,
+	borderRadius: 'rounded-md',
+	color: 'text-gray-500',
 	display: 'flex-middle',
-	fontSize: 'text-6xl',
-	height: 'h-16',
-	margin: 'mx-auto',
-	spacing: 'mb-8',
-	width: 'w-16',
+	flex: 'shrink-0',
+	fontSize: 'text-3xl',
+	overflow: 'overflow-hidden',
+	size: computeThumbnailSize(size),
 });
 
 export const heroBody = () => ({
-	position: 'relative',
-	space: 'space-y-6',
-	zIndex: 'z-10',
+	align: 'text-left',
+	space: 'space-y-1',
 });
 
 export const heroPretitle = () => ({
 	color: 'text-blue-500 dark:text-cyan-500',
-	fontFamily: 'font-secondary',
+	fontFamily: 'font-accent',
 	fontSize: 'text-sm',
 	fontWeight: 'font-medium',
 	textTransform: 'uppercase',
-	tracking: 'tracking-wide',
+	tracking: 'tracking-widest',
 });
 
 export const heroTitle = () => ({
-	color: 'text-gray-800 dark:text-gray-100',
-	fontSize: 'text-4xl lg:text-5xl',
-	fontWeight: 'font-bold',
-	lineHeight: 'leading-tight',
-	tracking: 'tracking-tight',
+	display: 'flex-start',
+	fontWeight: 'font-extrabold',
+	leading: 'leading-tight',
+	space: 'space-x-4',
+	tracking: 'tracking-wide',
 });
 
 export const heroSubtitle = () => ({
-	color: 'text-gray-600 dark:text-gray-300',
-	fontSize: 'text-xl',
-	fontWeight: 'font-medium',
-	lineHeight: 'leading-relaxed',
+	color: 'text-gray-500 dark:text-gray-400',
+	fontFamily: 'font-secondary',
+	fontWeight: 'font-light',
+	leading: '!leading-relaxed',
+	tracking: 'tracking-normal',
 });
 
 export const heroText = () => ({
-	color: 'text-gray-600 dark:text-gray-300',
 	fontFamily: 'font-secondary',
-	fontSize: 'text-lg',
-	lineHeight: 'leading-relaxed',
+	fontWeight: 'font-light',
+	tracking: 'tracking-wide',
 });
 
 export const heroActions = () => ({
-	display: 'flex-center',
-	space: 'space-x-4',
-	spacing: 'mt-8',
+	display: 'lg:flex-end',
+	space: 'space-y-4 space-x-0 lg:space-y-0 lg:space-x-4',
+	width: 'w-full',
 });

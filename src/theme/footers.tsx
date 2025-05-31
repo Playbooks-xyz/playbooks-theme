@@ -1,35 +1,38 @@
 import { borderProps } from 'utils';
 
 export const footer = () => ({
-	...borderProps,
+	bgColor: 'bg-white dark:bg-gray-900',
 	border: 'border-t',
-	display: 'flex-column',
-	space: 'space-y-8',
+	...borderProps,
+	position: 'relative',
+	spacing: 'py-6',
+});
+
+export const footerHeader = () => ({
+	border: 'border',
+	...borderProps,
 	spacing: 'py-8',
 });
 
 export const footerBody = () => ({
-	display: 'flex-between',
-	space: 'space-x-8',
-});
-
-export const footerSection = () => ({
-	display: 'flex-column',
-	space: 'space-y-4',
+	spacing: 'py-10',
+	width: 'w-full',
 });
 
 export const footerTitle = () => ({
-	fontSize: 'text-sm',
-	fontWeight: 'font-semibold',
-	textTransform: 'uppercase',
-	tracking: 'tracking-wide',
+	fontSize: 'text-base',
+	fontWeight: 'font-bold',
+	tracking: 'tracking-wider',
 });
 
-export const footerText = () => ({});
+export const footerText = () => ({
+	fontSize: 'text-sm',
+});
 
 export const footerList = () => ({
 	display: 'flex-column',
 	space: 'space-y-2',
+	spacing: '',
 });
 
 export const footerItem = () => ({
@@ -37,25 +40,12 @@ export const footerItem = () => ({
 	spacing: 'py-1',
 });
 
-export const footerLink = () => ({
-	color: 'text-gray-600 dark:text-gray-300',
-	fontSize: 'text-sm',
-	hover: 'h:text-gray-800 h:dark:text-gray-100',
-});
+export const footerBtn = () => ({});
+
+export const footerLink = () => ({});
 
 export const footerFooter = () => ({
-	...borderProps,
 	border: 'border-t',
-	display: 'flex-between',
-	spacing: 'pt-8',
-});
-
-export const footerCopyright = () => ({
-	color: 'text-gray-500 dark:text-gray-400',
-	fontSize: 'text-sm',
-});
-
-export const footerSocial = () => ({
-	display: 'flex-start',
-	space: 'space-x-4',
+	...borderProps,
+	spacing: 'pt-6',
 });

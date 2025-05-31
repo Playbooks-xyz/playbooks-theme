@@ -3,66 +3,69 @@ import { borderProps } from 'utils';
 export const drop = () => ({});
 
 export const dropToggle = () => ({
-	display: 'flex-middle',
-	space: 'space-x-2',
+	display: 'flex-between',
+	space: 'space-x-4',
 });
 
 export const dropMenu = () => ({
-	...borderProps,
-	animation: 'transition-all ease',
-	bgColor: 'bg-white dark:bg-gray-800',
+	bgColor: 'bg-white dark:bg-gray-900',
 	border: 'border',
+	...borderProps,
 	borderRadius: 'rounded-md',
-	boxShadow: 'shadow-lg',
-	display: 'flex-column',
-	minWidth: 'min-w-48',
-	position: 'absolute',
-	space: 'space-y-1',
-	spacing: 'p-2',
-	zIndex: 'z-50',
+	shadow: 'shadow-lg',
+	shadowColor: 'dark:shadow-gray-800/25',
+	textAlign: 'text-left',
+	transition: 'transition-opacity transition-transform ease',
+	width: 'w-auto',
+	overflow: 'overflow-hidden overflow-y-scroll',
+	zIndex: 'z-10',
 });
 
 export const dropHeader = () => ({
-	...borderProps,
+	align: 'text-left',
 	border: 'border-b',
-	spacing: 'pb-2 mb-2',
+	...borderProps,
+	space: 'space-y-1',
+	spacing: 'px-6 py-4',
 });
 
 export const dropTitle = () => ({
-	color: 'text-gray-700 dark:text-gray-200',
-	fontSize: 'text-sm',
+	color: 'text-gray-800 dark:text-white',
+	whitespace: 'whitespace-nowrap',
 	fontWeight: 'font-semibold',
-	spacing: 'px-2 py-1',
+	textTransform: 'capitalize',
+	tracking: 'tracking-wide',
 });
 
 export const dropSubtitle = () => ({
-	color: 'text-gray-500 dark:text-gray-400',
-	fontSize: 'text-xs',
-	spacing: 'px-2',
+	color: 'text-gray-500 dark:text-gray-300',
+	whitespace: 'whitespace-nowrap',
+	fontWeight: 'font-normal',
+	fontSize: 'text-sm',
 });
 
 export const dropList = () => ({
-	display: 'flex-column',
+	border: '',
+	...borderProps,
 	space: 'space-y-1',
+	spacing: 'p-2',
 });
 
 export const dropItem = () => ({
-	borderRadius: 'rounded',
+	display: 'block',
 	width: 'w-full',
 });
 
 export const dropBtn = () => ({
+	align: 'text-left',
 	display: 'flex-start',
-	space: 'space-x-2',
-	spacing: 'px-2 py-1',
+	space: 'space-x-4',
 	width: 'w-full',
 });
 
 export const dropLink = () => ({
-	color: 'text-gray-600 dark:text-gray-300',
-	display: 'block',
-	fontSize: 'text-sm',
-	hover: 'h:bg-gray-100 h:dark:bg-gray-700',
-	spacing: 'px-2 py-1',
+	align: 'text-left',
+	display: 'flex-start',
+	space: 'space-x-4',
 	width: 'w-full',
 });

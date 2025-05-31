@@ -1,52 +1,49 @@
 import { borderProps } from 'utils';
 
 export const feedback = () => ({
+	align: 'text-left',
+	bgColor: 'bg-gray-50 dark:bg-gray-800',
+	border: '',
 	...borderProps,
-	border: 'border',
 	borderRadius: 'rounded-md',
-	display: 'flex-column',
-	space: 'space-y-4',
-	spacing: 'p-6',
+	spacing: 'p-8',
 });
 
 export const feedbackHeader = () => ({
-	display: 'flex-start',
-	space: 'space-x-4',
+	spacing: 'p-4',
 });
 
 export const feedbackIcon = () => ({
-	flex: 'shrink-0',
+	color: 'text-gray-500',
 	fontSize: 'text-2xl',
 });
 
 export const feedbackBody = () => ({
-	display: 'flex-column',
 	space: 'space-y-2',
+	spacing: 'p-4',
 });
 
 export const feedbackPretitle = () => ({
-	color: 'text-gray-500 dark:text-gray-400',
-	fontFamily: 'font-secondary',
+	color: 'text-gray-500',
+	fontFamily: 'font-accent',
 	fontSize: 'text-sm',
 	fontWeight: 'font-medium',
 	textTransform: 'uppercase',
-	tracking: 'tracking-wide',
+	tracking: 'tracking-wider',
 });
 
 export const feedbackTitle = () => ({
-	color: 'text-gray-700 dark:text-gray-200',
-	fontSize: 'text-lg',
+	color: 'text-gray-800 dark:text-white',
 	fontWeight: 'font-semibold',
+	textTransform: 'capitalize',
 	tracking: 'tracking-wide',
 });
 
-export const feedbackText = () => ({
-	color: 'text-gray-600 dark:text-gray-300',
-	fontFamily: 'font-secondary',
-});
+export const feedbackText = () => ({});
 
 export const feedbackActions = () => ({
 	display: 'flex-start',
-	space: 'space-x-2',
-	spacing: 'mt-4',
+	flex: 'shrink-0',
+	space: 'space-x-4',
+	spacing: 'p-4',
 });
