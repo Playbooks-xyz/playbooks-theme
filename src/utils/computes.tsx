@@ -70,6 +70,53 @@ export const computeBtnSize = size => {
 	}
 };
 
+export const computeHeroSize = size => {
+	switch (size) {
+		case 'xs':
+			return 'min-h-[10vh]';
+
+		case 'sm':
+			return 'min-h-[20vh]';
+
+		case 'md':
+			return 'min-h-[30vh]';
+
+		case 'lg':
+			return 'min-h-[40vh]';
+
+		case 'xl':
+			return 'min-h-[60vh]';
+
+		case 'full':
+			return 'min-h-[100vh] -mt-20';
+
+		default:
+			return size;
+	}
+};
+
+export const computeHeroImgSize = size => {
+	switch (size) {
+		case 'xs':
+			return 'w-10';
+
+		case 'sm':
+			return 'w-16';
+
+		case 'md':
+			return 'w-20';
+
+		case 'lg':
+			return 'w-20 md:w-24';
+
+		case 'xl':
+			return 'w-24 md:w-32';
+
+		default:
+			return size;
+	}
+};
+
 export const computeInputSize = size => {
 	switch (size) {
 		case 'xs':
@@ -92,25 +139,25 @@ export const computeInputSize = size => {
 	}
 };
 
-export const computeHeroSize = size => {
+export const computeModalSize = size => {
 	switch (size) {
 		case 'xs':
-			return 'min-h-[10vh]';
+			return 'min-h-[150px]';
 
 		case 'sm':
-			return 'min-h-[20vh]';
+			return 'min-h-[250px]';
 
 		case 'md':
-			return 'min-h-[30vh]';
+			return 'min-h-[400px]';
 
 		case 'lg':
-			return 'min-h-[40vh]';
+			return 'min-h-[600px]';
 
 		case 'xl':
-			return 'min-h-[60vh]';
+			return 'min-h-[800px]';
 
 		case 'full':
-			return 'min-h-[100vh] -mt-20';
+			return 'min-h-[100vh]';
 
 		default:
 			return size;
@@ -199,28 +246,6 @@ export const computeTagImgSize = size => {
 
 		case 'xl':
 			return 'w-12 h-12';
-
-		default:
-			return size;
-	}
-};
-
-export const computeThumbnailSize = size => {
-	switch (size) {
-		case 'xs':
-			return 'w-10';
-
-		case 'sm':
-			return 'w-16';
-
-		case 'md':
-			return 'w-20';
-
-		case 'lg':
-			return 'w-20 md:w-24';
-
-		case 'xl':
-			return 'w-24 md:w-32';
 
 		default:
 			return size;

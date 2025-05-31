@@ -22,8 +22,6 @@
     "commit": "scripts/commit.sh",
     "deploy": "scripts/deploy.sh",
     "git": "git push --tags",
-    "packages": "npx yalc remove @playbooks/theme && npm install @playbooks/theme@latest --legacy-peer-deps",
-    "yalc": "npm uninstall @playbooks/theme --legacy-peer-deps && npx yalc add @playbooks/theme",
     "test": "jest",
     "prepare": "husky"
   },
