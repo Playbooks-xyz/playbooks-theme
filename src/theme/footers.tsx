@@ -25,9 +25,16 @@ export const footerTitle = () => ({
 	tracking: 'tracking-wide',
 });
 
+export const footerText = () => ({});
+
 export const footerList = () => ({
 	display: 'flex-column',
 	space: 'space-y-2',
+});
+
+export const footerItem = () => ({
+	display: 'block',
+	spacing: 'py-1',
 });
 
 export const footerLink = () => ({
@@ -36,7 +43,7 @@ export const footerLink = () => ({
 	hover: 'h:text-gray-800 h:dark:text-gray-100',
 });
 
-export const footerBottom = () => ({
+export const footerFooter = () => ({
 	...borderProps,
 	border: 'border-t',
 	display: 'flex-between',

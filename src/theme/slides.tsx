@@ -1,4 +1,4 @@
-import { borderProps } from 'utils';
+import { borderProps, computeSlideAnimation } from 'utils';
 
 export const slideWrapper = () => ({
 	inset: 'inset-0',
@@ -14,16 +14,21 @@ export const slideBackdrop = () => ({
 	zIndex: 'z-40',
 });
 
-export const slide = () => ({
+export const slide = ({ open, placement }) => ({
 	...borderProps,
 	bgColor: 'bg-white dark:bg-gray-800',
 	border: 'border',
+	delay: open ? 'delay-200' : '',
 	display: 'flex-column',
 	height: 'h-full',
+	inset: placement === 'left' ? 'left-0' : 'right-0',
 	maxWidth: 'max-w-md',
+	opacity: open ? 'opacity-100' : 'opacity-0',
 	position: 'fixed',
 	right: 'right-0',
+	shadow: placement === 'left' ? 'shadow-r-lg' : 'shadow-l-lg',
 	top: 'top-0',
+	transform: open ? computeSlideAnimation(placement) : 'translate-x-0',
 	width: 'w-full',
 	zIndex: 'z-50',
 });

@@ -22,6 +22,11 @@ export const toast = () => ({
 	spacing: 'p-4',
 });
 
+export const toastHeader = () => ({
+	display: 'flex-between',
+	spacing: 'p-2',
+});
+
 export const toastIcon = () => ({
 	flex: 'shrink-0',
 	fontSize: 'text-xl',

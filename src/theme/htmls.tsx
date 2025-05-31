@@ -5,22 +5,16 @@ export const html = () => ({});
 export const body = () => ({});
 
 export const main = () => ({
-	display: 'block',
 	position: 'relative',
-	width: 'w-full',
 });
 
 export const aside = () => ({
 	...borderProps,
-	display: 'block',
-	width: 'w-full',
 });
 
 export const div = () => ({
 	...borderProps,
-	display: 'block',
 	position: 'relative',
-	width: 'w-full',
 });
 
 export const span = () => ({

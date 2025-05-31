@@ -1,4 +1,4 @@
-import { borderProps } from 'utils';
+import { borderProps, computeSectionSize } from 'utils';
 
 export const modalWrapper = () => ({
 	inset: 'inset-0',
@@ -51,9 +51,10 @@ export const modalSubtitle = () => ({
 	space: 'space-x-4',
 });
 
-export const modalBody = () => ({
+export const modalBody = ({ size }) => ({
 	flex: 'flex-1',
 	space: 'space-y-4',
+	size: computeSectionSize(size),
 	spacing: 'p-6',
 });
 

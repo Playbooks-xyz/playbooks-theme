@@ -6,7 +6,7 @@ export const accordion = () => ({
 	width: 'w-full',
 });
 
-export const accordionToggle = () => ({
+export const accordionToggle = ({ open }) => ({
 	bgColor: 'bg-transparent',
 	border: 'border-transparent',
 	borderRadius: 'rounded-none',
@@ -14,6 +14,7 @@ export const accordionToggle = () => ({
 	nextIcon: {
 		animation: 'transition-all ease',
 		icon: 'chevron-down',
+		rotate: open ? 'rotate-180' : 'rotate-0',
 	},
 	spacing: 'p-0',
 	textAlign: 'text-left',

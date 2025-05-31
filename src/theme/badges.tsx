@@ -1,14 +1,16 @@
-import { borderProps } from 'utils';
+import { borderProps, computeBadgeSize } from 'utils';
 
-export const badge = () => ({
+export const badge = ({ size }) => ({
+	size: computeBadgeSize(size),
+	...borderProps,
 	borderRadius: 'rounded-md',
-	display: 'flex-middle-inline',
-	fontFamily: 'font-secondary',
+	flex: 'shrink-0',
+	fontFamily: 'font-accent',
 	fontSize: 'text-xs',
 	fontWeight: 'font-medium',
-	spacing: 'px-2 py-1',
-	textTransform: 'uppercase',
-	tracking: 'tracking-wide',
+	space: 'space-x-2',
+	textTransform: 'capitalize',
+	whitespace: 'whitespace-nowrap',
 });
 
 export const draftBadge = () => ({

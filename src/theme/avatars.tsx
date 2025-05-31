@@ -1,60 +1,46 @@
-import { borderProps } from 'utils';
+import { computeAvatarSize, computeBadgeSize } from 'utils';
 
 export const avatar = () => ({
-	...borderProps,
+	display: 'flex-start',
+	space: 'space-x-4',
+	width: 'w-full',
+});
+
+export const avatarBadge = ({ size }) => ({
+	bgColor: 'bg-blue-500 dark:bg-cyan-500',
 	border: 'border-2',
+	borderColor: 'border-white dark:border-gray-900',
+	borderOpacity: 'border-opacity-100',
 	borderRadius: 'rounded-full',
-	display: 'flex-middle',
+	color: 'white',
 	fontSize: 'text-sm',
-	fontWeight: 'font-medium',
-	height: 'h-10',
-	overflow: 'overflow-hidden',
-	width: 'w-10',
+	spacing: 'w-6 h-6',
+	flex: 'flex-middle',
+	size: computeBadgeSize(size),
 });
 
-export const avatarBadge = () => ({
+export const avatarImg = ({ size }) => ({
+	aspect: 'aspect-[1/1]',
+	borderColor: 'border-gray-100 dark:border-gray-900',
 	borderRadius: 'rounded-full',
-	display: 'flex-middle',
-	position: 'relative',
+	flex: 'shrink-0',
+	size: computeAvatarSize(size),
 });
 
-export const avatarImg = () => ({
-	height: 'h-full',
-	objectFit: 'object-cover',
-	width: 'w-full',
-});
-
-export const avatarBody = () => ({
-	display: 'flex-column',
-	space: 'space-y-1',
-	width: 'w-full',
-});
+export const avatarBody = () => ({});
 
 export const avatarTitle = () => ({
-	fontWeight: 'font-semibold',
-	tracking: 'tracking-wide',
+	color: 'text-gray-700 dark:text-gray-200',
+	fontWeight: 'font-bold',
+	textDecoration: 'capitalize',
 });
 
 export const avatarText = () => ({
-	color: 'text-gray-600 dark:text-gray-300',
-	fontFamily: 'font-secondary',
-	fontSize: 'text-xs',
-	fontWeight: 'font-medium',
-	textTransform: 'uppercase',
-	tracking: 'tracking-wide',
+	fontWeight: 'font-normal',
 });
 
 export const avatarActions = () => ({
 	display: 'flex-end',
+	flex: 'shrink-0',
 	space: 'space-x-2',
-	spacing: 'mt-4',
-});
-
-export const avatarIcon = () => ({
-	fontSize: 'text-lg',
-});
-
-export const avatarGroup = () => ({
-	display: 'flex',
-	space: '-space-x-2',
 });

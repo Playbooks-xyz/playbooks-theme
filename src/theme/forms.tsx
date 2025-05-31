@@ -1,3 +1,5 @@
+import { computeInputSize } from 'utils';
+
 export const form = () => ({});
 
 export const formCheckbox = () => ({
@@ -35,7 +37,7 @@ export const formLabel = () => ({
 	tracking: 'tracking-wide',
 });
 
-export const formInput = ({ variant }) => ({
+export const formInput = ({ size, variant }) => ({
 	align: 'text-left',
 	animation: 'transition ease',
 	bgColor: 'bg-white dark:bg-gray-900',
@@ -54,6 +56,7 @@ export const formInput = ({ variant }) => ({
 	ringColor: 'f:ring-transparent dark:f:ring-transparent',
 	ringOffset: 'f:ring-offset-1 dark:f:ring-offset-1',
 	ringOffsetColor: 'f:ring-offset-blue-500 dark:f:ring-offset-cyan-500',
+	size: computeInputSize(size),
 	tracking: 'tracking-wide',
 	width: 'w-full',
 	...(variant === 'group' && {
@@ -66,7 +69,8 @@ export const formInput = ({ variant }) => ({
 	}),
 });
 
-export const formDivInput = () => ({
+export const formDivInput = ({ size, variant }) => ({
+	...formInput({ size, variant }),
 	color: 'text-gray-600 dark:text-gray-200',
 	display: 'flex-center',
 	overflow: 'overflow-x-scroll',
@@ -95,6 +99,11 @@ export const formRange = () => ({
 	sliderTrackBorder: '[&::-webkit-slider-runnable-track]:rounded-full',
 	sliderTrackSize: '[&::-webkit-slider-runnable-track]:h-2',
 	width: 'w-full',
+});
+
+export const formSelect = ({ size, variant }) => ({
+	...formInput({ size, variant }),
+	cursor: 'cursor-pointer',
 });
 
 export const formText = () => ({

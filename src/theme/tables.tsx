@@ -33,8 +33,8 @@ export const tableRow = () => ({
 	hover: 'h:bg-gray-50 h:dark:bg-gray-800',
 });
 
-export const tableData = () => ({
-	color: 'text-gray-600 dark:text-gray-300',
+export const tableData = ({ title }) => ({
+	color: title ? 'text-gray-800 dark:text-gray-100' : 'text-gray-600 dark:text-gray-400',
 	fontFamily: 'font-secondary',
 	fontSize: 'text-sm',
 	spacing: 'px-6 py-4',

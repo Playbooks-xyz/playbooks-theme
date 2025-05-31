@@ -1,4 +1,4 @@
-import { borderProps } from 'utils';
+import { borderProps, computeSectionSize } from 'utils';
 
 export const nav = () => ({
 	display: 'flex-column',
@@ -15,7 +15,8 @@ export const navTitle = () => ({
 	fontWeight: 'font-bold',
 });
 
-export const navBody = () => ({
+export const navBody = ({ size }) => ({
+	size: computeSectionSize(size),
 	spacing: 'p-4',
 });
 

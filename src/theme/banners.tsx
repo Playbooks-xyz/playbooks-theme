@@ -1,33 +1,32 @@
 import { borderProps } from 'utils';
 
 export const banner = () => ({
+	border: 'border-b',
 	...borderProps,
-	border: 'border',
-	borderRadius: 'rounded-md',
-	display: 'flex-start',
+	color: 'white',
+	display: 'flex-between',
 	space: 'space-x-4',
-	spacing: 'mb-4 p-4',
+	spacing: 'py-2 px-4',
 	width: 'w-full',
 });
 
 export const bannerIcon = () => ({
-	flex: 'shrink-0',
-	fontSize: 'text-2xl',
+	color: 'text-blue-500 dark:text-cyan-500',
 });
 
 export const bannerBody = () => ({
-	display: 'flex-between',
-	width: 'w-full',
+	display: 'flex-start',
+	space: 'space-x-3',
+	spacing: 'py-1',
 });
 
 export const bannerTitle = () => ({
+	color: 'text-gray-700 dark:text-white',
 	fontWeight: 'font-semibold',
-	tracking: 'tracking-wide',
 });
 
 export const bannerText = () => ({
-	fontFamily: 'font-secondary',
-	spacing: 'mt-2',
+	color: 'text-gray-600 dark:text-gray-200',
 });
 
 export const bannerActions = () => ({

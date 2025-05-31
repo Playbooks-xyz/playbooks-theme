@@ -1,10 +1,8 @@
 export const icon = () => ({
-	display: 'inline-block',
-	fontSize: 'text-base',
-	lineHeight: 'leading-none',
+	color: 'text-inherit',
+	flex: 'shrink-0',
 });
 
 export const wrappedIcon = () => ({
 	display: 'flex-middle',
-	fontSize: 'text-lg',
 });

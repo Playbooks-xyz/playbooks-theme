@@ -1,27 +1,31 @@
-export const hero = () => ({
-	display: 'flex-column',
-	minHeight: 'min-h-screen',
+import { borderProps, computeHeroSize } from 'utils';
+
+export const hero = ({ size }) => ({
+	bgColor: 'bg-white dark:bg-gray-900',
+	...borderProps,
+	display: 'block',
 	position: 'relative',
-	space: 'space-y-8',
-	spacing: 'py-16',
-	textAlign: 'text-center',
+	size: computeHeroSize(size),
+	spacing: 'py-8',
 	width: 'w-full',
 });
 
 export const heroBg = () => ({
 	inset: 'inset-0',
 	position: 'absolute',
-	zIndex: 'z-0',
 });
 
-export const heroImg = () => ({
-	height: 'h-full',
-	inset: 'inset-0',
-	objectFit: 'object-cover',
-	objectPosition: 'object-center',
-	position: 'absolute',
-	width: 'w-full',
-	zIndex: 'z-0',
+export const heroImg = ({ size }) => ({
+	aspect: 'aspect-[1/1]',
+	bgColor: 'bg-gray-100 dark:bg-gray-800',
+	border: '',
+	...borderProps,
+	borderRadius: 'rounded-md',
+	color: 'text-gray-500',
+	display: 'flex-middle',
+	flex: 'shrink-0',
+	overflow: 'overflow-hidden',
+	size: computeHeroSize(size),
 });
 
 export const heroIcon = () => ({

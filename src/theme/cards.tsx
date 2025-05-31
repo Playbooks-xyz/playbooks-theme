@@ -1,73 +1,77 @@
 import { borderProps } from 'utils';
 
 export const card = () => ({
-	...borderProps,
+	animation: 'transition-all ease',
 	border: 'border',
+	...borderProps,
 	borderRadius: 'rounded-md',
-	display: 'flex-column',
-	overflow: 'overflow-hidden',
+	color: 'text-gray-400',
 	width: 'w-full',
 });
 
 export const cardHeader = () => ({
-	display: 'flex-between',
-	space: 'space-x-4',
-	spacing: 'p-4',
+	bgColor: 'bg-gray-100 dark:bg-gray-800',
+	...borderProps,
+	borderRadius: 'rounded-md',
 });
 
 export const cardIcon = () => ({
-	flex: 'shrink-0',
-	fontSize: 'text-2xl',
+	color: 'text-gray-500',
+	fontSize: 'text-xl',
 });
 
 export const cardImg = () => ({
-	height: 'h-48',
-	objectFit: 'object-cover',
+	bgColor: 'bg-gray-100 dark:bg-gray-800',
+	width: 'w-full',
 });
 
 export const cardBody = () => ({
-	display: 'flex-column',
-	flex: 'flex-1',
-	space: 'space-y-4',
+	align: 'text-left',
+	...borderProps,
+	space: 'space-y-1',
 	spacing: 'p-4',
 });
 
 export const cardPretitle = () => ({
-	color: 'text-gray-500 dark:text-gray-400',
-	fontFamily: 'font-secondary',
+	color: 'text-blue-500 dark:text-cyan-500',
+	fontFamily: 'font-accent',
 	fontSize: 'text-sm',
-	fontWeight: 'font-medium',
-	textTransform: 'uppercase',
-	tracking: 'tracking-wide',
+	fontWeight: 'font-book',
+	textTransform: 'capitalize',
+	tracking: 'tracking-wider',
 });
 
 export const cardTitle = () => ({
+	display: 'flex-start',
 	fontWeight: 'font-semibold',
-	tracking: 'tracking-wide',
+	space: 'space-x-4',
 });
 
 export const cardSubtitle = () => ({
-	color: 'text-gray-500 dark:text-gray-400',
-	fontFamily: 'font-secondary',
-	fontSize: 'text-sm',
-	fontWeight: 'font-medium',
-	spacing: 'mt-1',
+	color: 'text-gray-600 dark:text-gray-300',
+	fontWeight: 'font-light',
+	fontSize: 'text-base',
+	space: 'space-x-4',
+	tracking: 'tracking-normal',
 });
 
 export const cardText = () => ({
-	color: 'text-gray-600 dark:text-gray-300',
-	fontFamily: 'font-secondary',
+	fontSize: 'text-sm',
+	fontWeight: 'font-light',
 });
 
 export const cardFooter = () => ({
-	...borderProps,
 	border: 'border-t',
+	...borderProps,
+	color: 'text-gray-500',
 	display: 'flex-between',
+	fontSize: 'text-sm',
 	space: 'space-x-4',
 	spacing: 'p-4',
 });
 
 export const cardActions = () => ({
-	display: 'flex-end',
-	space: 'space-x-2',
+	display: 'flex-start',
+	flex: 'shrink-0',
+	space: 'space-x-4',
 });

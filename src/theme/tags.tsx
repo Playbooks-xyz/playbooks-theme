@@ -1,3 +1,5 @@
+import { computeTagImgSize } from 'utils';
+
 export const tagsWrapper = () => ({
 	display: 'flex-start',
 	flex: 'flex-wrap',
@@ -18,9 +20,10 @@ export const tag = () => ({
 	spacing: 'px-3 py-1',
 });
 
-export const tagImg = () => ({
+export const tagImg = ({ size }) => ({
 	borderRadius: 'rounded-full',
 	height: 'h-4',
+	size: computeTagImgSize(size),
 	width: 'w-4',
 });
 
