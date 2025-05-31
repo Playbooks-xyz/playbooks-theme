@@ -42,8 +42,8 @@ export const errorBadge = () => ({
 });
 
 export const outlineBadge = () => ({
-	border: 'border',
 	...borderProps,
 	bgColor: 'bg-transparent',
+	border: 'border',
 	color: 'text-gray-600 dark:text-gray-300',
 });

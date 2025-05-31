@@ -2,8 +2,8 @@ import { computeContainer, computeGrid, computeCol } from 'utils';
 
 export const container = ({ size }) => ({
 	margin: 'mx-auto',
-	spacing: 'px-4',
 	size: computeContainer(size),
+	spacing: 'px-4',
 });
 
 export const grid = ({ cols }) => ({
@@ -14,10 +14,10 @@ export const grid = ({ cols }) => ({
 });
 
 export const col = ({ span, sm, md, lg, xl, xxl }) => ({
-	span: computeCol('span', span),
-	sm: computeCol('sm', sm),
-	md: computeCol('md', md),
 	lg: computeCol('lg', lg),
+	md: computeCol('md', md),
+	sm: computeCol('sm', sm),
+	span: computeCol('span', span),
 	xl: computeCol('xl', xl),
 	xxl: computeCol('xxl', xxl),
 });

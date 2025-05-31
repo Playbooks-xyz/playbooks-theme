@@ -44,8 +44,8 @@ export const navLink = () => ({
 });
 
 export const navGroup = () => ({
-	border: 'border-b',
 	...borderProps,
+	border: 'border-b',
 	spacing: 'pb-4 mb-4',
 });
 
@@ -54,7 +54,7 @@ export const navGroupTitle = () => ({
 	fontFamily: 'font-secondary',
 	fontSize: 'text-xs',
 	fontWeight: 'font-medium',
+	spacing: 'mb-2',
 	textTransform: 'uppercase',
 	tracking: 'tracking-wide',
-	spacing: 'mb-2',
 });

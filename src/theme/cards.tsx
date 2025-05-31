@@ -1,8 +1,8 @@
 import { borderProps } from 'utils';
 
 export const card = () => ({
-	border: 'border',
 	...borderProps,
+	border: 'border',
 	borderRadius: 'rounded-md',
 	display: 'flex-column',
 	overflow: 'overflow-hidden',
@@ -11,8 +11,8 @@ export const card = () => ({
 
 export const cardHeader = () => ({
 	display: 'flex-between',
-	spacing: 'p-4',
 	space: 'space-x-4',
+	spacing: 'p-4',
 });
 
 export const cardIcon = () => ({
@@ -28,8 +28,8 @@ export const cardImg = () => ({
 export const cardBody = () => ({
 	display: 'flex-column',
 	flex: 'flex-1',
-	spacing: 'p-4',
 	space: 'space-y-4',
+	spacing: 'p-4',
 });
 
 export const cardPretitle = () => ({
@@ -60,11 +60,11 @@ export const cardText = () => ({
 });
 
 export const cardFooter = () => ({
-	border: 'border-t',
 	...borderProps,
+	border: 'border-t',
 	display: 'flex-between',
-	spacing: 'p-4',
 	space: 'space-x-4',
+	spacing: 'p-4',
 });
 
 export const cardActions = () => ({

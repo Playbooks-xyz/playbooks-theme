@@ -1,25 +1,25 @@
 import { borderProps } from 'utils';
 
 export const toastWrapper = () => ({
-	position: 'fixed',
-	top: 'top-4',
-	right: 'right-4',
-	zIndex: 'z-50',
 	display: 'flex-column',
+	position: 'fixed',
+	right: 'right-4',
 	space: 'space-y-2',
+	top: 'top-4',
+	zIndex: 'z-50',
 });
 
 export const toast = () => ({
+	...borderProps,
+	animation: 'transition-all ease',
 	bgColor: 'bg-white dark:bg-gray-800',
 	border: 'border',
-	...borderProps,
 	borderRadius: 'rounded-md',
 	boxShadow: 'shadow-lg',
 	display: 'flex-start',
 	maxWidth: 'max-w-sm',
-	spacing: 'p-4',
 	space: 'space-x-3',
-	animation: 'transition-all ease',
+	spacing: 'p-4',
 });
 
 export const toastIcon = () => ({
@@ -33,8 +33,8 @@ export const toastBody = () => ({
 });
 
 export const toastTitle = () => ({
-	fontWeight: 'font-medium',
 	fontSize: 'text-sm',
+	fontWeight: 'font-medium',
 });
 
 export const toastText = () => ({

@@ -1,11 +1,11 @@
 import { borderProps } from 'utils';
 
 export const footer = () => ({
-	border: 'border-t',
 	...borderProps,
+	border: 'border-t',
 	display: 'flex-column',
-	spacing: 'py-8',
 	space: 'space-y-8',
+	spacing: 'py-8',
 });
 
 export const footerBody = () => ({
@@ -19,8 +19,8 @@ export const footerSection = () => ({
 });
 
 export const footerTitle = () => ({
-	fontWeight: 'font-semibold',
 	fontSize: 'text-sm',
+	fontWeight: 'font-semibold',
 	textTransform: 'uppercase',
 	tracking: 'tracking-wide',
 });
@@ -37,8 +37,8 @@ export const footerLink = () => ({
 });
 
 export const footerBottom = () => ({
-	border: 'border-t',
 	...borderProps,
+	border: 'border-t',
 	display: 'flex-between',
 	spacing: 'pt-8',
 });

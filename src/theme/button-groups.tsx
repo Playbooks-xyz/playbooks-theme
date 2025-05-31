@@ -1,15 +1,15 @@
 import { borderProps } from 'utils';
 
 export const btnGroup = () => ({
-	border: 'border',
 	...borderProps,
+	border: 'border',
 	borderRadius: 'rounded-md',
 	display: 'flex-start',
-	overflow: 'overflow-hidden',
 	divide: 'divide-x',
 	divideColor: 'divide-gray-400',
 	divideOpacity: 'divide-opacity-25',
 	flex: 'shrink-0',
+	overflow: 'overflow-hidden',
 	space: 'space-x-0',
 	width: 'width-inherit',
 });

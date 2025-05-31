@@ -5,9 +5,9 @@ export const prefooter = () => ({
 });
 
 export const prefooterBody = () => ({
-	space: 'space-y-6',
-	maxWidth: 'max-w-2xl',
 	margin: 'mx-auto',
+	maxWidth: 'max-w-2xl',
+	space: 'space-y-6',
 });
 
 export const prefooterPretitle = () => ({});

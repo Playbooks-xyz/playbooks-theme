@@ -1,23 +1,23 @@
 import { borderProps } from 'utils';
 
 export const slideWrapper = () => ({
-	position: 'fixed',
 	inset: 'inset-0',
+	position: 'fixed',
 	zIndex: 'z-50',
 });
 
 export const slideBackdrop = () => ({
 	bgColor: 'bg-black',
 	bgOpacity: 'bg-opacity-50',
-	position: 'fixed',
 	inset: 'inset-0',
+	position: 'fixed',
 	zIndex: 'z-40',
 });
 
 export const slide = () => ({
+	...borderProps,
 	bgColor: 'bg-white dark:bg-gray-800',
 	border: 'border',
-	...borderProps,
 	display: 'flex-column',
 	height: 'h-full',
 	maxWidth: 'max-w-md',
@@ -29,16 +29,16 @@ export const slide = () => ({
 });
 
 export const slideHeader = () => ({
-	border: 'border-b',
 	...borderProps,
+	border: 'border-b',
 	display: 'flex-between',
-	spacing: 'p-6',
 	space: 'space-x-4',
+	spacing: 'p-6',
 });
 
 export const slideTitle = () => ({
-	fontWeight: 'font-semibold',
 	fontSize: 'text-lg',
+	fontWeight: 'font-semibold',
 });
 
 export const slideBody = () => ({
@@ -48,9 +48,9 @@ export const slideBody = () => ({
 });
 
 export const slideFooter = () => ({
-	border: 'border-t',
 	...borderProps,
+	border: 'border-t',
 	display: 'flex-end',
-	spacing: 'p-6',
 	space: 'space-x-2',
+	spacing: 'p-6',
 });

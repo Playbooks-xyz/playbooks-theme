@@ -2,8 +2,8 @@ export const rangeSliderTrack = () => ({
 	bgColor: 'bg-gray-200 dark:bg-gray-700',
 	borderRadius: 'rounded-full',
 	height: 'h-2',
-	width: 'w-full',
 	position: 'relative',
+	width: 'w-full',
 });
 
 export const rangeSliderThumb = () => ({
@@ -11,10 +11,10 @@ export const rangeSliderThumb = () => ({
 	border: 'border-2',
 	borderColor: 'border-white',
 	borderRadius: 'rounded-full',
+	cursor: 'cursor-pointer',
 	height: 'h-4',
-	width: 'w-4',
 	position: 'absolute',
 	top: 'top-1/2',
 	transform: 'transform -translate-y-1/2',
-	cursor: 'cursor-pointer',
+	width: 'w-4',
 });

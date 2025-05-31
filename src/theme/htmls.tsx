@@ -5,22 +5,22 @@ export const html = () => ({});
 export const body = () => ({});
 
 export const main = () => ({
-	position: 'relative',
 	display: 'block',
+	position: 'relative',
 	width: 'w-full',
 });
 
 export const aside = () => ({
+	...borderProps,
 	display: 'block',
 	width: 'w-full',
-	...borderProps,
 });
 
 export const div = () => ({
-	display: 'block',
-	width: 'w-full',
-	position: 'relative',
 	...borderProps,
+	display: 'block',
+	position: 'relative',
+	width: 'w-full',
 });
 
 export const span = () => ({
@@ -28,19 +28,19 @@ export const span = () => ({
 });
 
 export const ul = () => ({
+	...borderProps,
 	display: 'block',
 	listStyle: 'list-none',
-	...borderProps,
 	spacing: 'pl-4',
 });
 
 export const li = () => ({
+	...borderProps,
+	color: 'text-inherit',
 	display: 'list-item',
+	fontFamily: 'font-secondary',
 	listStyle: 'list-none',
 	spacing: 'py-1',
-	...borderProps,
-	fontFamily: 'font-secondary',
-	color: 'text-inherit',
 });
 
 export const iFrame = () => ({});
@@ -51,11 +51,10 @@ export const img = () => ({
 });
 
 export const hr = () => ({
-	border: 'border-t',
-	borderColor: 'border-gray-200 dark:border-gray-700',
-	margin: 'my-4',
-	borderRadius: 'rounded-md',
 	...borderProps,
+	border: 'border-t',
+	borderRadius: 'rounded-md',
+	margin: 'my-4',
 });
 
 export const article = () => ({});
@@ -69,10 +68,10 @@ export const blockquote = () => ({});
 export const pre = () => ({});
 
 export const code = () => ({
-	fontFamily: 'font-mono',
-	fontSize: 'text-sm',
 	bgColor: 'bg-gray-100 dark:bg-gray-800',
 	borderRadius: 'rounded-md',
 	display: 'inline-block',
+	fontFamily: 'font-mono',
+	fontSize: 'text-sm',
 	spacing: 'px-2 py-0.5',
 });

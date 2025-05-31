@@ -1,8 +1,8 @@
 import { borderProps } from 'utils';
 
 export const table = () => ({
-	border: 'border',
 	...borderProps,
+	border: 'border',
 	borderRadius: 'rounded-md',
 	overflow: 'overflow-hidden',
 	width: 'w-full',
@@ -28,8 +28,8 @@ export const tableHead = () => ({
 export const tableBody = () => ({});
 
 export const tableRow = () => ({
-	border: 'border-b',
 	...borderProps,
+	border: 'border-b',
 	hover: 'h:bg-gray-50 h:dark:bg-gray-800',
 });
 

@@ -2,38 +2,38 @@ export const hero = () => ({
 	display: 'flex-column',
 	minHeight: 'min-h-screen',
 	position: 'relative',
-	spacing: 'py-16',
 	space: 'space-y-8',
+	spacing: 'py-16',
 	textAlign: 'text-center',
 	width: 'w-full',
 });
 
 export const heroBg = () => ({
-	position: 'absolute',
 	inset: 'inset-0',
+	position: 'absolute',
 	zIndex: 'z-0',
 });
 
 export const heroImg = () => ({
 	height: 'h-full',
+	inset: 'inset-0',
 	objectFit: 'object-cover',
 	objectPosition: 'object-center',
 	position: 'absolute',
-	inset: 'inset-0',
 	width: 'w-full',
 	zIndex: 'z-0',
 });
 
 export const heroIcon = () => ({
+	bgColor: 'bg-blue-100 dark:bg-cyan-900',
+	borderRadius: 'rounded-full',
 	color: 'text-blue-500 dark:text-cyan-500',
 	display: 'flex-middle',
 	fontSize: 'text-6xl',
+	height: 'h-16',
 	margin: 'mx-auto',
 	spacing: 'mb-8',
 	width: 'w-16',
-	height: 'h-16',
-	borderRadius: 'rounded-full',
-	bgColor: 'bg-blue-100 dark:bg-cyan-900',
 });
 
 export const heroBody = () => ({

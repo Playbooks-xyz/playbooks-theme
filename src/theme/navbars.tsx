@@ -1,11 +1,11 @@
 import { borderProps } from 'utils';
 
 export const navbar = () => ({
-	border: 'border-b',
 	...borderProps,
+	border: 'border-b',
 	display: 'flex-between',
-	spacing: 'py-4',
 	space: 'space-x-4',
+	spacing: 'py-4',
 	width: 'w-full',
 });
 

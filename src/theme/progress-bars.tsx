@@ -7,8 +7,8 @@ export const progressBar = () => ({
 });
 
 export const progress = () => ({
-	bgColor: 'bg-blue-500 dark:bg-cyan-500',
-	height: 'h-full',
-	borderRadius: 'rounded-full',
 	animation: 'transition-all ease',
+	bgColor: 'bg-blue-500 dark:bg-cyan-500',
+	borderRadius: 'rounded-full',
+	height: 'h-full',
 });

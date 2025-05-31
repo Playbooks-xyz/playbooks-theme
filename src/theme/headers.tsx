@@ -1,11 +1,11 @@
 import { borderProps } from 'utils';
 
 export const header = () => ({
-	border: 'border-b',
 	...borderProps,
+	border: 'border-b',
 	display: 'flex-between',
-	spacing: 'py-4',
 	space: 'space-x-4',
+	spacing: 'py-4',
 });
 
 export const headerBrand = () => ({
@@ -14,8 +14,8 @@ export const headerBrand = () => ({
 });
 
 export const headerTitle = () => ({
-	fontWeight: 'font-semibold',
 	fontSize: 'text-lg',
+	fontWeight: 'font-semibold',
 	tracking: 'tracking-wide',
 });
 
@@ -28,8 +28,8 @@ export const headerSubtitle = () => ({
 
 export const headerText = () => ({
 	color: 'text-gray-700 dark:text-gray-100',
-	fontWeight: 'font-light',
 	fontFamily: 'font-secondary',
+	fontWeight: 'font-light',
 	tracking: 'tracking-normal',
 });
 

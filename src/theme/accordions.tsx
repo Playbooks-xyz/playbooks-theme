@@ -1,8 +1,8 @@
 import { borderProps } from 'utils';
 
 export const accordion = () => ({
-	border: 'border',
 	...borderProps,
+	border: 'border',
 	width: 'w-full',
 });
 
@@ -33,8 +33,8 @@ export const accordionBodyWrapper = () => ({
 });
 
 export const accordionBody = () => ({
-	border: 'border-t',
 	...borderProps,
+	border: 'border-t',
 	spacing: 'p-4',
 	width: 'w-full',
 });

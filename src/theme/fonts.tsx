@@ -47,12 +47,12 @@ export const p = () => ({
 });
 
 export const small = () => ({
-	fontSize: 'text-sm',
 	fontFamily: 'font-secondary',
+	fontSize: 'text-sm',
 });
 
 export const lead = () => ({
-	fontSize: 'text-lg',
 	fontFamily: 'font-secondary',
+	fontSize: 'text-lg',
 	lineHeight: 'leading-relaxed',
 });

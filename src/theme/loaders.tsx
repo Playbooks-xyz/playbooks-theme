@@ -5,12 +5,12 @@ export const modalLoader = () => ({
 });
 
 export const pageLoader = () => ({
+	bgColor: 'bg-white dark:bg-gray-900',
 	display: 'flex-middle',
 	height: 'h-screen',
-	position: 'fixed',
 	inset: 'inset-0',
+	position: 'fixed',
 	zIndex: 'z-50',
-	bgColor: 'bg-white dark:bg-gray-900',
 });
 
 export const sectionLoader = () => ({

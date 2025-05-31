@@ -1,8 +1,8 @@
 import { borderProps } from 'utils';
 
 export const avatar = () => ({
-	border: 'border-2',
 	...borderProps,
+	border: 'border-2',
 	borderRadius: 'rounded-full',
 	display: 'flex-middle',
 	fontSize: 'text-sm',

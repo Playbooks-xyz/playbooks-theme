@@ -1,8 +1,8 @@
 import { borderProps } from 'utils';
 
 export const command = () => ({
-	border: 'border',
 	...borderProps,
+	border: 'border',
 	borderRadius: 'rounded-md',
 	fontFamily: 'font-mono',
 	fontSize: 'text-sm',

@@ -6,14 +6,14 @@ export const menu = () => ({
 });
 
 export const menuBackdrop = () => ({
+	animation: 'transition-opacity ease',
 	bgColor: 'bg-black',
 	bgOpacity: 'bg-opacity-50',
-	position: 'fixed',
 	inset: 'inset-0',
-	zIndex: 'z-40',
-	animation: 'transition-opacity ease',
 	opacity: 'opacity-0',
 	pointerEvents: 'pointer-events-none',
+	position: 'fixed',
+	zIndex: 'z-40',
 });
 
 export const menuToggle = () => ({
@@ -22,9 +22,9 @@ export const menuToggle = () => ({
 });
 
 export const menuMenu = () => ({
+	...borderProps,
 	bgColor: 'bg-white dark:bg-gray-800',
 	border: 'border',
-	...borderProps,
 	borderRadius: 'rounded-md',
 	boxShadow: 'shadow-lg',
 	display: 'flex-column',
@@ -36,8 +36,8 @@ export const menuMenu = () => ({
 });
 
 export const menuMenuWrapper = () => ({
-	position: 'relative',
 	display: 'inline-block',
+	position: 'relative',
 });
 
 export const menuBlock = () => ({
@@ -53,9 +53,9 @@ export const menuTitle = () => ({
 
 export const menuSubtitle = () => ({
 	color: 'text-gray-500 dark:text-gray-300',
-	whitespace: 'whitespace-nowrap',
-	fontWeight: 'font-normal',
 	fontSize: 'text-sm',
+	fontWeight: 'font-normal',
+	whitespace: 'whitespace-nowrap',
 });
 
 export const menuList = () => ({

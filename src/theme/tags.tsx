@@ -14,8 +14,8 @@ export const tag = () => ({
 	fontFamily: 'font-secondary',
 	fontSize: 'text-sm',
 	fontWeight: 'font-medium',
-	spacing: 'px-3 py-1',
 	space: 'space-x-2',
+	spacing: 'px-3 py-1',
 });
 
 export const tagImg = () => ({

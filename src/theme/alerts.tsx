@@ -1,12 +1,12 @@
 import { borderProps } from 'utils';
 
 export const alert = () => ({
-	border: 'border',
 	...borderProps,
+	border: 'border',
 	borderRadius: 'rounded-md',
 	display: 'flex-start',
-	spacing: 'mb-4 p-4',
 	space: 'space-x-4',
+	spacing: 'mb-4 p-4',
 	width: 'w-full',
 });
 

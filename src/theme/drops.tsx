@@ -8,10 +8,10 @@ export const dropToggle = () => ({
 });
 
 export const dropMenu = () => ({
+	...borderProps,
 	animation: 'transition-all ease',
 	bgColor: 'bg-white dark:bg-gray-800',
 	border: 'border',
-	...borderProps,
 	borderRadius: 'rounded-md',
 	boxShadow: 'shadow-lg',
 	display: 'flex-column',
@@ -23,15 +23,15 @@ export const dropMenu = () => ({
 });
 
 export const dropHeader = () => ({
-	border: 'border-b',
 	...borderProps,
+	border: 'border-b',
 	spacing: 'pb-2 mb-2',
 });
 
 export const dropTitle = () => ({
 	color: 'text-gray-700 dark:text-gray-200',
-	fontWeight: 'font-semibold',
 	fontSize: 'text-sm',
+	fontWeight: 'font-semibold',
 	spacing: 'px-2 py-1',
 });
 
@@ -53,8 +53,8 @@ export const dropItem = () => ({
 
 export const dropBtn = () => ({
 	display: 'flex-start',
-	spacing: 'px-2 py-1',
 	space: 'space-x-2',
+	spacing: 'px-2 py-1',
 	width: 'w-full',
 });
 

@@ -1,12 +1,12 @@
 import { borderProps } from 'utils';
 
 export const feedback = () => ({
-	border: 'border',
 	...borderProps,
+	border: 'border',
 	borderRadius: 'rounded-md',
 	display: 'flex-column',
-	spacing: 'p-6',
 	space: 'space-y-4',
+	spacing: 'p-6',
 });
 
 export const feedbackHeader = () => ({
@@ -35,8 +35,8 @@ export const feedbackPretitle = () => ({
 
 export const feedbackTitle = () => ({
 	color: 'text-gray-700 dark:text-gray-200',
-	fontWeight: 'font-semibold',
 	fontSize: 'text-lg',
+	fontWeight: 'font-semibold',
 	tracking: 'tracking-wide',
 });
 

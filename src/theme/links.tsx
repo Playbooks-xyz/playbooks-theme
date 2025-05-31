@@ -16,8 +16,8 @@ export const accentLink = (active?) => ({
 	borderOpacity: 'border-opacity-50 dark:border-opacity-50',
 	borderRadius: 'rounded-md',
 	color: 'text-gray-600 dark:text-gray-300',
-	stroke: 'stroke-gray-500 dark:stroke-gray-300',
 	hover: 'h:bg-opacity-50 dark:h:bg-opacity-50',
+	stroke: 'stroke-gray-500 dark:stroke-gray-300',
 	...sharedLink(
 		active && {
 			bgOpacity: 'bg-opacity-50 dark:bg-opacity-50',
@@ -34,8 +34,8 @@ export const borderLink = (active?) => ({
 	borderOpacity: 'border-opacity-50 dark:border-opacity-50',
 	borderRadius: 'rounded-md',
 	color: 'text-gray-600 dark:text-gray-300',
-	stroke: 'stroke-gray-600 dark:stroke-gray-300',
 	hover: 'h:border-opacity-100 dark:h:border-opacity-100 h:opacity-100',
+	stroke: 'stroke-gray-600 dark:stroke-gray-300',
 	...sharedLink(
 		active && {
 			borderColor: 'border-cyan-500 dark:border-cyan-500',
@@ -84,12 +84,12 @@ export const sharedLink = (active?) => ({
 	animation: 'transition ease',
 	display: 'flex-middle-inline',
 	flex: 'shrink-0',
+	focus: 'focus:outline-none focus-visible:outline-none',
 	fontFamily: 'font-secondary',
 	fontSize: 'text-sm',
 	fontWeight: 'font-normal',
-	focus: 'focus:outline-none focus-visible:outline-none',
-	position: 'relative',
 	outline: 'outline-none',
+	position: 'relative',
 	space: 'space-x-4',
 	tracking: 'tracking-normal',
 	whiteSpace: 'whitespace-nowrap',

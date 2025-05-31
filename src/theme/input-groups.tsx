@@ -1,8 +1,8 @@
 import { borderProps } from 'utils';
 
 export const inputGroup = () => ({
-	border: 'border',
 	...borderProps,
+	border: 'border',
 	borderRadius: 'rounded-md',
 	display: 'flex-start',
 	overflow: 'overflow-hidden',
@@ -10,17 +10,17 @@ export const inputGroup = () => ({
 });
 
 export const inputAppend = () => ({
+	...borderProps,
 	bgColor: 'bg-gray-50 dark:bg-gray-800',
 	border: 'border-l',
-	...borderProps,
 	display: 'flex-middle',
 	spacing: 'px-3',
 });
 
 export const inputPrepend = () => ({
+	...borderProps,
 	bgColor: 'bg-gray-50 dark:bg-gray-800',
 	border: 'border-r',
-	...borderProps,
 	display: 'flex-middle',
 	spacing: 'px-3',
 });
