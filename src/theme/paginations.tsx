@@ -4,7 +4,7 @@ export const pagination = () => ({
 	spacing: 'py-4',
 });
 
-export const paginationBtn = (active?) => ({
+export const paginationBtn = ({ active }) => ({
 	bgColor: 'h:bg-gray-100 dark:h:bg-gray-800',
 	bgOpacity: 'bg-opacity-100',
 	border: '-border-x',

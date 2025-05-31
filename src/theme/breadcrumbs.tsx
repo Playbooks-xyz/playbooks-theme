@@ -25,7 +25,7 @@ export const breadcrumbActive = () => ({
 	fontWeight: 'font-medium',
 });
 
-export const breadcrumbBtn = (active?) => ({
+export const breadcrumbBtn = ({ active }) => ({
 	color: 'text-gray-600 dark:text-gray-400',
 	cursor: 'cursor-pointer',
 	fontFamily: 'font-accent',
@@ -39,7 +39,7 @@ export const breadcrumbBtn = (active?) => ({
 	}),
 });
 
-export const breadcrumbLink = (active?) => ({
+export const breadcrumbLink = ({ active }) => ({
 	color: 'text-gray-600 dark:text-gray-400',
 	cursor: 'cursor-pointer',
 	fontFamily: 'font-accent',

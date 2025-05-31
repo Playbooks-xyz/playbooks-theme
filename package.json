@@ -25,11 +25,7 @@
     "test": "jest",
     "prepare": "husky"
   },
-  "dependencies": {
-    "accounting": "^0.4.1"
-  },
   "devDependencies": {
-    "@types/accounting": "^0.4.5",
     "@types/jest": "^29.5.1",
     "@typescript-eslint/eslint-plugin": "^5.46.0",
     "@typescript-eslint/parser": "^5.46.0",

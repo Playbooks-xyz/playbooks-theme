@@ -1,4 +1,4 @@
-export const primaryBtn = (active?) => ({
+export const primaryBtn = ({ active }) => ({
 	...sharedBtn(active),
 	bgColor: 'bg-gradient-to-r from-cyan-500 to-indigo-500',
 	bgPosition: 'bg-pos-0 h:bg-pos-100',
@@ -8,7 +8,7 @@ export const primaryBtn = (active?) => ({
 	stroke: 'stroke-white dark:stroke-white',
 });
 
-export const accentBtn = (active?) => ({
+export const accentBtn = ({ active }) => ({
 	...sharedBtn(
 		active && {
 			bgOpacity: 'bg-opacity-50 dark:bg-opacity-50',
@@ -27,7 +27,7 @@ export const accentBtn = (active?) => ({
 	stroke: 'stroke-gray-500 dark:stroke-gray-300',
 });
 
-export const borderBtn = (active?) => ({
+export const borderBtn = ({ active }) => ({
 	...sharedBtn(
 		active && {
 			borderColor: 'border-cyan-500 dark:border-cyan-500',
@@ -47,7 +47,7 @@ export const borderBtn = (active?) => ({
 	stroke: 'stroke-gray-600 dark:stroke-gray-300',
 });
 
-export const tabBtn = (active?) => ({
+export const tabBtn = ({ active }) => ({
 	...sharedBtn(
 		active && {
 			borderColor: 'border-b-blue-500 dark:border-b-cyan-500',
@@ -63,7 +63,7 @@ export const tabBtn = (active?) => ({
 	stroke: 'stroke-gray-500 dark:stroke-gray-300',
 });
 
-export const textBtn = (active?) => ({
+export const textBtn = ({ active }) => ({
 	...sharedBtn(active),
 	color: 'text-gray-500 dark:text-gray-400',
 	fontSize: 'text-inherit',
@@ -78,7 +78,7 @@ export const btnWrapper = () => ({
 });
 
 // Shared
-export const sharedBtn = (active?) => ({
+export const sharedBtn = ({ active }) => ({
 	...active,
 	align: 'text-center',
 	animation: 'transition ease',

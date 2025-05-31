@@ -1,4 +1,4 @@
-export const primaryLink = (active?) => ({
+export const primaryLink = ({ active }) => ({
 	bgColor: 'bg-gradient-to-r from-cyan-500 to-indigo-500',
 	bgPosition: 'bg-pos-0 h:bg-pos-100',
 	bgSize: 'bg-size-200',
@@ -8,7 +8,7 @@ export const primaryLink = (active?) => ({
 	...sharedLink(active),
 });
 
-export const accentLink = (active?) => ({
+export const accentLink = ({ active }) => ({
 	bgColor: 'bg-gray-200 dark:bg-gray-700',
 	bgOpacity: 'bg-opacity-0 dark:bg-opacity-0',
 	border: '',
@@ -27,7 +27,7 @@ export const accentLink = (active?) => ({
 	),
 });
 
-export const borderLink = (active?) => ({
+export const borderLink = ({ active }) => ({
 	bgColor: 'bg-transparent',
 	border: 'border',
 	borderColor: 'border-gray-300 dark:border-gray-600',
@@ -47,7 +47,7 @@ export const borderLink = (active?) => ({
 	),
 });
 
-export const tabLink = (active?) => ({
+export const tabLink = ({ active }) => ({
 	bgColor: 'bg-transparent',
 	border: 'border-b-2',
 	borderColor:
@@ -64,7 +64,7 @@ export const tabLink = (active?) => ({
 	),
 });
 
-export const textLink = (active?) => ({
+export const textLink = ({ active }) => ({
 	color: 'text-gray-500 dark:text-gray-400',
 	fontSize: 'text-inherit',
 	hover: 'h:underline h:gray-700 h:dark:text-gray-100',
@@ -79,7 +79,7 @@ export const linkWrapper = () => ({
 });
 
 // Shared
-export const sharedLink = (active?) => ({
+export const sharedLink = ({ active }) => ({
 	align: 'text-center',
 	animation: 'transition ease',
 	display: 'flex-middle-inline',
