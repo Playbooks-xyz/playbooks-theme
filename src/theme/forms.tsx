@@ -5,7 +5,7 @@ export const form = () => ({});
 export const formCheckbox = () => ({
 	animation: 'transition-all ease',
 	bgColor:
-		'bg-gray-100 dark:bg-gray-800 checked:bg-blue-500 checked:h:bg-blue-500 checked:f:bg-blue-500 dark:checked:bg-cyan-500 dark:checked:h:bg-cyan-500 dark:checked:f:bg-cyan-500',
+		'bg-transparent dark:bg-transparent checked:bg-blue-500 checked:h:bg-blue-500 checked:f:bg-blue-500 dark:checked:bg-cyan-500 dark:checked:h:bg-cyan-500 dark:checked:f:bg-cyan-500',
 	border: 'border-2',
 	borderColor: 'border-gray-400 dark:border-gray-600 f:border-blue-500 dark:border-gray-500',
 	borderOpacity: 'border-opacity-50 dark:border-opacity-50',
