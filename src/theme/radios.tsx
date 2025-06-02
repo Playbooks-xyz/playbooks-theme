@@ -1,8 +1,9 @@
 import { borderProps } from 'utils';
 
-export const radioWrapper = () => ({
+export const radioWrapper = ({ active }) => ({
 	animation: 'transition-all ease',
 	border: 'border',
+	borderColor: active ? 'border-blue-500 dark:border-cyan-500' : borderProps.borderColor,
 	borderRadius: 'rounded-md',
 	...borderProps,
 	cursor: 'cursor-pointer',
