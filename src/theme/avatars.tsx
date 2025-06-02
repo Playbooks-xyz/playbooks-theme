@@ -37,6 +37,7 @@ export const avatarTitle = () => ({
 
 export const avatarText = () => ({
 	fontWeight: 'font-normal',
+	fontSize: 'text-sm',
 });
 
 export const avatarActions = () => ({
