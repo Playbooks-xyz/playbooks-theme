@@ -1,19 +1,25 @@
 # Overview
- A lightweight vite-based NPM package starter.
+ This is the default theme for Playbooks projects.
+ It is designed to be used in conjunction with the @playbooks/ui library inside an application.
 
 ## Prerequisites
 - Git
 - Node
-- NPM
+- @playbooks/ui
 
 ## Quick Start
-- npm install
-- npm start
+- npm install @playbooks/theme
+
+## Installation
+- coming soon...
 
 ## Development
-- npm link
+This project is designed for development using the yalc library.
+- npm run dev
 - switch to project
-- npm link <package_name>
+- npx yalc add @playbooks/theme
+- You may need to restart your application server
+- After that you should be good to go with hot reloading
 
 ## Scripts
 - We've included a couple of helpful scripts for faster development.
