@@ -4,6 +4,7 @@ export const badge = ({ size }) => ({
 	size: computeBadgeSize(size),
 	...borderProps,
 	borderRadius: 'rounded-md',
+	display: 'inline-block',
 	flex: 'shrink-0',
 	fontFamily: 'font-accent',
 	fontSize: 'text-xs',

@@ -2,7 +2,6 @@ import { borderProps } from 'utils';
 
 export const breadcrumb = () => ({
 	...borderProps,
-	border: 'border-b',
 	display: 'flex-start',
 	fontFamily: 'font-secondary',
 	fontSize: 'text-sm',

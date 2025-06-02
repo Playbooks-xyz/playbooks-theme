@@ -1,11 +1,12 @@
-export const tooltip = () => ({
+import { computeTooltipAnimation } from 'theme';
+
+export const tooltip = ({ open, placement }) => ({
+	animation: 'transition-all',
 	cursor: 'cursor-pointer',
 	duration: 'duration-100',
-	transition: 'transition-all ease',
-});
-
-export const tooltipBody = () => ({
-	animation: 'transition ease',
+	ease: 'ease-in',
+	opacity: open ? 'opacity-100' : 'opacity-0',
+	translate: open ? 'translate-x-0' : computeTooltipAnimation(placement),
 	zIndex: 'z-10',
 });
 

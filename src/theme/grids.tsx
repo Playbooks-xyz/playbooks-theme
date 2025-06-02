@@ -1,4 +1,4 @@
-import { computeContainer, computeGrid, computeCol } from 'utils';
+import { computeCol, computeContainer, computeGrid } from 'utils';
 
 export const container = ({ size }) => ({
 	margin: 'mx-auto',

@@ -41,3 +41,6 @@ export * from 'theme/tabs';
 export * from 'theme/tags';
 export * from 'theme/toasts';
 export * from 'theme/tooltips';
+
+// Utils
+export * from 'utils';

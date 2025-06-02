@@ -23,6 +23,7 @@ export const primaryBtn = ({ active, size }) => ({
 	bgSize: 'bg-size-200',
 	borderRadius: 'rounded-md',
 	color: 'white',
+	size: computeBtnSize(size),
 	stroke: 'stroke-white dark:stroke-white',
 	...btn(active),
 });

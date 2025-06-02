@@ -252,8 +252,24 @@ export const computeTagImgSize = size => {
 	}
 };
 
-export const computeTooltipAnimation = direction => {
+export const computeToastAnimation = direction => {
 	switch (direction) {
+		case 'top':
+			return '-translate-y-12';
+
+		case 'left':
+			return '-translate-x-12';
+
+		case 'right':
+			return 'translate-x-12';
+
+		case 'bottom':
+			return 'translate-y-12';
+	}
+};
+
+export const computeTooltipAnimation = placement => {
+	switch (placement) {
 		case 'top':
 			return 'translate-y-2';
 

@@ -56,9 +56,9 @@ export const formInput = ({ size, variant }) => ({
 	ringColor: 'f:ring-transparent dark:f:ring-transparent',
 	ringOffset: 'f:ring-offset-1 dark:f:ring-offset-1',
 	ringOffsetColor: 'f:ring-offset-blue-500 dark:f:ring-offset-cyan-500',
-	size: computeInputSize(size),
 	tracking: 'tracking-wide',
 	width: 'w-full',
+	...computeInputSize(size),
 	...(variant === 'group' && {
 		bgColor: 'bg-transparent',
 		border: 'border-none',

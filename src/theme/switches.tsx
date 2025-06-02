@@ -14,7 +14,7 @@ export const switchBase = () => ({
 
 export const switchBackdrop = () => ({
 	bgColor: 'bg-gray-200',
-	transition: 'transition-all ease',
+	animation: 'transition-all',
 	pointer: 'pointer-events-none',
 	size: 'w-10 h-2',
 	borderRadius: 'rounded-full',
@@ -23,7 +23,7 @@ export const switchBackdrop = () => ({
 export const switchInner = ({ checked }) => ({
 	position: 'absolute',
 	bgColor: checked ? 'bg-gray-100 dark:bg-gray-600' : 'bg-gray-100 dark:bg-gray-800',
-	transition: 'transition',
+	animation: 'transition-all',
 	duration: 'duration-200',
 	pointer: ' pointer-events-none',
 	size: 'w-10 h-3',
@@ -32,19 +32,17 @@ export const switchInner = ({ checked }) => ({
 });
 
 export const switchToggle = ({ checked }) => ({
-	animation: checked ? 'translate-x-6' : 'translate-x-0',
-	inset: 'left-0',
-	position: 'absolute',
-	display: 'inline-block',
+	animation: 'transition-all',
 	bgColor: checked ? 'bg-blue-500 dark:bg-cyan-500' : 'bg-gray-300 dark:bg-gray-600',
-	border: '',
-	transition: 'transition',
-	transform: 'transform',
-	duration: 'duration-200',
-	pointer: ' pointer-events-none',
-	// shadow: 'shadow-md',
-	size: 'w-6 h-6',
 	borderRadius: 'rounded-full',
+	display: 'inline-block',
+	duration: 'duration-200',
+	inset: 'left-0',
+	transform: 'transform',
+	translate: checked ? 'translate-x-6' : 'translate-x-0',
+	pointer: ' pointer-events-none',
+	position: 'absolute',
+	size: 'w-6 h-6',
 });
 
 export const switchLabel = () => ({

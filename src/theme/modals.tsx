@@ -7,17 +7,19 @@ export const modalWrapper = () => ({
 	zIndex: 'z-20',
 });
 
-export const modalBackdrop = () => ({
+export const modalBackdrop = ({ open }) => ({
+	animation: 'transition-all',
 	bgColor: 'bg-black dark:bg-gray-700',
+	bgOpacity: open ? 'opacity-[85%]' : 'opacity-0',
 	duration: 'duration-200',
 	ease: 'ease-in',
 	height: 'h-full',
 	inset: 'inset-0',
 	position: 'fixed',
-	transition: 'transition-all',
 });
 
-export const modal = () => ({
+export const modal = ({ open }) => ({
+	animation: 'transition-all',
 	align: 'text-left',
 	bgColor: 'bg-white dark:bg-gray-900',
 	border: 'border',
@@ -25,8 +27,9 @@ export const modal = () => ({
 	borderRadius: 'rounded-lg',
 	duration: 'duration-200',
 	ease: 'ease-in',
+	opacity: open ? 'opacity-100' : 'opacity-0',
+	scale: open ? 'scale-100' : 'scale-90',
 	spacing: 'mx-auto my-8',
-	transition: 'transition-all',
 	width: 'w-sm max-w-full',
 	zIndex: 'z-30',
 });

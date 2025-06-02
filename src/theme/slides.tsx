@@ -6,28 +6,29 @@ export const slideWrapper = () => ({
 	zIndex: 'z-20',
 });
 
-export const slideBackdrop = () => ({
+export const slideBackdrop = ({ open }) => ({
+	animation: 'transition-all',
 	bgColor: 'bg-black dark:bg-gray-700',
+	bgOpacity: open ? 'opacity-[85%]' : 'opacity-0',
 	duration: 'duration-200',
 	ease: 'ease-in',
 	height: 'h-full',
 	inset: 'inset-0',
 	position: 'fixed',
-	transition: 'transition-all',
 });
 
 export const slide = ({ open, placement }) => ({
+	animation: 'transition-all',
 	bgColor: 'bg-white dark:bg-gray-900',
-	ease: 'ease-out',
-	delay: open ? 'delay-200' : '',
 	display: 'flex-column',
 	duration: 'duration-200',
+	ease: 'ease-out',
 	height: 'h-full',
 	inset: placement === 'left' ? 'left-0' : 'right-0',
 	opacity: open ? 'opacity-100' : 'opacity-0',
 	position: 'fixed',
-	transition: 'transition-all',
-	transform: open ? computeSlideAnimation(placement) : 'translate-x-0',
+	transform: 'transform',
+	translate: open ? 'translate-x-0' : computeSlideAnimation(placement),
 	shadow: placement === 'left' ? 'shadow-r-lg' : 'shadow-l-lg',
 	width: 'w-[400px] max-w-80vw min-w-40vw',
 	zIndex: 'z-20',

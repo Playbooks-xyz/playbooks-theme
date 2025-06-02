@@ -1,4 +1,4 @@
-import { borderProps, computeTagSize, computeTagImgSize } from 'utils';
+import { borderProps, computeTagImgSize, computeTagSize } from 'utils';
 
 export const tagsWrapper = () => ({
 	display: 'flex-start',

@@ -24,7 +24,7 @@ export const radioInput = () => ({
 	border: 'border-2',
 	borderColor: 'border-gray-300 dark:border-gray-600',
 	borderRadius: 'rounded-full',
-	checked: 'checked:bg-blue-500 checked:border-blue-500',
+	checked: 'checked:bg-blue-500 checked:border-blue-500 checked:dark:bg-cyan-500 checked:dark:border-cyan-500',
 	cursor: 'cursor-pointer',
 	focus: 'focus:ring-2 focus:ring-blue-500',
 	height: 'h-4',
