@@ -11,17 +11,8 @@ export const breadcrumb = () => ({
 });
 
 export const breadcrumbItem = () => ({
-	color: 'text-gray-500 dark:text-gray-400',
-	hover: 'h:text-gray-700 h:dark:text-gray-200',
-});
-
-export const breadcrumbSeparator = () => ({
-	color: 'text-gray-400 dark:text-gray-500',
-});
-
-export const breadcrumbActive = () => ({
-	color: 'text-gray-700 dark:text-gray-200',
-	fontWeight: 'font-medium',
+	display: 'flex-start',
+	space: 'space-x-2',
 });
 
 export const breadcrumbBtn = ({ active }) => ({
