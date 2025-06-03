@@ -11,7 +11,11 @@ export const banner = () => ({
 });
 
 export const bannerIcon = () => ({
+	bgColor: 'bg-black dark:bg-black',
+	bgOpacity: 'bg-opacity-25 dark:bg-opacity-25',
+	borderRadius: 'rounded-md',
 	color: 'text-blue-500 dark:text-cyan-500',
+	spacing: 'px-2 py-1',
 });
 
 export const bannerBody = () => ({
@@ -27,6 +31,7 @@ export const bannerTitle = () => ({
 
 export const bannerText = () => ({
 	color: 'text-gray-600 dark:text-gray-200',
+	fontSize: 'text-sm',
 });
 
 export const bannerActions = () => ({
