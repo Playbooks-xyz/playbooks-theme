@@ -9,8 +9,9 @@ export const progressBar = () => ({
 });
 
 export const progress = () => ({
-	animation: 'transition-all ease',
+	animation: 'transition-all',
 	...gradientBgColor,
 	borderRadius: 'rounded-full',
+	ease: 'ease-out',
 	height: 'h-full',
 });

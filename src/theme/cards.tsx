@@ -1,11 +1,12 @@
 import { borderProps } from 'utils';
 
 export const card = () => ({
-	animation: 'transition-all ease',
+	animation: 'transition-all',
 	border: 'border',
 	...borderProps,
 	borderRadius: 'rounded-md',
 	color: 'text-gray-400',
+	ease: 'ease',
 	width: 'w-full',
 });
 

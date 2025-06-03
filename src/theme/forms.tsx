@@ -3,7 +3,7 @@ import { computeInputSize } from 'utils';
 export const form = () => ({});
 
 export const formCheckbox = () => ({
-	animation: 'transition-all ease',
+	animation: 'transition-all',
 	bgColor:
 		'bg-transparent dark:bg-transparent checked:bg-blue-500 checked:h:bg-blue-500 checked:f:bg-blue-500 dark:checked:bg-cyan-500 dark:checked:h:bg-cyan-500 dark:checked:f:bg-cyan-500',
 	border: 'border-2',
@@ -11,6 +11,7 @@ export const formCheckbox = () => ({
 	borderOpacity: 'border-opacity-50 dark:border-opacity-50',
 	borderRadius: 'rounded-md',
 	cursor: 'cursor-pointer',
+	ease: 'ease',
 	ring: 'ring-none',
 	ringColor:
 		'ring-transparent checked:ring-transparent dark:checked:ring-transparent f:ring-transparent dark:f:ring-transparent',
@@ -79,13 +80,14 @@ export const formDivInput = ({ size, variant }) => ({
 export const formFileInput = () => ({});
 
 export const formRange = () => ({
-	animation: 'transition-all ease',
+	animation: 'transition-all',
 	appearance: 'appearance-none',
 	bgColor: 'bg-transparent',
 	borderColor: 'border-gray-400 dark:border-gray-700',
 	borderOpacity: 'border-opacity-25',
 	borderRadius: 'rounded-full',
 	cursor: 'cursor-pointer',
+	ease: 'ease',
 	size: 'h-6',
 	sliderThumb: '[&::-webkit-slider-thumb]:appearance-none',
 	sliderThumbBg: '[&::-webkit-slider-thumb]:bg-blue-500 [&::-webkit-slider-thumb]:dark:bg-cyan-500',

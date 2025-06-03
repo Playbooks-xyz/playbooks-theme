@@ -9,15 +9,15 @@ export const container = ({ size }) => ({
 export const grid = ({ cols }) => ({
 	cols: computeGrid(cols),
 	gap: 'gap-4',
-	grid: 'grid',
+	grid: `grid ${computeGrid(cols)}`,
 	width: 'w-full',
 });
 
 export const col = ({ span, sm, md, lg, xl, xxl }) => ({
-	lg: computeCol('lg', lg),
-	md: computeCol('md', md),
-	sm: computeCol('sm', sm),
 	span: computeCol('span', span),
+	sm: computeCol('sm', sm),
+	md: computeCol('md', md),
+	lg: computeCol('lg', lg),
 	xl: computeCol('xl', xl),
 	xxl: computeCol('xxl', xxl),
 });

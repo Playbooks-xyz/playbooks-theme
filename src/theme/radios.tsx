@@ -1,12 +1,13 @@
 import { borderProps } from 'utils';
 
 export const radioWrapper = ({ active }) => ({
-	animation: 'transition-all ease',
+	animation: 'transition-all',
 	border: 'border',
 	borderColor: active ? 'border-blue-500 dark:border-cyan-500' : borderProps.borderColor,
 	borderRadius: 'rounded-md',
 	...borderProps,
 	cursor: 'cursor-pointer',
+	ease: 'ease',
 	display: 'inline-block',
 	duration: 'duration-200',
 	position: 'relative',
@@ -19,7 +20,7 @@ export const radio = () => ({
 });
 
 export const radioInput = () => ({
-	animation: 'transition-all ease',
+	animation: 'transition-all',
 	appearance: 'appearance-none',
 	bgColor: 'bg-white dark:bg-gray-800',
 	border: 'border-2',
@@ -27,6 +28,7 @@ export const radioInput = () => ({
 	borderRadius: 'rounded-full',
 	checked: 'checked:bg-blue-500 checked:border-blue-500 checked:dark:bg-cyan-500 checked:dark:border-cyan-500',
 	cursor: 'cursor-pointer',
+	ease: 'ease',
 	focus: 'focus:ring-2 focus:ring-blue-500',
 	height: 'h-4',
 	width: 'w-4',
