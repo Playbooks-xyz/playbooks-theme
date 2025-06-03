@@ -16,7 +16,6 @@ export const tag = ({ size }) => ({
 	display: 'flex-between-inline',
 	flex: 'shrink-0',
 	size: computeTagSize(size),
-	spacing: 'mb-2 mr-4',
 	tracking: 'tracking-wide',
 });
 
