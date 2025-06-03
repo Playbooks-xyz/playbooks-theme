@@ -57,7 +57,6 @@ export const metaCardProps = {
 export const sectionLinkProps = {
 	section: { display: 'flex-start', spacing: '' },
 	header: { display: 'hidden' },
-	// header: { spacing: '', flex: 'shrink-0', width: 'w-auto' },
 	title: {
 		size: 'sm',
 		color: 'text-gray-500 dark:text-gray-400',
