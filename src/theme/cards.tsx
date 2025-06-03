@@ -3,7 +3,7 @@ import { borderProps } from 'utils';
 export const card = () => ({
 	animation: 'transition-all',
 	border: 'border',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	color: 'text-gray-400',
 	fade: 'ease',
@@ -12,7 +12,7 @@ export const card = () => ({
 
 export const cardHeader = () => ({
 	bgColor: 'bg-gray-100 dark:bg-gray-800',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 });
 
@@ -28,7 +28,7 @@ export const cardImg = () => ({
 
 export const cardBody = () => ({
 	align: 'text-left',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	space: 'space-y-1',
 	spacing: 'p-4',
 });
@@ -63,7 +63,7 @@ export const cardText = () => ({
 
 export const cardFooter = () => ({
 	border: 'border-t',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	color: 'text-gray-500',
 	display: 'flex-between',
 	fontSize: 'text-sm',

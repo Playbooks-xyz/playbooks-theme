@@ -1,4 +1,4 @@
-import { borderProps, computeSlideAnimation } from 'utils';
+import { computeSlideAnimation } from 'utils';
 
 export const slideWrapper = () => ({
 	inset: 'inset-0',
@@ -8,8 +8,7 @@ export const slideWrapper = () => ({
 
 export const slideBackdrop = ({ open }) => ({
 	animation: 'transition-all',
-	bgColor: 'bg-black dark:bg-gray-700',
-	bgOpacity: open ? 'opacity-[85%]' : 'opacity-0',
+	bgColor: open ? 'bg-black/85 dark:bg-gray-700/85' : 'bg-transparent dark:bg-transparent',
 	duration: 'duration-200',
 	fade: 'ease-in',
 	height: 'h-full',
@@ -37,7 +36,7 @@ export const slide = ({ open, placement }) => ({
 export const slideHeader = () => ({
 	display: 'flex-between',
 	border: 'border-b',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	spacing: 'p-4',
 	width: 'w-full',
 });
@@ -55,7 +54,7 @@ export const slideBody = () => ({
 
 export const slideFooter = () => ({
 	border: 'border-t',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	display: 'flex-between',
 	space: 'space-x-4',
 	spacing: 'p-4',

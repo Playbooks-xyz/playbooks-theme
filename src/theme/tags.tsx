@@ -1,4 +1,4 @@
-import { borderProps, computeTagImgSize, computeTagSize } from 'utils';
+import { computeTagImgSize, computeTagSize } from 'utils';
 
 export const tagsWrapper = () => ({
 	display: 'flex-start',
@@ -7,10 +7,8 @@ export const tagsWrapper = () => ({
 });
 
 export const tag = ({ size }) => ({
-	bgColor: 'bg-gray-200 dark:bg-gray-700',
-	bgOpacity: 'bg-opacity-50 dark:bg-opacity-50',
-	borderColor: 'border-gray-500 dark:border-gray-400',
-	borderOpacity: 'border-opacity-50',
+	bgColor: 'bg-gray-200/50 dark:bg-gray-700/50',
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	color: 'text-gray-500 dark:text-gray-300',
 	display: 'flex-between-inline',
@@ -25,7 +23,7 @@ export const tagImg = ({ size }) => ({
 });
 
 export const tagBody = () => ({
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	fontSize: 'text-sm',
 	space: 'space-x-2',
 	spacing: 'px-2',

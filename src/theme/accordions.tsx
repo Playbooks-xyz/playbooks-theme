@@ -1,7 +1,5 @@
-import { borderProps } from 'utils';
-
 export const accordion = () => ({
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	overflow: 'overflow-hidden',
 	width: 'w-full',
 });
@@ -33,7 +31,7 @@ export const accordionBodyWrapper = () => ({
 });
 
 export const accordionBody = () => ({
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	border: 'border-t',
 	spacing: 'p-4',
 	width: 'w-full',

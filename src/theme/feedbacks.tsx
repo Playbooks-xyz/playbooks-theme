@@ -4,7 +4,7 @@ export const feedback = () => ({
 	align: 'text-left',
 	bgColor: 'bg-gray-50 dark:bg-gray-800',
 	border: '',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	spacing: 'p-8',
 });

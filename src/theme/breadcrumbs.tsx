@@ -1,7 +1,7 @@
 import { borderProps } from 'utils';
 
 export const breadcrumb = () => ({
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	display: 'flex-start',
 	fontFamily: 'font-secondary',
 	fontSize: 'text-sm',

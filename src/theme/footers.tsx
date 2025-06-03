@@ -3,14 +3,14 @@ import { borderProps } from 'utils';
 export const footer = () => ({
 	bgColor: 'bg-white dark:bg-gray-900',
 	border: 'border-t',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	position: 'relative',
 	spacing: 'py-6',
 });
 
 export const footerHeader = () => ({
 	border: 'border',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	spacing: 'py-8',
 });
 
@@ -46,6 +46,6 @@ export const footerLink = () => ({});
 
 export const footerFooter = () => ({
 	border: 'border-t',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	spacing: 'pt-6',
 });

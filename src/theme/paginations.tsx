@@ -1,23 +1,20 @@
-import { borderProps } from 'utils';
-
 export const pagination = () => ({
 	position: 'inline-flex',
 	border: 'border',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	overflow: 'overflow-hidden',
 });
 
 export const paginationBtn = (props?: { active: boolean }) => ({
-	bgColor: 'h:bg-gray-100 dark:h:bg-gray-800',
-	bgOpacity: 'bg-opacity-100',
+	bgColor: 'bg-transparent dark:hover:bg-transparent',
 	border: '-border-x',
-	borderColor: 'border-gray-400 dark:border-gray-700',
-	borderOpacity: 'border-opacity-25',
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: '',
 	color: 'text-gray-500 dark:text-gray-300',
 	fontSize: 'text-sm',
 	fontWeight: 'font-medium',
+	hover: 'hover:bg-gray-100 dark:hover:bg-gray-800',
 	spacing: 'px-4 py-2',
 	...(props?.active && {
 		bgColor: 'bg-gray-200 dark:bg-gray-700',

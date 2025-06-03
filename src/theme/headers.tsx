@@ -2,7 +2,7 @@ import { borderProps } from 'utils';
 
 export const header = () => ({
 	border: 'border-b',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	display: 'flex-between',
 	position: 'relative',
 	space: 'space-x-4',

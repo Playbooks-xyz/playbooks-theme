@@ -2,8 +2,9 @@ import { computeBtnSize } from 'utils';
 
 export const btn = active => ({
 	align: 'text-center',
-	animation: 'transition ease',
+	animation: 'transition',
 	display: 'flex-middle-inline',
+	fade: 'ease',
 	flex: 'shrink-0',
 	fontFamily: 'font-secondary',
 	fontSize: 'text-sm',
@@ -18,11 +19,11 @@ export const btn = active => ({
 });
 
 export const primaryBtn = ({ active, size }) => ({
-	bgColor: 'bg-gradient-to-r from-cyan-500 to-indigo-500',
-	bgPosition: 'bg-pos-0 h:bg-pos-100',
+	bgColor: 'bg-gradient-to-r/srgba from-cyan-500 to-indigo-500',
 	bgSize: 'bg-size-200',
 	borderRadius: 'rounded-md',
 	color: 'white',
+	hover: 'hover:bg-gradient-to-r hover:from-cyan-400 hover:to-indigo-500',
 	size: computeBtnSize(size),
 	stroke: 'stroke-white dark:stroke-white',
 	...btn(active),
@@ -30,19 +31,15 @@ export const primaryBtn = ({ active, size }) => ({
 
 export const accentBtn = ({ active, size }) => ({
 	bgColor: 'bg-gray-200 dark:bg-gray-700',
-	bgOpacity: 'bg-opacity-0 dark:bg-opacity-0',
-	border: '',
-	borderColor: 'border-gray-300 dark:border-gray-600',
-	borderOpacity: 'border-opacity-50 dark:border-opacity-50',
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	color: 'text-gray-600 dark:text-gray-300',
-	hover: 'h:bg-opacity-50 dark:h:bg-opacity-50',
+	hover: 'hover:bg-gray-200 hover:dark:bg-gray-700',
 	size: computeBtnSize(size),
 	stroke: 'stroke-gray-500 dark:stroke-gray-300',
 	...btn(
 		active && {
-			bgOpacity: 'bg-opacity-50 dark:bg-opacity-50',
-			borderOpacity: 'border-opacity-100 dark:border-opacity-100',
+			bgColor: 'bg-gray-200 dark:bg-gray-700',
 			...active,
 		},
 	),
@@ -51,17 +48,15 @@ export const accentBtn = ({ active, size }) => ({
 export const borderBtn = ({ active, size }) => ({
 	bgColor: 'bg-transparent',
 	border: 'border',
-	borderColor: 'border-gray-300 dark:border-gray-600',
-	borderOpacity: 'border-opacity-50 dark:border-opacity-50',
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	color: 'text-gray-600 dark:text-gray-300',
-	hover: 'h:border-opacity-100 dark:h:border-opacity-100 h:opacity-100',
+	hover: 'hover:border-gray-300 hover:dark:border-gray-600',
 	size: computeBtnSize(size),
 	stroke: 'stroke-gray-600 dark:stroke-gray-300',
 	...btn(
 		active && {
 			borderColor: 'border-cyan-500 dark:border-cyan-500',
-			borderOpacity: 'border-opacity-100 dark:border-opacity-100',
 			color: 'text-cyan-500',
 			stroke: 'stroke-cyan-500',
 			...active,
@@ -72,9 +67,10 @@ export const borderBtn = ({ active, size }) => ({
 export const tabBtn = ({ active, size }) => ({
 	bgColor: 'bg-transparent',
 	border: 'border-b-2',
-	borderColor: 'border-b-transparent h:border-b-gray-300 h:border-b-blue-500 dark:h:border-b-cyan-500',
+	borderColor: 'border-b-transparent hover:border-b-gray-300',
 	borderRadius: '',
 	color: 'text-gray-500 dark:text-gray-300',
+	hover: 'border-b-blue-500 dark:hover:border-b-cyan-500',
 	size: computeBtnSize(size),
 	stroke: 'stroke-gray-500 dark:stroke-gray-300',
 	...btn(
@@ -89,7 +85,7 @@ export const tabBtn = ({ active, size }) => ({
 export const textBtn = ({ active, size }) => ({
 	color: 'text-gray-500 dark:text-gray-400',
 	fontSize: 'text-inherit',
-	hover: 'h:underline h:gray-700 h:dark:text-gray-100',
+	hover: 'hover:underline hover:gray-700 hover:dark:text-gray-100',
 	size: computeBtnSize(size),
 	...btn(active),
 });

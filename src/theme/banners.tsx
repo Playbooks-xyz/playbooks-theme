@@ -1,8 +1,6 @@
-import { borderProps } from 'utils';
-
 export const banner = () => ({
 	border: 'border-b',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	color: 'white',
 	display: 'flex-between',
 	space: 'space-x-4',
@@ -11,8 +9,7 @@ export const banner = () => ({
 });
 
 export const bannerIcon = () => ({
-	bgColor: 'bg-black dark:bg-black',
-	bgOpacity: 'bg-opacity-25 dark:bg-opacity-25',
+	bgColor: 'bg-black/25 dark:bg-black/25',
 	borderRadius: 'rounded-md',
 	color: 'text-blue-500 dark:text-cyan-500',
 	spacing: 'px-2 py-1',

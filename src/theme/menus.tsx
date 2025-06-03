@@ -1,5 +1,3 @@
-import { borderProps } from 'utils';
-
 export const menu = () => ({});
 
 export const menuWrapper = () => ({
@@ -8,8 +6,7 @@ export const menuWrapper = () => ({
 
 export const menuBackdrop = ({ open }) => ({
 	animation: 'transition-all',
-	bgColor: 'bg-black dark:bg-gray-700',
-	bgOpacity: open ? 'opacity-[85%]' : 'opacity-0',
+	bgColor: open ? 'bg-black/85 dark:bg-gray-700/85' : 'bg-transparent dark:bg-transparent',
 	duration: 'duration-200',
 	fade: 'ease-in',
 	height: 'h-full',
@@ -23,7 +20,7 @@ export const menuMenu = ({ open }) => ({
 	animation: 'transition-all',
 	bgColor: 'bg-white dark:bg-gray-900',
 	border: 'border-y',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	duration: 'duration-200',
 	fade: 'ease-in',
 	height: 'max-h-[100vh]',

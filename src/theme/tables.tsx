@@ -9,7 +9,7 @@ export const table = () => ({
 
 export const tableHeader = () => ({
 	border: 'border-b',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 });
 
 export const tableHeaderRow = () => ({});
@@ -32,7 +32,7 @@ export const tableBody = () => ({});
 export const tableRow = () => ({
 	bgColor: '',
 	border: 'border-b',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 });
 
 export const tableData = ({ title }) => ({

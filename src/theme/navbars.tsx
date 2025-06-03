@@ -2,7 +2,7 @@ import { borderProps } from 'utils';
 
 export const navbar = () => ({
 	bgColor: 'bg-white dark:bg-gray-900',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	border: 'border-b',
 	display: 'flex-between',
 	space: 'space-x-4',

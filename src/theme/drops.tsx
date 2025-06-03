@@ -12,7 +12,7 @@ export const dropMenu = ({ open }) => ({
 	animation: 'transition-all',
 	bgColor: 'bg-white dark:bg-gray-900',
 	border: 'border',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	duration: 'duration-200',
 	fade: 'ease',
@@ -29,7 +29,7 @@ export const dropMenu = ({ open }) => ({
 export const dropHeader = () => ({
 	align: 'text-left',
 	border: 'border-b',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	space: 'space-y-1',
 	spacing: 'px-6 py-4',
 });
@@ -51,7 +51,7 @@ export const dropSubtitle = () => ({
 
 export const dropList = () => ({
 	border: '',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	space: 'space-y-1',
 	spacing: 'p-2',
 });

@@ -1,4 +1,4 @@
-import { borderProps, computeSectionSize } from 'utils';
+import { computeSectionSize } from 'utils';
 
 export const modalWrapper = () => ({
 	inset: 'inset-0',
@@ -9,8 +9,7 @@ export const modalWrapper = () => ({
 
 export const modalBackdrop = ({ open }) => ({
 	animation: 'transition-all',
-	bgColor: 'bg-black dark:bg-gray-700',
-	bgOpacity: open ? 'opacity-[85%]' : 'opacity-0',
+	bgColor: open ? 'bg-black/85 dark:bg-gray-700/85' : 'bg-transparent dark:bg-transparent',
 	duration: 'duration-200',
 	fade: 'ease-in',
 	height: 'h-full',
@@ -23,7 +22,7 @@ export const modal = ({ open }) => ({
 	align: 'text-left',
 	bgColor: 'bg-white dark:bg-gray-900',
 	border: 'border',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-lg',
 	duration: 'duration-200',
 	fade: 'ease-in',
@@ -37,7 +36,7 @@ export const modal = ({ open }) => ({
 export const modalHeader = () => ({
 	display: 'flex-between',
 	border: 'border-b',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	space: 'space-x-4',
 	spacing: 'p-4',
 });
@@ -58,14 +57,14 @@ export const modalSubtitle = () => ({
 
 export const modalBody = ({ size }) => ({
 	align: 'text-left',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	spacing: 'p-4',
 	size: computeSectionSize(size),
 });
 
 export const modalFooter = () => ({
 	border: 'border-t',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	color: 'text-gray-500',
 	fontSize: 'text-sm',
 	display: 'flex-end',

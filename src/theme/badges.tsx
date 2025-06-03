@@ -2,7 +2,7 @@ import { borderProps, computeBadgeSize } from 'utils';
 
 export const badge = ({ size }) => ({
 	size: computeBadgeSize(size),
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	display: 'inline-block',
 	flex: 'shrink-0',
@@ -45,7 +45,7 @@ export const errorBadge = () => ({
 });
 
 export const outlineBadge = () => ({
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	bgColor: 'bg-transparent',
 	border: 'border',
 	color: 'text-gray-600 dark:text-gray-300',

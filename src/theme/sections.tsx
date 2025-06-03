@@ -3,7 +3,7 @@ import { borderProps, computeSectionSize } from 'utils';
 export const section = () => ({
 	bgColor: 'bg-white dark:bg-gray-900',
 	border: 'border',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	position: 'relative',
 	spacing: 'mb-4',
@@ -13,7 +13,7 @@ export const section = () => ({
 export const sectionHeader = () => ({
 	spacing: 'p-4',
 	border: 'border-b',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	display: 'flex-between',
 	space: 'space-x-4',
 	width: 'w-full',
@@ -53,7 +53,7 @@ export const sectionActions = () => ({
 
 export const sectionBody = ({ size }) => ({
 	spacing: 'p-4',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	size: computeSectionSize(size),
 	width: 'w-full',
 });
@@ -63,7 +63,7 @@ export const sectionHr = () => ({});
 export const sectionFooter = () => ({
 	display: 'flex-between',
 	border: 'border-t',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	space: 'space-x-4',
 	spacing: 'p-4',
 	width: 'w-full',

@@ -9,11 +9,11 @@ export const main = () => ({
 });
 
 export const aside = () => ({
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 });
 
 export const div = () => ({
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	position: 'relative',
 });
 
@@ -22,12 +22,12 @@ export const span = () => ({
 });
 
 export const ul = () => ({
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	spacing: 'pl-4',
 });
 
 export const li = () => ({
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	fontFamily: 'font-secondary',
 	color: 'text-inherit',
 });
@@ -39,7 +39,7 @@ export const img = () => ({
 });
 
 export const hr = () => ({
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	border: 'border-t',
 	borderRadius: 'rounded-md',
 });

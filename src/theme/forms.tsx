@@ -5,10 +5,9 @@ export const form = () => ({});
 export const formCheckbox = () => ({
 	animation: 'transition-all',
 	bgColor:
-		'bg-transparent dark:bg-transparent checked:bg-blue-500 checked:h:bg-blue-500 checked:f:bg-blue-500 dark:checked:bg-cyan-500 dark:checked:h:bg-cyan-500 dark:checked:f:bg-cyan-500',
+		'bg-transparent dark:bg-transparent checked:bg-blue-500 checked:hover:bg-blue-500 checked:f:bg-blue-500 dark:checked:bg-cyan-500 dark:checked:hover:bg-cyan-500 dark:checked:f:bg-cyan-500',
 	border: 'border-2',
-	borderColor: 'border-gray-400 dark:border-gray-600 f:border-blue-500 dark:border-gray-500',
-	borderOpacity: 'border-opacity-50 dark:border-opacity-50',
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	cursor: 'cursor-pointer',
 	fade: 'ease',
@@ -40,15 +39,15 @@ export const formLabel = () => ({
 
 export const formInput = ({ size, variant }) => ({
 	align: 'text-left',
-	animation: 'transition ease',
+	animation: 'transition',
 	bgColor: 'bg-white dark:bg-gray-900',
 	border: 'border',
-	borderColor: 'border-gray-400 dark:border-gray-600 f:border-blue-500 dark:f:border-cyan-500',
-	borderOpacity: 'border-opacity-50 dark:border-opacity-50',
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	color: 'text-gray-600 dark:text-gray-200',
 	cursor: 'cursor-auto',
 	display: 'block',
+	fade: 'ease',
 	fontFamily: 'font-secondary',
 	fontSize: 'text-sm',
 	outline: 'outline-none',
@@ -78,30 +77,6 @@ export const formDivInput = ({ size, variant }) => ({
 });
 
 export const formFileInput = () => ({});
-
-export const formRange = () => ({
-	animation: 'transition-all',
-	appearance: 'appearance-none',
-	bgColor: 'bg-transparent',
-	borderColor: 'border-gray-400 dark:border-gray-700',
-	borderOpacity: 'border-opacity-25',
-	borderRadius: 'rounded-full',
-	cursor: 'cursor-pointer',
-	fade: 'ease',
-	size: 'h-6',
-	sliderThumb: '[&::-webkit-slider-thumb]:appearance-none',
-	sliderThumbBg: '[&::-webkit-slider-thumb]:bg-blue-500 [&::-webkit-slider-thumb]:dark:bg-cyan-500',
-	sliderThumbBorder: '[&::-webkit-slider-thumb]:border-2',
-	sliderThumbBorderColor: '[&::-webkit-slider-thumb]:border-gray-800',
-	sliderThumbBorderRadius: '[&::-webkit-slider-thumb]:rounded-full',
-	sliderThumbPosition: '[&::-webkit-slider-thumb]:-mt-2',
-	sliderThumbSize: '[&::-webkit-slider-thumb]:h-6 [&::-webkit-slider-thumb]:w-6',
-	sliderTrack: '[&::-webkit-slider-runnable-track]:appearance-none',
-	sliderTrackBg: '[&::-webkit-slider-runnable-track]:bg-gray-100 [&::-webkit-slider-runnable-track]:dark:bg-gray-800',
-	sliderTrackBorder: '[&::-webkit-slider-runnable-track]:rounded-full',
-	sliderTrackSize: '[&::-webkit-slider-runnable-track]:h-2',
-	width: 'w-full',
-});
 
 export const formSelect = ({ size, variant }) => ({
 	...formInput({ size, variant }),

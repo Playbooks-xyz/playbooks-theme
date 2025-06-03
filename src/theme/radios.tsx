@@ -1,11 +1,8 @@
-import { borderProps } from 'utils';
-
 export const radioWrapper = ({ active }) => ({
 	animation: 'transition-all',
 	border: 'border',
-	borderColor: active ? 'border-blue-500 dark:border-cyan-500' : borderProps.borderColor,
+	borderColor: active ? 'border-blue-500 dark:border-cyan-500' : 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
-	...borderProps,
 	cursor: 'cursor-pointer',
 	fade: 'ease',
 	display: 'inline-block',

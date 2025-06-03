@@ -2,7 +2,7 @@ import { borderProps, computeHeroSize, computeThumbnailSize } from 'utils';
 
 export const hero = ({ size }) => ({
 	bgColor: 'bg-white dark:bg-gray-900',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	display: 'block',
 	position: 'relative',
 	size: computeHeroSize(size),
@@ -19,7 +19,7 @@ export const heroImg = ({ size }) => ({
 	aspect: 'aspect-[1/1]',
 	bgColor: 'bg-gray-100 dark:bg-gray-800',
 	border: '',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	color: 'text-gray-500',
 	display: 'flex-middle',
@@ -32,7 +32,7 @@ export const heroIcon = ({ size }) => ({
 	aspect: 'aspect-[1/1]',
 	bgColor: 'bg-gray-100 dark:bg-gray-800',
 	border: '',
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	color: 'text-gray-500',
 	display: 'flex-middle',

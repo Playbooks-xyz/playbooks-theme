@@ -13,9 +13,9 @@ export const tabs = () => ({
 });
 
 export const tab = ({ active }) => ({
-	bgColor: 'h:bg-gray-100 dark:h:bg-gray-700',
+	bgColor: 'hover:bg-gray-100 dark:hover:bg-gray-700',
 	border: 'border-b-4',
-	borderColor: 'border-transparent h:border-gray-300 dark:h:border-gray-600',
+	borderColor: 'border-transparent hover:border-gray-300 dark:hover:border-gray-600',
 	color: 'text-gray-700 dark:text-gray-200',
 	borderRadius: 'rounded-none',
 	grid: 'hidden sm:block',

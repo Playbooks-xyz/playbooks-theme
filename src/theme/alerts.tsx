@@ -1,6 +1,5 @@
 export const alert = () => ({
 	bgColor: 'bg-gray-100 dark:bg-gray-800',
-	bgOpacity: 'bg-opacity-25',
 	border: 'border-l-8',
 	borderColor: 'border-cyan-500',
 	borderRadius: 'rounded-md',

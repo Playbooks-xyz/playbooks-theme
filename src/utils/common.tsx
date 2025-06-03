@@ -10,14 +10,10 @@ export const accordionProps = open => ({
 	},
 });
 
-export const borderProps = {
-	borderColor: 'border-gray-300 dark:border-gray-600',
-	borderOpacity: 'border-opacity-50 dark:border-opacity-50',
-};
+export const borderColor = 'border-gray-300/50 dark:border-gray-600/50';
 
 export const cloudProps = {
-	bgColor: 'bg-gray-200 dark:bg-gray-700',
-	bgOpacity: 'bg-opacity-25 dark:bg-opacity-25',
+	bgColor: 'bg-gray-200/25 dark:bg-gray-700/25',
 	color: 'text-gray-500 dark:text-gray-400',
 	fontSize: 'text-sm',
 	fontFamily: 'font-secondary',
@@ -52,7 +48,7 @@ export const metaProps = {
 export const metaCardProps = {
 	size: '',
 	bgColor: '',
-	color: 'text-gray-500 dark:text-gray-400 h:gray-500 dark:h:gray-300',
+	color: 'text-gray-500 dark:text-gray-400 hover:gray-500 dark:hover:gray-300',
 	fontSize: 'text-sm',
 	spacing: 'mr-4',
 	textDecoration: 'underline',
@@ -64,7 +60,7 @@ export const sectionLinkProps = {
 	// header: { spacing: '', flex: 'shrink-0', width: 'w-auto' },
 	title: {
 		size: 'sm',
-		color: 'gray-500 dark:gray-400',
+		color: 'text-gray-500 dark:text-gray-400',
 		fontFamily: 'font-accent',
 		fontWeight: 'font-regular',
 		tracking: 'tracking-widest',

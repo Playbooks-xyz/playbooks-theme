@@ -1,7 +1,7 @@
 import { borderProps } from 'utils';
 
 export const btnGroup = () => ({
-	...borderProps,
+	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	border: 'border',
 	borderRadius: 'rounded-md',
 	display: 'flex-start',
