@@ -1,5 +1,3 @@
-import { borderProps } from 'utils';
-
 export const html = () => ({});
 
 export const body = () => ({});

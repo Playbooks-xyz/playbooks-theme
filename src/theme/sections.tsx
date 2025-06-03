@@ -1,4 +1,4 @@
-import { borderProps, computeSectionSize } from 'utils';
+import { computeSectionSize } from 'utils';
 
 export const section = () => ({
 	bgColor: 'bg-white dark:bg-gray-900',

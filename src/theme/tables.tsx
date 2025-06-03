@@ -1,5 +1,3 @@
-import { borderProps } from 'utils';
-
 export const table = () => ({
 	divide: 'divide-y',
 	divideColor: 'divide-gray-200',

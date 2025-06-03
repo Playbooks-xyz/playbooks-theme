@@ -1,5 +1,3 @@
-import { borderProps } from 'utils';
-
 export const feedback = () => ({
 	align: 'text-left',
 	bgColor: 'bg-gray-50 dark:bg-gray-800',

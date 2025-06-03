@@ -1,5 +1,3 @@
-import { borderProps } from 'utils';
-
 export const breadcrumb = () => ({
 	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	display: 'flex-start',

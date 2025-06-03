@@ -1,5 +1,3 @@
-import { borderProps } from 'utils';
-
 export const header = () => ({
 	border: 'border-b',
 	borderColor: 'border-gray-300/50 dark:border-gray-600/50',

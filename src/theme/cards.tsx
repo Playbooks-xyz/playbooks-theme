@@ -1,5 +1,3 @@
-import { borderProps } from 'utils';
-
 export const card = () => ({
 	animation: 'transition-all',
 	border: 'border',

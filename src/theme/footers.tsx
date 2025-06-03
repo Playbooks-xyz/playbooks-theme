@@ -1,5 +1,3 @@
-import { borderProps } from 'utils';
-
 export const footer = () => ({
 	bgColor: 'bg-white dark:bg-gray-900',
 	border: 'border-t',

@@ -1,4 +1,4 @@
-import { borderProps, computeBadgeSize } from 'utils';
+import { computeBadgeSize } from 'utils';
 
 export const badge = ({ size }) => ({
 	size: computeBadgeSize(size),
