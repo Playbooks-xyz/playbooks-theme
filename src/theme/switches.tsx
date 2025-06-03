@@ -4,7 +4,8 @@ export const switchGroup = () => ({
 });
 
 export const switchBase = () => ({
-	display: 'inline-flex items-center justify-center shrink-0',
+	display: 'inline-flex items-center justify-center',
+	flex: ' shrink-0',
 	position: 'relative',
 	overflow: 'overflow-hidden',
 	size: 'w-12 h-10',
@@ -21,11 +22,11 @@ export const switchBackdrop = () => ({
 });
 
 export const switchInner = ({ checked }) => ({
-	position: 'absolute',
-	bgColor: checked ? 'bg-gray-100 dark:bg-gray-600' : 'bg-gray-100 dark:bg-gray-800',
 	animation: 'transition-all',
+	bgColor: checked ? 'bg-gray-100 dark:bg-gray-600' : 'bg-gray-100 dark:bg-gray-800',
 	duration: 'duration-200',
 	pointer: ' pointer-events-none',
+	position: 'absolute',
 	size: 'w-10 h-3',
 	spacing: 'mx-auto',
 	borderRadius: 'rounded-full',
@@ -40,7 +41,7 @@ export const switchToggle = ({ checked }) => ({
 	inset: 'left-0',
 	transform: 'transform',
 	translate: checked ? 'translate-x-6' : 'translate-x-0',
-	pointer: ' pointer-events-none',
+	pointerEvents: 'pointer-events-none',
 	position: 'absolute',
 	size: 'w-6 h-6',
 });
