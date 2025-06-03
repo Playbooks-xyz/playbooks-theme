@@ -15,7 +15,7 @@ export const toast = ({ open, direction }) => ({
 	color: 'text-gray-700 dark:text-white',
 	duration: 'duration-200',
 	display: 'block',
-	ease: 'ease-in',
+	fade: 'ease-in',
 	opacity: open ? 'opacity-100' : 'opacity-0',
 	overflow: 'overflow-hidden',
 	shadow: 'shadow-lg',

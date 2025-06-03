@@ -12,6 +12,6 @@ export const progress = () => ({
 	animation: 'transition-all',
 	...gradientBgColor,
 	borderRadius: 'rounded-full',
-	ease: 'ease-out',
+	fade: 'ease-out',
 	height: 'h-full',
 });

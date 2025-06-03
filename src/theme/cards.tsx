@@ -6,7 +6,7 @@ export const card = () => ({
 	...borderProps,
 	borderRadius: 'rounded-md',
 	color: 'text-gray-400',
-	ease: 'ease',
+	fade: 'ease',
 	width: 'w-full',
 });
 

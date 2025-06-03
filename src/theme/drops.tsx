@@ -8,19 +8,19 @@ export const dropToggle = () => ({
 });
 
 export const dropMenu = ({ open }) => ({
+	align: 'text-left',
 	animation: 'transition-all',
 	bgColor: 'bg-white dark:bg-gray-900',
 	border: 'border',
 	...borderProps,
 	borderRadius: 'rounded-md',
 	duration: 'duration-200',
-	ease: 'ease',
+	fade: 'ease',
 	opacity: open ? 'opacity-100' : 'opacity-0',
 	overflow: 'overflow-hidden overflow-y-scroll',
 	scale: open ? 'scale-100' : 'scale-90',
 	shadow: 'shadow-lg',
 	shadowColor: 'dark:shadow-gray-800/25',
-	textAlign: 'text-left',
 	translate: open ? 'translate-y-0' : 'translate-y-4',
 	width: 'w-auto',
 	zIndex: 'z-10',

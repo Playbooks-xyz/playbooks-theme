@@ -17,7 +17,7 @@ export const tableHeaderRow = () => ({});
 export const tableHead = () => ({
 	animation: 'transition-all',
 	align: 'text-left',
-	ease: 'ease',
+	fade: 'ease',
 	spacing: 'px-4 py-4',
 	whiteSpace: 'whitespace-nowrap',
 	fontSize: 'text-xs',

@@ -4,7 +4,7 @@ export const tooltip = ({ open, placement }) => ({
 	animation: 'transition-all',
 	cursor: 'cursor-pointer',
 	duration: 'duration-100',
-	ease: 'ease-in',
+	fade: 'ease-in',
 	opacity: open ? 'opacity-100' : 'opacity-0',
 	translate: open ? 'translate-x-0' : computeTooltipAnimation(placement),
 	zIndex: 'z-10',

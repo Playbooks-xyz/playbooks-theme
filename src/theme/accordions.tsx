@@ -7,15 +7,15 @@ export const accordion = () => ({
 });
 
 export const accordionToggle = ({ open }) => ({
+	align: 'text-left',
 	display: 'flex-between',
 	nextIcon: {
 		animation: 'transition-all',
-		ease: 'ease',
+		fade: 'ease',
 		icon: 'chevron-down',
 		rotate: open ? 'rotate-180' : 'rotate-0',
 	},
 	spacing: 'p-0',
-	textAlign: 'text-left',
 	width: 'w-full',
 });
 
@@ -27,7 +27,7 @@ export const accordionTitle = () => ({
 
 export const accordionBodyWrapper = () => ({
 	animation: 'transition-all',
-	ease: 'ease',
+	fade: 'ease',
 	duration: 'duration-200',
 	overflow: 'overflow-hidden',
 });

@@ -11,7 +11,7 @@ export const formCheckbox = () => ({
 	borderOpacity: 'border-opacity-50 dark:border-opacity-50',
 	borderRadius: 'rounded-md',
 	cursor: 'cursor-pointer',
-	ease: 'ease',
+	fade: 'ease',
 	ring: 'ring-none',
 	ringColor:
 		'ring-transparent checked:ring-transparent dark:checked:ring-transparent f:ring-transparent dark:f:ring-transparent',
@@ -87,7 +87,7 @@ export const formRange = () => ({
 	borderOpacity: 'border-opacity-25',
 	borderRadius: 'rounded-full',
 	cursor: 'cursor-pointer',
-	ease: 'ease',
+	fade: 'ease',
 	size: 'h-6',
 	sliderThumb: '[&::-webkit-slider-thumb]:appearance-none',
 	sliderThumbBg: '[&::-webkit-slider-thumb]:bg-blue-500 [&::-webkit-slider-thumb]:dark:bg-cyan-500',
