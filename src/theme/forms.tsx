@@ -51,7 +51,7 @@ export const formInput = ({ size, variant }) => ({
 	fontFamily: 'font-secondary',
 	fontSize: 'text-sm',
 	outline: 'outline-none',
-	placeholderColor: 'placeholder:gray-500 dark:placeholder:gray-400',
+	placeholderColor: 'placeholder:text-gray-500 dark:placeholder:text-gray-400',
 	ring: 'f:ring-1',
 	ringColor: 'f:ring-transparent dark:f:ring-transparent',
 	ringOffset: 'f:ring-offset-1 dark:f:ring-offset-1',

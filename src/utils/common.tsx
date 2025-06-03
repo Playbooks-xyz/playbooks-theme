@@ -48,7 +48,7 @@ export const metaProps = {
 export const metaCardProps = {
 	size: '',
 	bgColor: '',
-	color: 'text-gray-500 dark:text-gray-400 hover:gray-500 dark:hover:gray-300',
+	color: 'text-gray-500 dark:text-gray-400 hover:text-gray-500 dark:hover:text-gray-300',
 	fontSize: 'text-sm',
 	spacing: 'mr-4',
 	textDecoration: 'underline',

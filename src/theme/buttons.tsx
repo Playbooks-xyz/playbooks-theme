@@ -85,7 +85,7 @@ export const tabBtn = ({ active, size }) => ({
 export const textBtn = ({ active, size }) => ({
 	color: 'text-gray-500 dark:text-gray-400',
 	fontSize: 'text-inherit',
-	hover: 'hover:underline hover:gray-700 hover:dark:text-gray-100',
+	hover: 'hover:underline hover:text-gray-700 hover:dark:text-gray-100',
 	size: computeBtnSize(size),
 	...btn(active),
 });
