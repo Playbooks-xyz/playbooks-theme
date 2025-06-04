@@ -1,11 +1,12 @@
 # Overview
  This is the default theme for Playbooks projects.
- It is designed to be used in conjunction with the @playbooks/ui library inside a web application.
+ It is designed to be used in conjunction with the `@playbooks/ui` library within a web app built with Tailwind v4.
 
 ## Prerequisites
 - Git
 - Node
 - @playbooks/ui
+- tailwind v4
 
 ## Quick Start
 - npm install @playbooks/theme
