@@ -119,6 +119,9 @@ export const computeThumbnailSize = size => {
 
 export const computeInputSize = size => {
 	switch (size) {
+		case 'xxs':
+			return { fontSize: 'text-sm', spacing: 'p-2' };
+
 		case 'xs':
 			return { fontSize: 'text-sm', spacing: 'p-2.5' };
 
