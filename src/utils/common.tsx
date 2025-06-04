@@ -10,8 +10,6 @@ export const accordionProps = open => ({
 	},
 });
 
-export const borderColor = 'border-gray-300/50 dark:border-gray-600/50';
-
 export const cloudProps = {
 	bgColor: 'bg-gray-200/25 dark:bg-gray-700/25',
 	color: 'text-gray-500 dark:text-gray-400',
@@ -19,11 +17,6 @@ export const cloudProps = {
 	fontFamily: 'font-secondary',
 	size: '',
 	spacing: 'px-2 py-1',
-};
-
-export const divideProps = {
-	divideColor: 'divide-gray-400 dark:divide-gray-600',
-	divideOpacity: 'divide-opacity-50 dark:divide-opacity-50',
 };
 
 export const gradientBgColor = {

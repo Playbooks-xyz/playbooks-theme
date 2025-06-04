@@ -1,7 +1,6 @@
 export const table = () => ({
 	divide: 'divide-y',
-	divideColor: 'divide-gray-200',
-	divideOpacity: 'divide-opacity-25',
+	divideColor: 'divide-gray-300/50 dark:divide-gray-600/50',
 	width: 'w-full',
 });
 
