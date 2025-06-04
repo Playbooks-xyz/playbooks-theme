@@ -7,6 +7,7 @@ export const menuWrapper = () => ({
 export const menuBackdrop = ({ open }) => ({
 	animation: 'transition-all',
 	bgColor: open ? 'bg-black/85 dark:bg-gray-700/85' : 'bg-transparent dark:bg-transparent',
+	delay: open ? 'delay-200' : '',
 	duration: 'duration-200',
 	fade: 'ease-in',
 	height: 'h-full',
