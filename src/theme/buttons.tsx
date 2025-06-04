@@ -33,10 +33,10 @@ export const accentBtn = ({ active, size }) => ({
 	bgColor: 'bg-transparent dark:bg-transparent',
 	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
-	color: 'text-gray-600 dark:text-gray-300',
+	color: 'text-gray-500 dark:text-gray-200',
 	hover: 'hover:bg-gray-200 hover:dark:bg-gray-700',
 	size: computeBtnSize(size),
-	stroke: 'stroke-gray-500 dark:stroke-gray-300',
+	stroke: 'stroke-gray-500 dark:stroke-gray-200',
 	...btn(
 		active && {
 			bgColor: 'bg-gray-200 dark:bg-gray-700',
@@ -50,7 +50,7 @@ export const borderBtn = ({ active, size }) => ({
 	border: 'border',
 	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
-	color: 'text-gray-600 dark:text-gray-300',
+	color: 'text-gray-500 dark:text-gray-200',
 	hover: 'hover:border-gray-300 hover:dark:border-gray-600',
 	size: computeBtnSize(size),
 	stroke: 'stroke-gray-600 dark:stroke-gray-300',
@@ -69,7 +69,7 @@ export const tabBtn = ({ active, size }) => ({
 	border: 'border-b-2',
 	borderColor: 'border-b-transparent hover:border-b-gray-300',
 	borderRadius: '',
-	color: 'text-gray-500 dark:text-gray-300',
+	color: 'text-gray-500 dark:text-gray-200',
 	hover: 'border-b-blue-500 dark:hover:border-b-cyan-500',
 	size: computeBtnSize(size),
 	stroke: 'stroke-gray-500 dark:stroke-gray-300',
@@ -83,7 +83,7 @@ export const tabBtn = ({ active, size }) => ({
 });
 
 export const textBtn = ({ active, size }) => ({
-	color: 'text-gray-500 dark:text-gray-400',
+	color: 'text-gray-500 dark:text-gray-300',
 	fontSize: 'text-inherit',
 	hover: 'hover:underline hover:text-gray-700 hover:dark:text-gray-100',
 	size: computeBtnSize(size),
@@ -91,7 +91,9 @@ export const textBtn = ({ active, size }) => ({
 });
 
 export const btnWrapper = ({ disabled }) => ({
+	color: 'text-blue-500 dark:text-cyan-500',
 	cursor: disabled ? 'cursor-not-allowed' : 'cursor-pointer',
+	hover: 'hover:text-blue-600 dark:hover:text-cyan-600 hover:underline',
 	outline: 'focus-visible:outline',
 	outlineColor: 'focus-visible:outline-blue-500 dark:focus-visible:outline-cyan-500',
 	outlineOffset: 'outline-offset-1',

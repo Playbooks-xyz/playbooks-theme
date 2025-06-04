@@ -9,8 +9,11 @@ export const navbar = () => ({
 });
 
 export const navbarBrand = () => ({
+	animation: 'transition-all',
 	display: 'inline-block',
+	ease: 'ease',
 	flex: 'shrink-0',
+	hover: 'hover:opacity-75',
 	width: 'w-44',
 });
 
