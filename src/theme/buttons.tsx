@@ -39,7 +39,7 @@ export const accentBtn = ({ active, size }) => ({
 	stroke: 'stroke-gray-500 dark:stroke-gray-200',
 	...btn(
 		active && {
-			bgColor: 'bg-gray-200 dark:bg-gray-600',
+			bgColor: 'bg-gray-200 dark:bg-gray-800',
 			...active,
 		},
 	),
