@@ -91,9 +91,7 @@ export const textBtn = ({ active, size }) => ({
 });
 
 export const btnWrapper = ({ disabled }) => ({
-	color: 'text-blue-500 dark:text-cyan-500',
 	cursor: disabled ? 'cursor-not-allowed' : 'cursor-pointer',
-	hover: 'hover:text-blue-600 dark:hover:text-cyan-600 hover:underline',
 	outline: 'focus-visible:outline',
 	outlineColor: 'focus-visible:outline-blue-500 dark:focus-visible:outline-cyan-500',
 	outlineOffset: 'outline-offset-1',

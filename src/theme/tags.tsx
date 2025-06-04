@@ -1,6 +1,6 @@
 import { computeTagImgSize, computeTagSize } from 'utils';
 
-export const tagsWrapper = () => ({
+export const tags = () => ({
 	display: 'flex-start',
 	spacing: '',
 	flex: 'flex-wrap',

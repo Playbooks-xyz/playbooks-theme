@@ -1,4 +1,4 @@
-export const breadcrumb = () => ({
+export const breadcrumbs = () => ({
 	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	display: 'flex-start',
 	fontFamily: 'font-secondary',
