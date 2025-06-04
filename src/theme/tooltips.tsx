@@ -13,7 +13,7 @@ export const tooltip = ({ open, placement }) => ({
 export const tooltipInner = () => ({
 	bgColor: 'bg-gray-800 dark:bg-gray-800',
 	borderRadius: 'rounded-md',
-	color: 'white',
+	color: 'text-white',
 	fontSize: 'text-sm',
 	spacing: 'px-4 py-3 m-1',
 	width: 'w-auto',

@@ -24,7 +24,7 @@ export const primaryLink = ({ active, size }) => ({
 	bgPosition: 'bg-center',
 	bgSize: 'bg-size-[100%] hover:bg-size-[200%]',
 	borderRadius: 'rounded-md',
-	color: 'white',
+	color: 'text-white',
 	size: computeBtnSize(size),
 	stroke: 'stroke-white dark:stroke-white',
 	...link(active),

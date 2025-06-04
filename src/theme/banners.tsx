@@ -1,7 +1,7 @@
 export const banner = () => ({
 	border: 'border-b',
 	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
-	color: 'white',
+	color: 'text-white',
 	display: 'flex-between',
 	space: 'space-x-4',
 	spacing: 'py-2 px-4',

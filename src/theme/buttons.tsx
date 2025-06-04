@@ -19,18 +19,18 @@ export const btn = active => ({
 });
 
 export const primaryBtn = ({ active, size }) => ({
-	bgColor: 'bg-gradient-to-r/srgba from-cyan-500 to-indigo-500',
-	bgSize: 'bg-size-200',
+	bgColor: 'bg-gradient-to-r from-cyan-500 to-indigo-500',
+	bgPosition: 'bg-center',
+	bgSize: 'bg-size-[100%] hover:bg-size-[200%]',
 	borderRadius: 'rounded-md',
-	color: 'white',
-	hover: 'hover:bg-gradient-to-r hover:from-cyan-400 hover:to-indigo-500',
+	color: 'text-white',
 	size: computeBtnSize(size),
 	stroke: 'stroke-white dark:stroke-white',
 	...btn(active),
 });
 
 export const accentBtn = ({ active, size }) => ({
-	bgColor: 'bg-gray-200 dark:bg-gray-700',
+	bgColor: 'bg-transparent dark:bg-transparent',
 	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	color: 'text-gray-600 dark:text-gray-300',

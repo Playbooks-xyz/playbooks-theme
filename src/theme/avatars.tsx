@@ -11,7 +11,7 @@ export const avatarBadge = ({ size }) => ({
 	border: 'border-2',
 	borderColor: 'border-white dark:border-gray-900',
 	borderRadius: 'rounded-full',
-	color: 'white',
+	color: 'text-white',
 	fontSize: 'text-sm',
 	spacing: 'w-6 h-6',
 	flex: 'flex-middle',
