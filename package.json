@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "dev": "vite build --mode development --watch --minify false",
-    "start": "vite build --mode development --minify false && yalc publish",
+    "start": "vite build --mode development --minify false",
     "build": "vite build --mode production --minify true",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
