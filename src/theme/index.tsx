@@ -15,7 +15,7 @@ export * from 'theme/footers';
 export * from 'theme/forms';
 export * from 'theme/grids';
 export * from 'theme/headers';
-export * from 'theme/heroes';
+export * from 'theme/heros';
 export * from 'theme/htmls';
 export * from 'theme/icons';
 export * from 'theme/input-groups';

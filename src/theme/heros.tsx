@@ -57,10 +57,8 @@ export const heroPretitle = () => ({
 });
 
 export const heroTitle = () => ({
-	display: 'flex-start',
 	fontWeight: 'font-extrabold',
 	leading: 'leading-tight',
-	space: 'space-x-4',
 	tracking: 'tracking-wide',
 });
 

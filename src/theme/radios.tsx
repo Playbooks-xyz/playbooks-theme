@@ -34,10 +34,12 @@ export const radioInput = () => ({
 export const radioTitle = () => ({
 	color: 'text-gray-700 dark:text-gray-200',
 	fontSize: 'text-sm',
+	fontWeight: 'font-medium',
 	leading: 'leading-tight',
 });
 
 export const radioText = () => ({
+	color: 'text-gray-600 dark:text-gray-300',
 	fontSize: 'text-sm',
 	fontWeight: 'font-light',
 	tracking: 'tracking-wide',

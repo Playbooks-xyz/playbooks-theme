@@ -9,10 +9,7 @@ export const header = () => ({
 });
 
 export const headerTitle = () => ({
-	display: 'flex-start',
-	flex: 'grow',
 	fontWeight: 'font-bold',
-	space: 'space-x-4',
 	tracking: 'tracking-wide',
 	textTransform: 'capitalize',
 });

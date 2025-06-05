@@ -20,7 +20,7 @@ export const sectionHeader = () => ({
 });
 
 export const sectionPretitle = () => ({
-	color: 'text-gray-500',
+	color: 'text-gray-700 dark:text-gray-300',
 	fontFamily: 'font-accent',
 	fontSize: 'text-sm',
 	fontWeight: 'font-medium',
@@ -29,10 +29,8 @@ export const sectionPretitle = () => ({
 });
 
 export const sectionTitle = () => ({
-	display: 'flex-start',
 	fontWeight: 'font-bold',
 	leading: 'leading-normal',
-	space: 'space-x-4',
 	tracking: 'tracking-wide',
 });
 

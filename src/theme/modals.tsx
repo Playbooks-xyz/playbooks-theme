@@ -42,9 +42,7 @@ export const modalHeader = () => ({
 });
 
 export const modalTitle = () => ({
-	display: 'flex-start',
 	fontWeight: 'font-bold',
-	space: 'space-x-4',
 	tracking: 'tracking-wide',
 });
 

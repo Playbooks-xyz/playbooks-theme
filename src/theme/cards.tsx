@@ -41,9 +41,7 @@ export const cardPretitle = () => ({
 });
 
 export const cardTitle = () => ({
-	display: 'flex-start',
 	fontWeight: 'font-semibold',
-	space: 'space-x-4',
 });
 
 export const cardSubtitle = () => ({
