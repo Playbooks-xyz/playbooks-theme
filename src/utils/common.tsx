@@ -20,13 +20,13 @@ export const cloudProps = {
 };
 
 export const gradientBgColor = {
-	bgColor: 'bg-gradient-to-br from-cyan-500 to-indigo-500',
+	bgColor: 'bg-linear-to-br from-secondary-500 to-primary-500',
 };
 
 export const gradientSpan = {
 	color: 'text-transparent',
 	bgClip: 'bg-clip-text',
-	bgColor: 'bg-gradient-to-r from-cyan-500 to-indigo-500',
+	bgColor: 'bg-linear-to-r from-secondary-500 to-primary-500',
 	leading: 'leading-relaxed',
 };
 

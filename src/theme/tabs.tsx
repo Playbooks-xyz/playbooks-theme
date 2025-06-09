@@ -21,8 +21,8 @@ export const tab = ({ active }) => ({
 	grid: 'hidden sm:block',
 	zIndex: 'z-10',
 	...(active && {
-		borderColor: 'border-blue-500 dark:border-cyan-500',
-		color: 'text-blue-500 dark:text-cyan-500',
+		borderColor: 'border-primary-500 dark:border-secondary-500',
+		color: 'text-primary-500 dark:text-secondary-500',
 	}),
 });
 

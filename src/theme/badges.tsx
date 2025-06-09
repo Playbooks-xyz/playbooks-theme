@@ -35,8 +35,8 @@ export const successBadge = () => ({
 });
 
 export const finishedBadge = () => ({
-	bgColor: 'bg-blue-100 dark:bg-blue-800',
-	color: 'text-blue-600 dark:text-blue-300',
+	bgColor: 'bg-primary-100 dark:bg-primary-800',
+	color: 'text-primary-600 dark:text-primary-300',
 });
 
 export const errorBadge = () => ({

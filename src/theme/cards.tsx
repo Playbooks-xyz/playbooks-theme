@@ -32,7 +32,7 @@ export const cardBody = () => ({
 });
 
 export const cardPretitle = () => ({
-	color: 'text-blue-500 dark:text-cyan-500',
+	color: 'text-primary-500 dark:text-secondary-500',
 	fontFamily: 'font-accent',
 	fontSize: 'text-sm',
 	fontWeight: 'font-book',

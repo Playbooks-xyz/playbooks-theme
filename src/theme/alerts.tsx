@@ -1,7 +1,7 @@
 export const alert = () => ({
 	bgColor: 'bg-gray-100 dark:bg-gray-800',
-	border: 'border-l-8',
-	borderColor: 'border-cyan-500',
+	border: 'border-l-4 border',
+	borderColor: 'border-gray-300/50 dark:bg-gray-600/50',
 	borderRadius: 'rounded-md',
 	display: 'flex-start-top',
 	overflow: 'overflow-hidden',
