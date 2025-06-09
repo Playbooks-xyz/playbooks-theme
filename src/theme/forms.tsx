@@ -5,7 +5,7 @@ export const form = () => ({});
 export const formCheckbox = () => ({
 	animation: 'transition-all',
 	bgColor:
-		'bg-transparent dark:bg-transparent checked:bg-primary-500 checked:hover:bg-primary-500 checked:f:bg-primary-500 dark:checked:bg-secondary-500 dark:checked:hover:bg-secondary-500 dark:checked:f:bg-secondary-500',
+		'bg-transparent dark:bg-transparent checked:bg-primary checked:hover:bg-primary checked:f:bg-primary dark:checked:bg-secondary dark:checked:hover:bg-secondary dark:checked:f:bg-secondary',
 	border: 'border-2',
 	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
@@ -16,7 +16,7 @@ export const formCheckbox = () => ({
 		'ring-transparent checked:ring-transparent dark:checked:ring-transparent f:ring-transparent dark:f:ring-transparent',
 	ringOffset: 'ring-offset-4 checked:ring-offset-4 f:ring-offset-4',
 	ringOffsetColor:
-		'checked:ring-offset-primary-500/50 dark:checked:ring-offset-secondary-500/50 f:ring-offset-primary-500/50 dark:f:ring-offset-secondary-500/50',
+		'checked:ring-offset-primary/50 dark:checked:ring-offset-secondary/50 f:ring-offset-primary/50 dark:f:ring-offset-secondary/50',
 	size: 'h-6 w-6',
 });
 
@@ -55,7 +55,7 @@ export const formInput = ({ size, variant }) => ({
 	ring: 'f:ring-1',
 	ringColor: 'f:ring-transparent dark:f:ring-transparent',
 	ringOffset: 'f:ring-offset-1 dark:f:ring-offset-1',
-	ringOffsetColor: 'f:ring-offset-primary-500 dark:f:ring-offset-secondary-500',
+	ringOffsetColor: 'f:ring-offset-primary dark:f:ring-offset-secondary',
 	tracking: 'tracking-wide',
 	width: 'w-full',
 	...computeInputSize(size),

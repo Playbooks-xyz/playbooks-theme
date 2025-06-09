@@ -7,7 +7,7 @@ export const avatar = () => ({
 });
 
 export const avatarBadge = ({ size }) => ({
-	bgColor: 'bg-primary-500 dark:bg-secondary-500',
+	bgColor: 'bg-primary dark:bg-secondary',
 	border: 'border-2',
 	borderColor: 'border-white dark:border-gray-900',
 	borderRadius: 'rounded-full',

@@ -11,7 +11,7 @@ export const banner = () => ({
 export const bannerIcon = () => ({
 	bgColor: 'bg-black/25 dark:bg-black/25',
 	borderRadius: 'rounded-md',
-	color: 'text-primary-500 dark:text-secondary-500',
+	color: 'text-primary dark:text-secondary',
 	spacing: 'px-2 py-1',
 });
 

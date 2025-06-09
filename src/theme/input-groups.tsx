@@ -6,12 +6,12 @@ export const inputGroup = () => ({
 	borderRadius: 'rounded-md',
 	color: 'text-gray-600 dark:text-gray-200',
 	fade: 'ease',
-	focus: 'focus-within:border-primary-500 dark:focus-within:border-secondary-500',
+	focus: 'focus-within:border-primary dark:focus-within:border-secondary',
 	display: 'flex no-wrap',
 	ring: 'focus-within:ring-1',
 	ringColor: 'focus-within:ring-transparent dark:focus-within:ring-transparent',
 	ringOffset: 'focus-within:ring-offset-1',
-	ringOffsetColor: 'focus-within:ring-offset-primary-500 focus-within:dark:ring-offset-secondary-500',
+	ringOffsetColor: 'focus-within:ring-offset-primary focus-within:dark:ring-offset-secondary',
 });
 
 export const inputAppend = () => ({

@@ -1,7 +1,7 @@
 export const radioWrapper = ({ active }) => ({
 	animation: 'transition-all',
 	border: 'border',
-	borderColor: active ? 'border-primary-500 dark:border-secondary-500' : 'border-gray-300/50 dark:border-gray-600/50',
+	borderColor: active ? 'border-primary dark:border-secondary' : 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	cursor: 'cursor-pointer',
 	fade: 'ease',
@@ -24,10 +24,10 @@ export const radioInput = () => ({
 	borderColor: 'border-gray-300 dark:border-gray-600',
 	borderRadius: 'rounded-full',
 	checked:
-		'checked:bg-primary-500 checked:border-primary-500 checked:dark:bg-secondary-500 checked:dark:border-secondary-500',
+		'checked:bg-primary checked:border-primary checked:dark:bg-secondary checked:dark:border-secondary',
 	cursor: 'cursor-pointer',
 	fade: 'ease',
-	focus: 'focus:ring-2 focus:ring-primary-500',
+	focus: 'focus:ring-2 focus:ring-primary',
 	height: 'h-4',
 	width: 'w-4',
 });

@@ -20,7 +20,7 @@ export const link = active => ({
 });
 
 export const primaryLink = ({ active, size }) => ({
-	bgColor: 'bg-linear-to-r from-secondary-500 to-primary-500',
+	bgColor: 'bg-linear-to-r from-secondary to-primary',
 	bgPosition: 'bg-center',
 	bgSize: 'bg-size-[100%] hover:bg-size-[200%]',
 	borderRadius: 'rounded-md',
@@ -57,9 +57,9 @@ export const borderLink = ({ active, size }) => ({
 	stroke: 'stroke-gray-600 dark:stroke-gray-300',
 	...link(
 		active && {
-			borderColor: 'border-secondary-500 dark:border-secondary-500',
-			color: 'text-secondary-500',
-			stroke: 'stroke-secondary-500',
+			borderColor: 'border-secondary dark:border-secondary',
+			color: 'text-secondary',
+			stroke: 'stroke-secondary',
 			...active,
 		},
 	),
@@ -71,12 +71,12 @@ export const tabLink = ({ active, size }) => ({
 	borderColor: 'border-b-transparent hover:border-b-gray-300',
 	borderRadius: '',
 	color: 'text-gray-600 dark:text-gray-200',
-	hover: 'border-b-primary-500 dark:hover:border-b-secondary-500',
+	hover: 'border-b-primary dark:hover:border-b-secondary',
 	size: computeBtnSize(size),
 	stroke: 'stroke-gray-500 dark:stroke-gray-300',
 	...link(
 		active && {
-			borderColor: 'border-b-primary-500 dark:border-b-secondary-500',
+			borderColor: 'border-b-primary dark:border-b-secondary',
 			color: 'text-gray-600 dark:text-gray-200',
 			...active,
 		},
@@ -94,7 +94,7 @@ export const textLink = ({ active, size }) => ({
 export const linkWrapper = ({ disabled }) => ({
 	cursor: disabled ? 'cursor-not-allowed' : 'cursor-pointer',
 	outline: 'focus-visible:outline',
-	outlineColor: 'focus-visible:outline-primary-500 dark:focus-visible:outline-secondary-500',
+	outlineColor: 'focus-visible:outline-primary dark:focus-visible:outline-secondary',
 	outlineOffset: 'outline-offset-1',
 	width: 'w-inherit',
 });

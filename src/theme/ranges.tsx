@@ -8,9 +8,9 @@ export const rangeSliderTrack = () => ({
 
 export const rangeSliderThumb = ({ isDragged }) => ({
 	size: 'w-6 h-6',
-	bgColor: isDragged ? 'bg-primary-500 dark:bg-secondary-500' : 'bg-gray-300 dark:bg-gray-600',
+	bgColor: isDragged ? 'bg-primary dark:bg-secondary' : 'bg-gray-300 dark:bg-gray-600',
 	border: 'border-2',
-	borderColor: isDragged ? 'border-primary-500 dark:border-secondary-500' : 'border-gray-300 dark:border-gray-600',
+	borderColor: isDragged ? 'border-primary dark:border-secondary' : 'border-gray-300 dark:border-gray-600',
 	borderRadius: 'rounded-full',
 	display: 'flex-middle',
 	position: '',

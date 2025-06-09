@@ -34,7 +34,7 @@ export const switchInner = ({ checked }) => ({
 
 export const switchToggle = ({ checked }) => ({
 	animation: 'transition-all',
-	bgColor: checked ? 'bg-primary-500 dark:bg-secondary-500' : 'bg-gray-300 dark:bg-gray-600',
+	bgColor: checked ? 'bg-primary dark:bg-secondary' : 'bg-gray-300 dark:bg-gray-600',
 	borderRadius: 'rounded-full',
 	display: 'inline-block',
 	duration: 'duration-200',

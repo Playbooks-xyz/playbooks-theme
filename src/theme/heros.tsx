@@ -48,7 +48,7 @@ export const heroBody = () => ({
 });
 
 export const heroPretitle = () => ({
-	color: 'text-primary-500 dark:text-secondary-500',
+	color: 'text-primary dark:text-secondary',
 	fontFamily: 'font-accent',
 	fontSize: 'text-sm',
 	fontWeight: 'font-medium',
