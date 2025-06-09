@@ -36,6 +36,28 @@ const App = ({ Component, pageProps }: AppProps) => {
 export default App;
 ```
 
+Then, make sure to base stylesheet to look like the following:
+
+```css
+@import 'tailwindcss';
+@import '@playbooks/ui/styles.css';
+
+@source "../../node_modules/@playbooks/theme*.js";
+@source "../../node_modules/@playbooks/ui*.js";
+
+@theme {
+	--font-primary: Plus Jakarta Sans, sans-serif;
+	--font-secondary: Inter, sans-serif;
+	--font-accent: Courier, monospace;
+}
+
+@theme inline {
+  --color-primary: var(--color-blue-500);
+  --color-secondary: var(--color-cyan-500);
+  --color-accent: var(--color-indigo-500);
+}
+```
+
 ## Development
 This project is designed for development using the [yalc](https://npmjs.com/package/yalc) library.
 - npm run dev
