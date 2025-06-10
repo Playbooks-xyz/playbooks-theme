@@ -1,28 +1,28 @@
 export const h1 = () => ({
 	color: 'text-gray-800 dark:text-gray-100',
 	fontSize: 'text-5xl lg:text-6xl',
-	fontWeight: 'font-medium',
+	fontWeight: 'font-bold',
 	fontFamily: 'font-primary',
 });
 
 export const h2 = () => ({
 	color: 'text-gray-800 dark:text-gray-100',
 	fontSize: 'text-4xl lg:text-5xl',
-	fontWeight: 'font-medium',
+	fontWeight: 'font-bold',
 	fontFamily: 'font-primary',
 });
 
 export const h3 = () => ({
 	color: 'text-gray-800 dark:text-gray-100',
 	fontSize: 'text-3xl lg:text-3xl',
-	fontWeight: 'font-medium',
+	fontWeight: 'font-bold',
 	fontFamily: 'font-primary',
 });
 
 export const h4 = () => ({
 	color: 'text-gray-800 dark:text-gray-100',
 	fontSize: 'text-xl lg:text-2xl',
-	fontWeight: 'font-medium',
+	fontWeight: 'font-semibold',
 	fontFamily: 'font-primary',
 });
 

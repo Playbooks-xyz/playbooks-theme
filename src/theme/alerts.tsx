@@ -1,7 +1,16 @@
-export const alert = () => ({
+export const alert = ({ type }) => ({
 	bgColor: 'bg-gray-100 dark:bg-gray-800',
-	border: 'border-l-4 border',
-	borderColor: 'border-gray-300/50 dark:bg-gray-600/50',
+	border: 'border-l-8 border',
+	borderColor:
+		type === 'success'
+			? 'border-green-500/50 dark:border-green-500/50'
+			: type === 'warning'
+				? 'border-amber-500/50 dark:border-amber-500/50'
+				: type === 'error'
+					? 'border-red-500/50 dark:border-red-500/50'
+					: type === 'info'
+						? 'border-blue-300/50 dark:border-cyan-600/50'
+						: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
 	display: 'flex-start-top',
 	overflow: 'overflow-hidden',
@@ -10,12 +19,13 @@ export const alert = () => ({
 });
 
 export const alertIcon = () => ({
-	color: 'green-400',
+	color: 'text-gray-600 dark:text-gray-500',
 	fontSize: 'text-2xl',
 });
 
 export const alertBody = () => ({
 	space: 'space-y-1',
+	fontSize: 'text-sm',
 });
 
 export const alertTitle = () => ({
