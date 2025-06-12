@@ -22,6 +22,7 @@ export default defineConfig(({ mode }) => {
 	return {
 		base: './',
 		build: {
+			sourcemap: true,
 			lib: {
 				entry: path.resolve(__dirname, 'src/index.tsx'),
 				name: 'playbooks-theme',
