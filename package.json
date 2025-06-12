@@ -7,13 +7,25 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playbooks-xyz/theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/playbooks-xyz/theme/issues"
+  },
   "files": [
     "dist"
   ],
+  "keywords": [
+    "playbooks",
+    "theme"
+  ],
   "scripts": {
-    "dev": "vite build --mode development --watch --minify false",
+    "dev": "vite build --mode development --watch --minify false --sourcemap",
     "start": "vite build --mode development --minify false",
     "build": "vite build --mode production --minify true",
+    "build:ts": "dts-bundle-generator --config dts.config.ts",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "format": "prettier src",
