@@ -16,33 +16,37 @@ export function pushBuild() {
 	};
 }
 
-export default defineConfig({
-	base: './',
-	build: {
-		lib: {
-			entry: path.resolve(__dirname, 'src/index.tsx'),
-			name: 'playbooks-theme',
-			formats: ['es', 'cjs'],
-			fileName: format => `index.${format}.js`,
-		},
-		rollupOptions: {
-			external: ['react', 'react-dom'],
-			output: {
-				globals: {
-					react: 'React',
-					'react-dom': 'ReactDOM',
-					'react/jsx-runtime': 'react/jsx-runtime',
-				},
+export default defineConfig(({ mode }) => {
+	const plugins = mode !== 'production' ? [pushBuild()] : [];
+
+	return {
+		base: './',
+		build: {
+			lib: {
+				entry: path.resolve(__dirname, 'src/index.tsx'),
+				name: 'playbooks-theme',
+				formats: ['es', 'cjs'],
+				fileName: format => `index.${format}.js`,
 			},
-			plugins: [peerDepsExternal()],
+			rollupOptions: {
+				external: ['react', 'react-dom'],
+				output: {
+					globals: {
+						react: 'React',
+						'react-dom': 'ReactDOM',
+						'react/jsx-runtime': 'react/jsx-runtime',
+					},
+				},
+				plugins: [peerDepsExternal()],
+			},
 		},
-	},
-	plugins: [pushBuild()],
-	resolve: {
-		alias: {
-			src: path.resolve(__dirname, '/src'),
-			theme: path.resolve(__dirname, '/src/theme'),
-			utils: path.resolve(__dirname, '/src/utils'),
+		plugins,
+		resolve: {
+			alias: {
+				src: path.resolve(__dirname, '/src'),
+				theme: path.resolve(__dirname, '/src/theme'),
+				utils: path.resolve(__dirname, '/src/utils'),
+			},
 		},
-	},
+	};
 });
