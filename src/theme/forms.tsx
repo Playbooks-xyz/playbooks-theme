@@ -5,7 +5,7 @@ export const form = () => ({});
 export const formCheckbox = () => ({
 	animation: 'transition-all',
 	bgColor:
-		'bg-transparent dark:bg-transparent checked:bg-primary checked:hover:bg-primary checked:f:bg-primary dark:checked:bg-secondary dark:checked:hover:bg-secondary dark:checked:f:bg-secondary',
+		'bg-transparent dark:bg-transparent checked:bg-primary checked:hover:bg-primary checked:focus:bg-primary dark:checked:bg-secondary dark:checked:hover:bg-secondary dark:checked:focus:bg-secondary',
 	border: 'border-2',
 	borderColor: 'border-gray-300/50 dark:border-gray-600/50',
 	borderRadius: 'rounded-md',
@@ -13,10 +13,10 @@ export const formCheckbox = () => ({
 	fade: 'ease',
 	ring: 'ring-none',
 	ringColor:
-		'ring-transparent checked:ring-transparent dark:checked:ring-transparent f:ring-transparent dark:f:ring-transparent',
-	ringOffset: 'ring-offset-4 checked:ring-offset-4 f:ring-offset-4',
+		'ring-transparent checked:ring-transparent dark:checked:ring-transparent focus:ring-transparent dark:focus:ring-transparent',
+	ringOffset: 'ring-offset-4 checked:ring-offset-4 focus:ring-offset-4',
 	ringOffsetColor:
-		'checked:ring-offset-primary/50 dark:checked:ring-offset-secondary/50 f:ring-offset-primary/50 dark:f:ring-offset-secondary/50',
+		'checked:ring-offset-primary/50 dark:checked:ring-offset-secondary/50 focus:ring-offset-primary/50 dark:focus:ring-offset-secondary/50',
 	size: 'h-6 w-6',
 });
 
@@ -52,20 +52,20 @@ export const formInput = ({ size, variant = '' }) => ({
 	fontSize: 'text-sm',
 	outline: 'outline-none',
 	placeholderColor: 'placeholder:text-gray-500 dark:placeholder:text-gray-400',
-	ring: 'f:ring-1',
-	ringColor: 'f:ring-transparent dark:f:ring-transparent',
-	ringOffset: 'f:ring-offset-1 dark:f:ring-offset-1',
-	ringOffsetColor: 'f:ring-offset-primary dark:f:ring-offset-secondary',
+	ring: 'focus:ring-1',
+	ringColor: 'focus:ring-transparent dark:focus:ring-transparent',
+	ringOffset: 'focus:ring-offset-1 dark:focus:ring-offset-1',
+	ringOffsetColor: 'focus:ring-offset-primary dark:focus:ring-offset-secondary',
 	tracking: 'tracking-wide',
 	width: 'w-full',
 	...computeInputSize(size),
 	...(variant === 'group' && {
 		bgColor: 'bg-transparent',
 		border: 'border-none',
-		ring: 'f:ring-0',
-		ringColor: 'f:ring-transparent',
-		ringOffset: 'f:ring-offset-none',
-		ringOffsetColor: 'f:ring-offset-transparent',
+		ring: 'focus:ring-0',
+		ringColor: 'focus:ring-transparent',
+		ringOffset: 'focus:ring-offset-none',
+		ringOffsetColor: 'focus:ring-offset-transparent',
 	}),
 });
 
